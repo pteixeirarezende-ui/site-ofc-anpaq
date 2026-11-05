@@ -1,0 +1,74 @@
+[
+  {
+    "nome": "Acqua Embalagens Ltda",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "servico": "Embalagens e Garrafas",
+    "site": "https://acquaembalagens.com.br",
+    "instagram": "@acquaembalagens",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Confraria Mineira da Cachaça — CONFALA",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "servico": "Confraria e Difusão Cultural",
+    "site": "",
+    "instagram": "@confalaoficial",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "CRUD Soluções em Software de Gestão e Consultoria",
+    "cidade": "Ouro Preto",
+    "estado": "MG",
+    "servico": "Sistemas de Gestão para Alambiques",
+    "site": "https://crudsolucoes.com.br",
+    "instagram": "@crudsolucoes",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "D&R Alambiques e Cobres Ltda",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "servico": "Alambiques de Cobre e Equipamentos",
+    "site": "https://dralambiques.com.br",
+    "instagram": "@dralambiques",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Deville Comunicação",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "servico": "Design de Rótulos e Comunicação",
+    "site": "",
+    "instagram": "@devillecomunicacao",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Direção Sul Comércio de Embalagens Ltda",
+    "cidade": "Curitiba",
+    "estado": "PR",
+    "servico": "Embalagens e Fechamentos",
+    "site": "",
+    "instagram": "@direcaosul",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Distribuidora Savana Ltda",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "servico": "Distribuição e Logística de Bebidas",
+    "site": "https://distribuidorasavana.com.br",
+    "instagram": "@distribuidorasavana",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Fábrica de Alambiques Santa Efigênia Ltda",
+    "cidade": "Itaverava",
+    "estado": "MG",
+    "servico": "Caldeiraria e Alambiques em Cobre",
+    "site": "https://alambiquessantaefigenia.com.br",
+    "instagram": "@alambiquessantaefigenia",
+    "publicar": "SIM"
+  }
+]

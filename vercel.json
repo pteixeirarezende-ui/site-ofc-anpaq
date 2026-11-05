@@ -1,0 +1,194 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/a-anpaq.html",
+      "destination": "/a-anpaq/",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/release-da-anpaq.html",
+      "destination": "/a-anpaq/#release",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/selo-de-qualidade.html",
+      "destination": "/selo/",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/agenda.html",
+      "destination": "/agenda/",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/jornal.html",
+      "destination": "/revista/",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/jornal",
+      "destination": "/revista/",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/notícias.html",
+      "destination": "/noticias/",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/not%C3%ADcias.html",
+      "destination": "/noticias/",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/notícias",
+      "destination": "/noticias/",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/not%C3%ADcias",
+      "destination": "/noticias/",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/legislação.html",
+      "destination": "/guia-do-produtor/#legislacao",
+      "permanent": true
+    },
+    {
+      "source": "/a-anpaq/legisla%C3%A7%C3%A3o.html",
+      "destination": "/guia-do-produtor/#legislacao",
+      "permanent": true
+    },
+    {
+      "source": "/associados/associado-produtor.html",
+      "destination": "/associados/?tipo=produtor",
+      "permanent": true
+    },
+    {
+      "source": "/associados/associado-fornecedor-e-prestador-de-serviço.html",
+      "destination": "/associados/?tipo=fornecedor",
+      "permanent": true
+    },
+    {
+      "source": "/associados/associado-fornecedor-e-prestador-de-servi%C3%A7o.html",
+      "destination": "/associados/?tipo=fornecedor",
+      "permanent": true
+    },
+    {
+      "source": "/anuário/:path*",
+      "destination": "/anuario/",
+      "permanent": true
+    },
+    {
+      "source": "/anu%C3%A1rio/:path*",
+      "destination": "/anuario/",
+      "permanent": true
+    },
+    {
+      "source": "/regularize-seu-alambique.html",
+      "destination": "/guia-do-produtor/",
+      "permanent": true
+    },
+    {
+      "source": "/regularize-seu-alambique/cartilha-sebrae.html",
+      "destination": "/guia-do-produtor/#cartilha",
+      "permanent": true
+    },
+    {
+      "source": "/associe-se.html",
+      "destination": "/associe-se/",
+      "permanent": true
+    },
+    {
+      "source": "/contato.html",
+      "destination": "/contato/",
+      "permanent": true
+    },
+    {
+      "source": "/privacidade.html",
+      "destination": "/privacidade/",
+      "permanent": true
+    },
+    {
+      "source": "/component/content/article/8-notícias/:path*",
+      "destination": "/noticias/",
+      "permanent": true
+    },
+    {
+      "source": "/component/content/article/8-not%C3%ADcias/:path*",
+      "destination": "/noticias/",
+      "permanent": true
+    },
+    {
+      "source": "/component/content/article/9-jornal/:path*",
+      "destination": "/revista/",
+      "permanent": true
+    },
+    {
+      "source": "/component/content/article/10-legislação/:path*",
+      "destination": "/guia-do-produtor/#legislacao",
+      "permanent": true
+    },
+    {
+      "source": "/component/content/article/10-legisla%C3%A7%C3%A3o/:path*",
+      "destination": "/guia-do-produtor/#legislacao",
+      "permanent": true
+    },
+    {
+      "source": "/index.php",
+      "has": [
+        {
+          "type": "query",
+          "key": "option",
+          "value": "com_djcatalog2"
+        }
+      ],
+      "destination": "/associados/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agenda do Setor — Feiras, Eventos e Cursos | ANPAQ</title>
+  <meta name="description" content="Calendário oficial de feiras, festivais de cachaça de alambique, simpósios científicos e cursos de capacitação técnica no Brasil."/>
+  <link rel="canonical" href="https://anpaq.com.br/agenda/"/>
+  <link rel="icon" href="/favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://anpaq.com.br/agenda/"/>
+  <meta property="og:title" content="Agenda do Setor — Feiras, Eventos e Cursos | ANPAQ"/>
+  <meta property="og:description" content="Calendário oficial de feiras, festivais de cachaça de alambique, simpósios científicos e cursos de capacitação técnica no Brasil."/>
+  <meta property="og:image" content="https://anpaq.com.br/assets/img/og-default.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:site_name" content="ANPAQ — Associação Nacional da Cachaça de Alambique"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:url" content="https://anpaq.com.br/agenda/"/>
+  <meta name="twitter:title" content="Agenda do Setor — Feiras, Eventos e Cursos | ANPAQ"/>
+  <meta name="twitter:description" content="Calendário oficial de feiras, festivais de cachaça de alambique, simpósios científicos e cursos de capacitação técnica no Brasil."/>
+  <meta name="twitter:image" content="https://anpaq.com.br/assets/img/og-default.jpg"/>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://anpaq.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Agenda",
+      "item": "https://anpaq.com.br/agenda/"
+    }
+  ]
+}
+  </script>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"/>
+  <link rel="stylesheet" href="/assets/site.css"/>
+<style>
+    .agenda-month-block {
+      margin-bottom: var(--sp-12);
+    }
+    .agenda-month-header {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-4);
+      margin-bottom: var(--sp-6);
+    }
+    .agenda-month-title {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      color: var(--anpaq-dark-900);
+      margin: 0;
+      white-space: nowrap;
+    }
+    .agenda-month-line {
+      flex: 1;
+      height: 1px;
+      background: var(--anpaq-cream-400);
+    }
+    .event-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .event-meta-line {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-2);
+      font-size: var(--text-xs);
+      color: var(--anpaq-text-muted);
+      margin-bottom: var(--sp-2);
+    }
+    .event-meta-line svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      color: var(--anpaq-gold-600);
+    }
+    .event-actions {
+      display: flex;
+      gap: var(--sp-2);
+      flex-wrap: wrap;
+      margin-top: var(--sp-6);
+      padding-top: var(--sp-4);
+      border-top: 1px solid var(--anpaq-cream-300);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Link de Acessibilidade -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ═══════════════ HEADER & NAV ═══════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="/" class="nav-brand" aria-label="ANPAQ — Página inicial">
+        <img src="/assets/img/logo-anpaq.png" alt="ANPAQ — Associação Nacional da Cachaça de Alambique" class="nav-logo" width="160" height="48">
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="nav-menu" aria-label="Navegação principal">
+        <div class="nav-item">
+          <a href="/selo/" class="nav-link">Selo Nacional</a>
+        </div>
+        <div class="nav-item">
+          <a href="/a-anpaq/" class="nav-link">A ANPAQ</a>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="/associados/" class="nav-link" aria-haspopup="true">
+            Associados
+            <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="nav-dropdown" role="menu">
+            <a href="/associados/?tipo=produtor" class="dropdown-link" role="menuitem">Produtores</a>
+            <a href="/associados/?tipo=fornecedor" class="dropdown-link" role="menuitem">Fornecedores</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/revista/" class="nav-link">Revista</a>
+        </div>
+        <div class="nav-item">
+          <a href="/anuario/" class="nav-link">Anuário</a>
+        </div>
+        <div class="nav-item">
+          <a href="/guia-do-produtor/" class="nav-link">Guia do produtor</a>
+        </div>
+        <div class="nav-item">
+          <a href="/agenda/" class="nav-link is-active" aria-current="page">Agenda</a>
+        </div>
+        <div class="nav-item">
+          <a href="/contato/" class="nav-link">Contato</a>
+        </div>
+      </nav>
+
+      <!-- Ação Direita: Associe-se -->
+      <div class="nav-actions">
+        <a href="/associe-se/" class="btn btn-primary">Associe-se</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-drawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gaveta Mobile em tela cheia -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+    <div class="mobile-drawer-header">
+      <a href="/" class="nav-brand" aria-label="ANPAQ — Página inicial">
+        <img src="/assets/img/logo-anpaq.png" alt="ANPAQ" class="nav-logo" width="140" height="42">
+      </a>
+      <button class="btn-ghost" id="drawer-close" aria-label="Fechar menu" style="color:var(--anpaq-gold-400);font-size:1.5rem;padding:0.5rem;cursor:pointer;">
+        ✕
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links" aria-label="Navegação mobile">
+      <a href="/selo/" class="mobile-nav-link">Selo Nacional</a>
+      <a href="/a-anpaq/" class="mobile-nav-link">A ANPAQ</a>
+      <div>
+        <a href="/associados/" class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">
+          Associados <span>▾</span>
+        </a>
+        <div class="mobile-submenu">
+          <a href="/associados/?tipo=produtor" class="mobile-sub-link">Produtores</a>
+          <a href="/associados/?tipo=fornecedor" class="mobile-sub-link">Fornecedores</a>
+        </div>
+      </div>
+      <a href="/revista/" class="mobile-nav-link">Revista</a>
+      <a href="/anuario/" class="mobile-nav-link">Anuário</a>
+      <a href="/guia-do-produtor/" class="mobile-nav-link">Guia do produtor</a>
+      <a href="/agenda/" class="mobile-nav-link is-active">Agenda</a>
+      <a href="/contato/" class="mobile-nav-link">Contato</a>
+    </nav>
+
+    <div class="mobile-drawer-footer">
+      <a href="/associe-se/" class="btn btn-primary" style="width:100%;">Associe-se</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+  <main id="main-content">
+
+    <!-- 1. INNER HERO -->
+    <section class="section section--dark" style="padding-top: calc(var(--sp-24) + var(--header-height)); padding-bottom: var(--sp-12);">
+      <div class="container">
+        <div class="section-header reveal" style="max-width: 820px; margin: 0 auto; text-align: center;">
+          <span class="eyebrow">Calendário Oficial</span>
+          <div class="gold-line" style="margin: var(--sp-4) auto var(--sp-6);"></div>
+          <h1>Agenda do Setor — Feiras, Eventos e Cursos</h1>
+          <p style="font-size: var(--text-lg); color: var(--anpaq-text-light-muted); line-height: 1.6;">
+            Acompanhe o cronograma das principais feiras de negócios, encontros de produtores, dias de campo e capacitações técnicas do setor da cachaça de alambique em todo o Brasil.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CONTROLES E LISTA DE EVENTOS -->
+    <section class="section section--warm" style="padding-top: var(--sp-12); padding-bottom: var(--sp-16);">
+      <div class="container">
+        
+        <!-- Barra de Filtros e Alternância Temporal -->
+        <div class="filters reveal" style="justify-content: space-between; align-items: center; margin-bottom: var(--sp-10);">
+          <div style="display: flex; gap: var(--sp-2); align-items: center; flex-wrap: wrap;">
+            <span style="font-size: var(--text-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--anpaq-text-muted); margin-right: var(--sp-2);">Visualizar:</span>
+            <button class="btn btn-sm btn-primary is-active filter-time-btn" id="btn-proximos" data-time="proximos">
+              Próximos Eventos
+            </button>
+            <button class="btn btn-sm btn-secondary filter-time-btn" id="btn-todos" data-time="todos">
+              Ver anteriores
+            </button>
+          </div>
+
+          <div style="font-size: var(--text-xs); color: var(--anpaq-text-muted);" id="agenda-contador">
+            Carregando eventos...
+          </div>
+        </div>
+
+        <!-- Feedback de Carregamento -->
+        <div id="agenda-loading" style="display: none; text-align: center; padding: var(--sp-12);">
+          <div class="spinner" style="margin: 0 auto var(--sp-4);"></div>
+          <p style="color: var(--anpaq-text-muted);">Consultando agenda de eventos...</p>
+        </div>
+
+        <!-- Container Agrupado por Mês -->
+        <div id="agenda-container" class="reveal">
+          <!-- Gerado dinamicamente via script -->
+        </div>
+
+        <!-- Estado Vazio -->
+        <div id="agenda-empty" class="empty-state" style="display: none; margin-top: var(--sp-8);">
+          <h3>Nenhum evento futuro no momento</h3>
+          <p>Novas datas e feiras estão sendo confirmadas. Selecione "Ver Todos" para consultar o histórico ou acompanhe as atualizações da ANPAQ.</p>
+          <div style="margin-top: var(--sp-4);">
+            <button class="btn btn-secondary btn-sm" id="btn-forcar-todos">Ver anteriores</button>
+          </div>
+        </div>
+
+        <!-- confirmar com o Sérgio: Para usufruir de condições especiais oferecidas em cursos parceiros, associados devem apresentar documento de quitação da última mensalidade. -->
+
+      </div>
+    </section>
+
+    <!-- 3. CTA DIVULGAÇÃO DE EVENTO -->
+    <section class="cta-band">
+      <div class="container cta-band-inner reveal">
+        <h2>Sua entidade ou empresa vai realizar um evento do setor?</h2>
+        <p>Divulgue sua feira, curso técnico ou festival de cachaça de alambique nos canais de comunicação da ANPAQ.</p>
+        <div class="cta-band-actions">
+          <a href="/contato/" class="btn btn-primary">Informar Evento à ANPAQ</a>
+          <a href="/associe-se/" class="btn btn-ghost">Associe-se à ANPAQ</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER INSTITUCIONAL ═══════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Coluna 1: Marca & Frase -->
+        <div class="footer-col-brand">
+          <a href="/" aria-label="ANPAQ — Início">
+            <img src="/assets/img/logo-anpaq.png" alt="ANPAQ Logo" class="footer-logo" width="160" height="48" loading="lazy">
+          </a>
+          <p class="footer-brand-desc">
+            A Associação Nacional da Cachaça de Alambique apoia e desenvolve o setor produtivo da autêntica cachaça de alambique brasileira desde 1988.
+          </p>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="/selo/" class="footer-link">Selo Nacional</a></li>
+            <li><a href="/a-anpaq/" class="footer-link">A ANPAQ</a></li>
+            <li><a href="/associados/" class="footer-link">Associados</a></li>
+            <li><a href="/revista/" class="footer-link">Revista</a></li>
+            <li><a href="/anuario/" class="footer-link">Anuário</a></li>
+            <li><a href="/guia-do-produtor/" class="footer-link">Guia do produtor</a></li>
+            <li><a href="/agenda/" class="footer-link">Agenda</a></li>
+            <li><a href="/noticias/" class="footer-link">Notícias</a></li>
+            <li><a href="/contato/" class="footer-link">Contato</a></li>
+            <li><a href="/associe-se/" class="footer-link" style="color:var(--anpaq-gold-400);font-weight:600;">Associe-se</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Contato -->
+        <div>
+          <h4 class="footer-col-title">Contato & Sede</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Rua Levindo Lopes, 333 — loja 08 — Funcionários<br/>30140-170 — Belo Horizonte/MG</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>(31) 3442-9181 · (31) 99828-7495</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Atendimento: 09h às 14h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linha final legal -->
+      <div class="footer-bottom">
+        <p class="footer-legal-warning">Beba com moderação. Venda proibida para menores de 18 anos.</p>
+        <p>&copy; 2026 ANPAQ — Associação Nacional da Cachaça de Alambique. Todos os direitos reservados.</p>
+        <div class="footer-meta-links">
+          <a href="/privacidade/">Política de Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/assets/config.js"></script>
+  <script src="/assets/config.js"></script>
+  <script src="/assets/site.js"></script>
+  <script src="/assets/site.js"></script>
+
+  <!-- Lógica Dinâmica da Agenda -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const containerEl = document.getElementById('agenda-container');
+      const loadingEl = document.getElementById('agenda-loading');
+      const emptyEl = document.getElementById('agenda-empty');
+      const contadorEl = document.getElementById('agenda-contador');
+      const btnProximos = document.getElementById('btn-proximos');
+      const btnTodos = document.getElementById('btn-todos');
+      const btnForcarTodos = document.getElementById('btn-forcar-todos');
+
+      let todosEventos = [];
+      let modoFiltro = 'proximos'; // 'proximos' | 'todos'
+
+      const mesesNomes = [
+        'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+        'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+      ];
+
+      // Formatação em pt-BR (ex.: "6 a 8 de agosto de 2026")
+      function formatarPeriodo(inicioStr, fimStr) {
+        if (!inicioStr) return '';
+        const pIni = inicioStr.split('-').map(Number);
+        const anoIni = pIni[0];
+        const mesIni = pIni[1] - 1;
+        const diaIni = pIni[2];
+
+        if (!fimStr || fimStr === inicioStr) {
+          return `${diaIni} de ${mesesNomes[mesIni].toLowerCase()} de ${anoIni}`;
+        }
+
+        const pFim = fimStr.split('-').map(Number);
+        const anoFim = pFim[0];
+        const mesFim = pFim[1] - 1;
+        const diaFim = pFim[2];
+
+        if (anoIni === anoFim && mesIni === mesFim) {
+          return `${diaIni} a ${diaFim} de ${mesesNomes[mesIni].toLowerCase()} de ${anoIni}`;
+        } else if (anoIni === anoFim) {
+          return `${diaIni} de ${mesesNomes[mesIni].toLowerCase()} a ${diaFim} de ${mesesNomes[mesFim].toLowerCase()} de ${anoIni}`;
+        } else {
+          return `${diaIni} de ${mesesNomes[mesIni].toLowerCase()} de ${anoIni} a ${diaFim} de ${mesesNomes[mesFim].toLowerCase()} de ${anoFim}`;
+        }
+      }
+
+      // Agrupamento por Mês/Ano com base na data de início
+      function extrairChaveMes(dataStr) {
+        if (!dataStr) return 'Outros';
+        const parts = dataStr.split('-');
+        if (parts.length >= 2) {
+          const ano = parts[0];
+          const mesIndex = parseInt(parts[1], 10) - 1;
+          if (mesIndex >= 0 && mesIndex < 12) {
+            return `${mesesNomes[mesIndex]} de ${ano}`;
+          }
+        }
+        return 'Outros';
+      }
+
+      // Gera arquivo .ics para salvar no calendário
+      function baixarICS(ev) {
+        const dtStart = (ev.inicio || '').replace(/-/g, '');
+        // DTEND no padrão .ics para dia inteiro é exclusivo (+1 dia se mesmo dia)
+        let dtEnd = (ev.fim || ev.inicio || '').replace(/-/g, '');
+
+        const icsContent = [
+          'BEGIN:VCALENDAR',
+          'VERSION:2.0',
+          'PRODID:-//ANPAQ//Agenda Oficial//PT',
+          'CALSCALE:GREGORIAN',
+          'BEGIN:VEVENT',
+          `SUMMARY:${ev.evento || 'Evento ANPAQ'}`,
+          `DTSTART;VALUE=DATE:${dtStart}`,
+          `DTEND;VALUE=DATE:${dtEnd}`,
+          `LOCATION:${ev.cidade_uf || ''}`,
+          `DESCRIPTION:${ev.organizador ? 'Organizador: ' + ev.organizador : ''}`,
+          'END:VEVENT',
+          'END:VCALENDAR'
+        ].join('\r\n');
+
+        const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        const nomeArquivo = (ev.evento || 'evento').toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
+        link.download = `${nomeArquivo}.ics`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(link.href);
+      }
+
+      function renderizar() {
+        if (!containerEl) return;
+        containerEl.innerHTML = '';
+
+        const hojeStr = '2026-11-05';
+
+        // Filtra por proximidade temporal se o modo for 'proximos'
+        let lista = todosEventos;
+        if (modoFiltro === 'proximos') {
+          lista = todosEventos.filter(ev => {
+            const dataComparacao = ev.fim || ev.inicio;
+            return dataComparacao >= hojeStr;
+          });
+        }
+
+        if (contadorEl) {
+          contadorEl.textContent = `${lista.length} evento${lista.length === 1 ? '' : 's'} listado${lista.length === 1 ? '' : 's'}`;
+        }
+
+        if (!lista || lista.length === 0) {
+          if (emptyEl) emptyEl.style.display = 'block';
+          return;
+        }
+        if (emptyEl) emptyEl.style.display = 'none';
+
+        // Agrupa por Mês/Ano
+        const grupos = {};
+        lista.forEach(ev => {
+          const chave = extrairChaveMes(ev.inicio);
+          if (!grupos[chave]) grupos[chave] = [];
+          grupos[chave].push(ev);
+        });
+
+        // Constrói o HTML agrupado
+        Object.keys(grupos).forEach(mesAno => {
+          const monthBlock = document.createElement('div');
+          monthBlock.className = 'agenda-month-block';
+
+          // Cabeçalho do Mês
+          const monthHeader = document.createElement('div');
+          monthHeader.className = 'agenda-month-header';
+
+          const title = document.createElement('h3');
+          title.className = 'agenda-month-title';
+          title.textContent = mesAno;
+
+          const line = document.createElement('div');
+          line.className = 'agenda-month-line';
+
+          monthHeader.appendChild(title);
+          monthHeader.appendChild(line);
+          monthBlock.appendChild(monthHeader);
+
+          // Grid de Cards do Mês
+          const grid = document.createElement('div');
+          grid.className = 'events-grid';
+
+          grupos[mesAno].forEach(ev => {
+            const card = document.createElement('div');
+            card.className = 'event-card';
+
+            const cardTop = document.createElement('div');
+
+            // Header do Card: Data formatada + Badge ANPAQ
+            const badgeWrap = document.createElement('div');
+            badgeWrap.style.cssText = 'display: flex; justify-content: space-between; align-items: flex-start; gap: var(--sp-2); margin-bottom: var(--sp-3);';
+
+            const dateBadge = document.createElement('span');
+            dateBadge.className = 'event-date-badge';
+            dateBadge.textContent = formatarPeriodo(ev.inicio, ev.fim);
+            badgeWrap.appendChild(dateBadge);
+
+            if (String(ev.anpaq).trim().toUpperCase() === 'SIM') {
+              const anpaqBadge = document.createElement('span');
+              anpaqBadge.className = 'badge badge-sm';
+              anpaqBadge.style.cssText = 'background: rgba(201, 162, 39, 0.2); color: var(--anpaq-gold-700); border-color: rgba(201, 162, 39, 0.4); font-weight: 700;';
+              anpaqBadge.textContent = 'ANPAQ Presente';
+              badgeWrap.appendChild(anpaqBadge);
+            }
+
+            cardTop.appendChild(badgeWrap);
+
+            // Título do Evento
+            const eventTitle = document.createElement('h4');
+            eventTitle.className = 'event-title';
+            eventTitle.textContent = ev.evento || 'Evento do Setor';
+            cardTop.appendChild(eventTitle);
+
+            // Cidade / UF
+            if (ev.cidade_uf) {
+              const loc = document.createElement('div');
+              loc.className = 'event-location';
+              loc.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>${ev.cidade_uf}</span>`;
+              cardTop.appendChild(loc);
+            }
+
+            // Organizador
+            if (ev.organizador) {
+              const org = document.createElement('div');
+              org.className = 'event-meta-line';
+              org.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span><strong>Org:</strong> ${ev.organizador}</span>`;
+              cardTop.appendChild(org);
+            }
+
+            // Contato
+            if (ev.contato) {
+              const cont = document.createElement('div');
+              cont.className = 'event-meta-line';
+              cont.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>${ev.contato}</span>`;
+              cardTop.appendChild(cont);
+            }
+
+            card.appendChild(cardTop);
+
+            // Ações: Link e Adicionar ao Calendário (.ics)
+            const actions = document.createElement('div');
+            actions.className = 'event-actions';
+
+            if (ev.link && ev.link.trim()) {
+              const btnLink = document.createElement('a');
+              btnLink.href = ev.link;
+              btnLink.target = '_blank';
+              btnLink.rel = 'noopener';
+              btnLink.className = 'btn btn-secondary btn-sm';
+              btnLink.style.cssText = 'flex: 1; text-align: center; justify-content: center;';
+              btnLink.textContent = 'Mais informações';
+              actions.appendChild(btnLink);
+            }
+
+            const btnCal = document.createElement('button');
+            btnCal.className = 'btn btn-ghost btn-sm';
+            btnCal.style.cssText = 'padding: var(--sp-2) var(--sp-3); font-size: var(--text-xs);';
+            btnCal.title = 'Adicionar evento ao calendário';
+            btnCal.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:4px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Calendário`;
+            btnCal.addEventListener('click', () => baixarICS(ev));
+            actions.appendChild(btnCal);
+
+            card.appendChild(actions);
+            grid.appendChild(card);
+          });
+
+          monthBlock.appendChild(grid);
+          containerEl.appendChild(monthBlock);
+        });
+      }
+
+      function alternarModo(novoModo) {
+        modoFiltro = novoModo;
+        if (novoModo === 'proximos') {
+          btnProximos.className = 'btn btn-sm btn-primary is-active filter-time-btn';
+          btnTodos.className = 'btn btn-sm btn-secondary filter-time-btn';
+        } else {
+          btnProximos.className = 'btn btn-sm btn-secondary filter-time-btn';
+          btnTodos.className = 'btn btn-sm btn-primary is-active filter-time-btn';
+        }
+        renderizar();
+      }
+
+      if (btnProximos) btnProximos.addEventListener('click', () => alternarModo('proximos'));
+      if (btnTodos) btnTodos.addEventListener('click', () => alternarModo('todos'));
+      if (btnForcarTodos) btnForcarTodos.addEventListener('click', () => alternarModo('todos'));
+
+      // Inicialização
+      try {
+        if (loadingEl) loadingEl.style.display = 'block';
+
+        let data = [];
+        if (window.ANPAQ && typeof window.ANPAQ.fetchSheet === 'function') {
+          data = await window.ANPAQ.fetchSheet('Agenda');
+        }
+
+        // Ordena cronologicamente por data de início crescente
+        data.sort((a, b) => {
+          return String(a.inicio || '').localeCompare(String(b.inicio || ''));
+        });
+
+        todosEventos = data;
+        renderizar();
+      } catch (err) {
+        console.error('[ANPAQ] Erro ao carregar agenda de eventos:', err);
+      } finally {
+        if (loadingEl) loadingEl.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

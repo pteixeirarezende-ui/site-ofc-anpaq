@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /pre-cadastro/
+Sitemap: https://anpaq.com.br/sitemap.xml

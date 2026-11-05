@@ -1,0 +1,178 @@
+[
+  {
+    "inicio": "2026-05-27",
+    "fim": "2026-05-31",
+    "cidade_uf": "Brasília/DF",
+    "evento": "Festival da Cachaça de Brasília",
+    "organizador": "Instituto Brasileiro de Integração",
+    "contato": "(61) 9590-3563 · @festivaldacachacabsb",
+    "link": "https://instagram.com/festivaldacachacabsb",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-06-04",
+    "fim": "2026-06-07",
+    "cidade_uf": "Itatiaia/RJ",
+    "evento": "Festival de Canas",
+    "organizador": "Fazenda da Serra Escola de Permacultura",
+    "contato": "Escola de Permacultura",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-06-04",
+    "fim": "2026-06-07",
+    "cidade_uf": "São Lourenço/MG",
+    "evento": "14º Festival da Cachaça de São Lourenço",
+    "organizador": "William Eventos",
+    "contato": "@festivaldacachacasaolourenco",
+    "link": "https://instagram.com/festivaldacachacasaolourenco",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-06-09",
+    "fim": "2026-06-11",
+    "cidade_uf": "São Paulo/SP",
+    "evento": "Cachaça Trade Fair",
+    "organizador": "Marketpress",
+    "contato": "(11) 98347-2093",
+    "link": "https://cachacatradefair.com.br",
+    "anpaq": "SIM",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-06-08",
+    "fim": "2026-06-09",
+    "cidade_uf": "Belo Horizonte/MG",
+    "evento": "Curso Sommelier de Cachaça",
+    "organizador": "Cana Brasil",
+    "contato": "(31) 99877-3636",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-06-29",
+    "fim": "2026-07-01",
+    "cidade_uf": "Ouro Preto/MG",
+    "evento": "Curso de Tecnologia da Produção de Cachaça de Alambique",
+    "organizador": "Cachaçarias Nobres",
+    "contato": "(31) 97140-6195",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-07-02",
+    "fim": "2026-07-04",
+    "cidade_uf": "Ouro Preto/MG",
+    "evento": "Curso Blend, Análise Sensorial e Padronização",
+    "organizador": "Cachaçarias Nobres",
+    "contato": "(31) 97140-6195",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-07-10",
+    "fim": "2026-07-12",
+    "cidade_uf": "Salinas/MG",
+    "evento": "XXIII Festival Mundial da Cachaça de Salinas",
+    "organizador": "APACS",
+    "contato": "APACS Salinas",
+    "link": "",
+    "anpaq": "SIM",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-07-12",
+    "fim": "2026-07-12",
+    "cidade_uf": "Jaguaraçu/MG",
+    "evento": "Festival da Cachaça e Campeonato de Truco",
+    "organizador": "Restaurante Del Rey",
+    "contato": "(31) 98395-2576",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-07-24",
+    "fim": "2026-07-26",
+    "cidade_uf": "Araxá/MG",
+    "evento": "Araxá Cachaça Festival",
+    "organizador": "Araxá Cachaça Festival",
+    "contato": "(34) 99131-1141",
+    "link": "https://araxacachacafestival.com.br",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-08-06",
+    "fim": "2026-08-08",
+    "cidade_uf": "Belo Horizonte/MG",
+    "evento": "35ª Expocachaça · 4ª Minas Mais Doce · 19ª BrasilBier",
+    "organizador": "Expocachaça",
+    "contato": "(31) 99813-9731",
+    "link": "https://expocachaca.com.br",
+    "anpaq": "SIM",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-09-12",
+    "fim": "2026-09-12",
+    "cidade_uf": "Abre Campo/MG",
+    "evento": "Dia de Campo — da Cana ao Destilado",
+    "organizador": "SENAR MG / Sicoob Credivertentes",
+    "contato": "(31) 99527-1484",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-10-06",
+    "fim": "2026-10-08",
+    "cidade_uf": "São Paulo/SP",
+    "evento": "ProWine São Paulo (Expo Center Norte)",
+    "organizador": "Messe Düsseldorf / Emme Brasil",
+    "contato": "(11) 2365-4313",
+    "link": "https://prowinesaopaulo.com",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-10-15",
+    "fim": "2026-10-18",
+    "cidade_uf": "João Pessoa/PB",
+    "evento": "Brasil Cachaças",
+    "organizador": "MM Projetos e Consultoria",
+    "contato": "(83) 98690-6155",
+    "link": "",
+    "anpaq": "SIM",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2027-01-21",
+    "fim": "2027-01-24",
+    "cidade_uf": "Balneário Camboriú/SC",
+    "evento": "Expo Bebidas",
+    "organizador": "Expo Bebidas Oficial",
+    "contato": "@expobebidasoficial",
+    "link": "https://expobebidasbc.com.br",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2027-09-22",
+    "fim": "2027-09-24",
+    "cidade_uf": "Lavras/MG",
+    "evento": "IV Simpósio Brasileiro de Cachaça de Alambique",
+    "organizador": "UFLA",
+    "contato": "(35) 99985-3727",
+    "link": "",
+    "anpaq": "SIM",
+    "publicar": "SIM"
+  }
+]

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Revista Cachaça de Alambique com Notícias | ANPAQ</title>
+  <meta name="description" content="Revista oficial da ANPAQ, distribuída gratuitamente em todo o Brasil com matérias técnicas, regulação e mercado da cachaça de alambique."/>
+  <link rel="canonical" href="https://anpaq.com.br/revista/"/>
+  <link rel="icon" href="/favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://anpaq.com.br/revista/"/>
+  <meta property="og:title" content="Revista Cachaça de Alambique com Notícias | ANPAQ"/>
+  <meta property="og:description" content="Revista oficial da ANPAQ, distribuída gratuitamente em todo o Brasil com matérias técnicas, regulação e mercado da cachaça de alambique."/>
+  <meta property="og:image" content="https://anpaq.com.br/assets/img/og-default.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:site_name" content="ANPAQ — Associação Nacional da Cachaça de Alambique"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:url" content="https://anpaq.com.br/revista/"/>
+  <meta name="twitter:title" content="Revista Cachaça de Alambique com Notícias | ANPAQ"/>
+  <meta name="twitter:description" content="Revista oficial da ANPAQ, distribuída gratuitamente em todo o Brasil com matérias técnicas, regulação e mercado da cachaça de alambique."/>
+  <meta name="twitter:image" content="https://anpaq.com.br/assets/img/og-default.jpg"/>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://anpaq.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Revista",
+      "item": "https://anpaq.com.br/revista/"
+    }
+  ]
+}
+  </script>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"/>
+  <link rel="stylesheet" href="/assets/site.css"/>
+</head>
+<body>
+
+  <!-- Link de Acessibilidade -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ═══════════════ HEADER & NAV ═══════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="/" class="nav-brand" aria-label="ANPAQ — Página inicial">
+        <img src="/assets/img/logo-anpaq.png" alt="ANPAQ — Associação Nacional da Cachaça de Alambique" class="nav-logo" width="160" height="48">
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="nav-menu" aria-label="Navegação principal">
+        <div class="nav-item">
+          <a href="/selo/" class="nav-link">Selo Nacional</a>
+        </div>
+        <div class="nav-item">
+          <a href="/a-anpaq/" class="nav-link">A ANPAQ</a>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="/associados/" class="nav-link" aria-haspopup="true">
+            Associados
+            <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="nav-dropdown" role="menu">
+            <a href="/associados/?tipo=produtor" class="dropdown-link" role="menuitem">Produtores</a>
+            <a href="/associados/?tipo=fornecedor" class="dropdown-link" role="menuitem">Fornecedores</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/revista/" class="nav-link is-active" aria-current="page">Revista</a>
+        </div>
+        <div class="nav-item">
+          <a href="/anuario/" class="nav-link">Anuário</a>
+        </div>
+        <div class="nav-item">
+          <a href="/guia-do-produtor/" class="nav-link">Guia do produtor</a>
+        </div>
+        <div class="nav-item">
+          <a href="/agenda/" class="nav-link">Agenda</a>
+        </div>
+        <div class="nav-item">
+          <a href="/contato/" class="nav-link">Contato</a>
+        </div>
+      </nav>
+
+      <!-- Ação Direita: Associe-se -->
+      <div class="nav-actions">
+        <a href="/associe-se/" class="btn btn-primary">Associe-se</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-drawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gaveta Mobile em tela cheia -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+    <div class="mobile-drawer-header">
+      <a href="/" class="nav-brand" aria-label="ANPAQ — Página inicial">
+        <img src="/assets/img/logo-anpaq.png" alt="ANPAQ" class="nav-logo" width="140" height="42">
+      </a>
+      <button class="btn-ghost" id="drawer-close" aria-label="Fechar menu" style="color:var(--anpaq-gold-400);font-size:1.5rem;padding:0.5rem;cursor:pointer;">
+        ✕
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links" aria-label="Navegação mobile">
+      <a href="/selo/" class="mobile-nav-link">Selo Nacional</a>
+      <a href="/a-anpaq/" class="mobile-nav-link">A ANPAQ</a>
+      <div>
+        <a href="/associados/" class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">
+          Associados <span>▾</span>
+        </a>
+        <div class="mobile-submenu">
+          <a href="/associados/?tipo=produtor" class="mobile-sub-link">Produtores</a>
+          <a href="/associados/?tipo=fornecedor" class="mobile-sub-link">Fornecedores</a>
+        </div>
+      </div>
+      <a href="/revista/" class="mobile-nav-link is-active">Revista</a>
+      <a href="/anuario/" class="mobile-nav-link">Anuário</a>
+      <a href="/guia-do-produtor/" class="mobile-nav-link">Guia do produtor</a>
+      <a href="/agenda/" class="mobile-nav-link">Agenda</a>
+      <a href="/contato/" class="mobile-nav-link">Contato</a>
+    </nav>
+
+    <div class="mobile-drawer-footer">
+      <a href="/associe-se/" class="btn btn-primary" style="width:100%;">Associe-se</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+  <main id="main-content">
+
+    <!-- 1. INNER HERO -->
+    <section class="section section--dark" style="padding-top: calc(var(--sp-24) + var(--header-height)); padding-bottom: var(--sp-12);">
+      <div class="container">
+        <div class="section-header reveal" style="max-width: 820px; margin: 0 auto; text-align: center;">
+          <span class="eyebrow">Publicações Oficiais</span>
+          <div class="gold-line" style="margin: var(--sp-4) auto var(--sp-6);"></div>
+          <h1>Cachaça de Alambique com Notícias</h1>
+          <p style="font-size: var(--text-lg); color: var(--anpaq-text-light-muted); line-height: 1.6;">
+            A revista oficial da ANPAQ, distribuída gratuitamente em todo o Brasil. Informação técnica, legislação, tendências de mercado e tecnologia para o fortalecimento contínuo da cachaça de alambique.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. EDIÇÃO EM DESTAQUE -->
+    <section class="section section--light" style="padding-top: var(--sp-12); padding-bottom: var(--sp-12);">
+      <div class="container">
+        <div id="revista-destaque-container" class="reveal">
+          <!-- Renderizado via JS / Fallback inicial gracioso -->
+          <div class="pub-highlight-card">
+            <div class="pub-highlight-cover-wrap">
+              <picture>
+                <source srcset="/assets/img/revista-capa-95.webp" type="image/webp">
+                <img src="/assets/img/revista-capa-95.jpg" alt="Capa da Edição 95 da Revista da ANPAQ" class="pub-highlight-cover-img" width="800" height="1132" loading="eager">
+              </picture>
+            </div>
+            <div class="pub-highlight-body">
+              <span class="badge" style="background: rgba(201, 162, 39, 0.15); color: var(--anpaq-gold-700); border-color: rgba(201, 162, 39, 0.3); margin-bottom: var(--sp-3);">Edição em Destaque</span>
+              <h2 style="font-family: var(--font-display); font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl)); margin-bottom: var(--sp-2); color: var(--anpaq-dark-900);">Edição 99 — Inovações e Sustentabilidade</h2>
+              <p style="color: var(--anpaq-text-muted); font-size: var(--text-sm); margin-bottom: var(--sp-6); font-weight: 500;">
+                Publicada em Abril de 2026 · Distribuição Gratuita
+              </p>
+              <p style="color: var(--anpaq-dark-800); line-height: 1.6; margin-bottom: var(--sp-8);">
+                Revista distribuída gratuitamente em todo o Brasil. Matérias técnicas, novidades regulatórias, eventos e divulgação da cachaça de alambique.
+              </p>
+              <div style="display: flex; gap: var(--sp-4); flex-wrap: wrap;">
+                <button class="btn btn-primary btn-disabled" disabled>
+                  Ler a edição (Em breve)
+                </button>
+                <a href="#todas-edicoes" class="btn btn-secondary">
+                  Ver acervo de edições
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TODAS AS EDIÇÕES (ACERVO) -->
+    <section class="section section--warm" id="todas-edicoes" style="padding-top: var(--sp-12); padding-bottom: var(--sp-16);">
+      <div class="container">
+        <div class="section-header reveal" style="margin-bottom: var(--sp-8);">
+          <span class="eyebrow">Acervo Histórico</span>
+          <div class="gold-line"></div>
+          <h2>Todas as Edições</h2>
+          <p>Consulte as edições anteriores e acesse os conteúdos técnicos publicados pela ANPAQ.</p>
+        </div>
+
+        <!-- Filtro por Ano -->
+        <div class="filters reveal" style="margin-bottom: var(--sp-8);">
+          <span style="font-size: var(--text-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--anpaq-text-muted); align-self: center;">Filtrar por ano:</span>
+          <div id="filtro-anos" style="display: flex; gap: var(--sp-2); flex-wrap: wrap;">
+            <button class="btn btn-sm btn-primary filter-year-btn is-active" data-year="todos">Todos</button>
+            <button class="btn btn-sm btn-secondary filter-year-btn" data-year="2026">2026</button>
+            <button class="btn btn-sm btn-secondary filter-year-btn" data-year="2025">2025</button>
+          </div>
+        </div>
+
+        <!-- Feedback de Carregamento -->
+        <div id="revista-loading" style="display: none; text-align: center; padding: var(--sp-12);">
+          <div class="spinner" style="margin: 0 auto var(--sp-4);"></div>
+          <p style="color: var(--anpaq-text-muted);">Carregando edições da revista...</p>
+        </div>
+
+        <!-- Grid de Capas -->
+        <div id="revista-grid" class="pub-grid-covers reveal">
+          <!-- Itens preenchidos dinamicamente pelo script -->
+        </div>
+
+        <!-- Estado Vazio -->
+        <div id="revista-empty" class="empty-state" style="display: none; margin-top: var(--sp-8);">
+          <h3>Nenhuma edição encontrada</h3>
+          <p>Não há publicações cadastradas para o ano selecionado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SOBRE A REVISTA -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="split align-center">
+          <div class="reveal">
+            <span class="eyebrow">Linha Editorial</span>
+            <div class="gold-line"></div>
+            <h2>O canal de referência para a cadeia produtiva da cachaça de alambique</h2>
+            <p style="margin-bottom: var(--sp-4); line-height: 1.7; color: var(--anpaq-dark-800);">
+              A revista <strong>Cachaça de Alambique com Notícias</strong> é um dos principais veículos de informação dedicada ao setor em todo o território nacional. Editada com linguagem acessível, leva aos produtores, especialistas e entidades conteúdos decisivos para a melhoria dos processos e valorização do produto.
+            </p>
+            <p style="line-height: 1.7; color: var(--anpaq-dark-800);">
+              A publicação aborda continuamente:
+            </p>
+            <ul style="list-style: none; padding: 0; margin: var(--sp-4) 0 var(--sp-6); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--sp-3);">
+              <li style="display: flex; align-items: flex-start; gap: var(--sp-2); font-size: var(--text-sm); color: var(--anpaq-dark-900);">
+                <span style="color: var(--anpaq-gold-500); font-weight: bold;">✔</span> Informações e laudos técnicos
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--sp-2); font-size: var(--text-sm); color: var(--anpaq-dark-900);">
+                <span style="color: var(--anpaq-gold-500); font-weight: bold;">✔</span> Tributação e adequação legal
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--sp-2); font-size: var(--text-sm); color: var(--anpaq-dark-900);">
+                <span style="color: var(--anpaq-gold-500); font-weight: bold;">✔</span> Tendências de mercado e consumo
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--sp-2); font-size: var(--text-sm); color: var(--anpaq-dark-900);">
+                <span style="color: var(--anpaq-gold-500); font-weight: bold;">✔</span> Feiras, congressos e concursos
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--sp-2); font-size: var(--text-sm); color: var(--anpaq-dark-900);">
+                <span style="color: var(--anpaq-gold-500); font-weight: bold;">✔</span> Cursos e qualificação profissional
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--sp-2); font-size: var(--text-sm); color: var(--anpaq-dark-900);">
+                <span style="color: var(--anpaq-gold-500); font-weight: bold;">✔</span> Tecnologia de destilação e alambiques
+              </li>
+            </ul>
+          </div>
+
+          <div class="reveal">
+            <div style="background: var(--anpaq-cream-200); border: 1px solid var(--anpaq-cream-400); border-radius: var(--radius); padding: clamp(var(--sp-6), 3vw, var(--sp-8)); position: relative;">
+              <h3 style="font-family: var(--font-display); font-size: var(--text-xl); margin-bottom: var(--sp-3); color: var(--anpaq-dark-900);">Circulação Nacional</h3>
+              <p style="font-size: var(--text-sm); line-height: 1.6; color: var(--anpaq-dark-800); margin-bottom: var(--sp-4);">
+                A revista alcança produtores de cachaça de alambique em diversos estados brasileiros, além de fornecedores de insumos e maquinários, distribuidores, pesquisadores de instituições de ensino, consultores técnicos e profissionais da gastronomia.
+              </p>
+              <div style="border-top: 1px solid var(--anpaq-cream-400); padding-top: var(--sp-4);">
+                <p style="font-size: var(--text-xs); color: var(--anpaq-text-muted); margin: 0;">
+                  A versão digital da publicação também é disponibilizada gratuitamente aos associados e ao público interessado no aprimoramento da cachaça de alambique.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CTA DIVULGAÇÃO -->
+    <section class="cta-band">
+      <div class="container cta-band-inner reveal">
+        <h2>Divulgue seus produtos e serviços na Revista da ANPAQ</h2>
+        <p>Conecte sua empresa diretamente aos principais produtores, alambiques e profissionais do setor da cachaça em todo o Brasil.</p>
+        <div class="cta-band-actions">
+          <a href="/contato/" class="btn btn-primary">Fale com a ANPAQ</a>
+          <a href="/associe-se/" class="btn btn-ghost">Conheça as vantagens de associado</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER INSTITUCIONAL ═══════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Coluna 1: Marca & Frase -->
+        <div class="footer-col-brand">
+          <a href="/" aria-label="ANPAQ — Início">
+            <img src="/assets/img/logo-anpaq.png" alt="ANPAQ Logo" class="footer-logo" width="160" height="48" loading="lazy">
+          </a>
+          <p class="footer-brand-desc">
+            A Associação Nacional da Cachaça de Alambique apoia e desenvolve o setor produtivo da autêntica cachaça de alambique brasileira desde 1988.
+          </p>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="/selo/" class="footer-link">Selo Nacional</a></li>
+            <li><a href="/a-anpaq/" class="footer-link">A ANPAQ</a></li>
+            <li><a href="/associados/" class="footer-link">Associados</a></li>
+            <li><a href="/revista/" class="footer-link">Revista</a></li>
+            <li><a href="/anuario/" class="footer-link">Anuário</a></li>
+            <li><a href="/guia-do-produtor/" class="footer-link">Guia do produtor</a></li>
+            <li><a href="/agenda/" class="footer-link">Agenda</a></li>
+            <li><a href="/noticias/" class="footer-link">Notícias</a></li>
+            <li><a href="/contato/" class="footer-link">Contato</a></li>
+            <li><a href="/associe-se/" class="footer-link" style="color:var(--anpaq-gold-400);font-weight:600;">Associe-se</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Contato -->
+        <div>
+          <h4 class="footer-col-title">Contato & Sede</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Rua Levindo Lopes, 333 — loja 08 — Funcionários<br/>30140-170 — Belo Horizonte/MG</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>(31) 3442-9181 · (31) 99828-7495</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Atendimento: 09h às 14h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linha final legal -->
+      <div class="footer-bottom">
+        <p class="footer-legal-warning">Beba com moderação. Venda proibida para menores de 18 anos.</p>
+        <p>&copy; 2026 ANPAQ — Associação Nacional da Cachaça de Alambique. Todos os direitos reservados.</p>
+        <div class="footer-meta-links">
+          <a href="/privacidade/">Política de Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/assets/config.js"></script>
+  <script src="/assets/config.js"></script>
+  <script src="/assets/site.js"></script>
+  <script src="/assets/site.js"></script>
+
+  <!-- Lógica Dinâmica da Revista -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const destaqueContainer = document.getElementById('revista-destaque-container');
+      const gridContainer = document.getElementById('revista-grid');
+      const filtroAnosContainer = document.getElementById('filtro-anos');
+      const loadingEl = document.getElementById('revista-loading');
+      const emptyEl = document.getElementById('revista-empty');
+
+      let todasEdicoes = [];
+      let anoSelecionado = 'todos';
+
+      // Utilitário de formatação de mês/ano
+      function formatarData(dataStr) {
+        if (!dataStr) return '';
+        const meses = [
+          'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+          'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+        ];
+        // Se vier como YYYY-MM
+        const parts = String(dataStr).split('-');
+        if (parts.length === 2) {
+          const ano = parts[0];
+          const mesIndex = parseInt(parts[1], 10) - 1;
+          if (mesIndex >= 0 && mesIndex < 12) {
+            return `${meses[mesIndex]} de ${ano}`;
+          }
+        }
+        return dataStr;
+      }
+
+      function extrairAno(dataStr) {
+        if (!dataStr) return '';
+        const match = String(dataStr).match(/\d{4}/);
+        return match ? match[0] : '';
+      }
+
+      // Renderiza a Edição em Destaque
+      function renderDestaque(edicao) {
+        if (!destaqueContainer || !edicao) return;
+
+        destaqueContainer.innerHTML = '';
+        const card = document.createElement('div');
+        card.className = 'pub-highlight-card';
+
+        // Capa
+        const coverWrap = document.createElement('div');
+        coverWrap.className = 'pub-highlight-cover-wrap';
+
+        if (edicao.capa_url && edicao.capa_url.trim()) {
+          const img = document.createElement('img');
+          img.src = edicao.capa_url;
+          img.alt = `Capa da Edição ${edicao.edicao} da Revista ANPAQ`;
+          img.className = 'pub-highlight-cover-img';
+          img.width = 1131;
+          img.height = 1600;
+          img.loading = 'eager';
+          coverWrap.appendChild(img);
+        } else {
+          const placeholder = document.createElement('div');
+          placeholder.className = 'pub-cover-placeholder';
+          placeholder.style.height = '100%';
+
+          const brand = document.createElement('div');
+          brand.className = 'pub-cover-placeholder-brand';
+          brand.textContent = 'ANPAQ REVISTA';
+
+          const num = document.createElement('div');
+          num.className = 'pub-cover-placeholder-num';
+          num.textContent = `Nº ${edicao.edicao}`;
+
+          const sub = document.createElement('div');
+          sub.className = 'pub-cover-placeholder-sub';
+          sub.textContent = formatarData(edicao.data);
+
+          placeholder.appendChild(brand);
+          placeholder.appendChild(num);
+          placeholder.appendChild(sub);
+          coverWrap.appendChild(placeholder);
+        }
+
+        // Corpo
+        const body = document.createElement('div');
+        body.className = 'pub-highlight-body';
+
+        const badge = document.createElement('span');
+        badge.className = 'badge';
+        badge.style.cssText = 'background: rgba(201, 162, 39, 0.15); color: var(--anpaq-gold-700); border-color: rgba(201, 162, 39, 0.3); margin-bottom: var(--sp-3);';
+        badge.textContent = 'Edição em Destaque';
+
+        const title = document.createElement('h2');
+        title.style.cssText = 'font-family: var(--font-display); font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl)); margin-bottom: var(--sp-2); color: var(--anpaq-dark-900);';
+        title.textContent = edicao.titulo || `Edição ${edicao.edicao}`;
+
+        const metaDate = document.createElement('p');
+        metaDate.style.cssText = 'color: var(--anpaq-text-muted); font-size: var(--text-sm); margin-bottom: var(--sp-6); font-weight: 500;';
+        metaDate.textContent = `Publicada em ${formatarData(edicao.data)} · Distribuição Gratuita`;
+
+        const desc = document.createElement('p');
+        desc.style.cssText = 'color: var(--anpaq-dark-800); line-height: 1.6; margin-bottom: var(--sp-8);';
+        desc.textContent = 'Revista distribuída gratuitamente em todo o Brasil. Matérias técnicas, novidades regulatórias, eventos e divulgação da cachaça de alambique.';
+
+        const actions = document.createElement('div');
+        actions.style.cssText = 'display: flex; gap: var(--sp-4); flex-wrap: wrap;';
+
+        if (edicao.link && edicao.link.trim()) {
+          const btnLer = document.createElement('a');
+          btnLer.href = edicao.link;
+          btnLer.target = '_blank';
+          btnLer.rel = 'noopener';
+          btnLer.className = 'btn btn-primary';
+          btnLer.textContent = 'Ler a edição';
+          actions.appendChild(btnLer);
+        } else {
+          const btnDisabled = document.createElement('button');
+          btnDisabled.className = 'btn btn-primary btn-disabled';
+          btnDisabled.disabled = true;
+          btnDisabled.textContent = 'Ler a edição (Em breve)';
+          actions.appendChild(btnDisabled);
+        }
+
+        const btnAcervo = document.createElement('a');
+        btnAcervo.href = '#todas-edicoes';
+        btnAcervo.className = 'btn btn-secondary';
+        btnAcervo.textContent = 'Ver acervo de edições';
+        actions.appendChild(btnAcervo);
+
+        body.appendChild(badge);
+        body.appendChild(title);
+        body.appendChild(metaDate);
+        body.appendChild(desc);
+        body.appendChild(actions);
+
+        card.appendChild(coverWrap);
+        card.appendChild(body);
+        destaqueContainer.appendChild(card);
+      }
+
+      // Renderiza Grid de Edições
+      function renderGrid(itens) {
+        if (!gridContainer) return;
+        gridContainer.innerHTML = '';
+
+        if (!itens || itens.length === 0) {
+          if (emptyEl) emptyEl.style.display = 'block';
+          return;
+        }
+        if (emptyEl) emptyEl.style.display = 'none';
+
+        itens.forEach(edicao => {
+          const item = document.createElement('div');
+          item.className = 'pub-cover-item';
+
+          // Frame da Capa
+          const frame = document.createElement('div');
+          frame.className = 'pub-cover-frame';
+
+          if (edicao.capa_url && edicao.capa_url.trim()) {
+            const img = document.createElement('img');
+            img.src = edicao.capa_url;
+            img.alt = `Capa da Edição ${edicao.edicao}`;
+            img.className = 'pub-cover-thumb';
+            img.width = 1131;
+            img.height = 1600;
+            img.loading = 'lazy';
+            frame.appendChild(img);
+          } else {
+            const placeholder = document.createElement('div');
+            placeholder.className = 'pub-cover-placeholder';
+
+            const brand = document.createElement('div');
+            brand.className = 'pub-cover-placeholder-brand';
+            brand.textContent = 'ANPAQ';
+
+            const num = document.createElement('div');
+            num.className = 'pub-cover-placeholder-num';
+            num.textContent = `Nº ${edicao.edicao}`;
+
+            const sub = document.createElement('div');
+            sub.className = 'pub-cover-placeholder-sub';
+            sub.textContent = formatarData(edicao.data);
+
+            placeholder.appendChild(brand);
+            placeholder.appendChild(num);
+            placeholder.appendChild(sub);
+            frame.appendChild(placeholder);
+          }
+
+          // Título e Data
+          const title = document.createElement('h3');
+          title.className = 'pub-meta-title';
+          title.textContent = edicao.titulo || `Edição ${edicao.edicao}`;
+
+          const date = document.createElement('div');
+          date.className = 'pub-meta-date';
+          date.textContent = formatarData(edicao.data);
+
+          // Botão de Leitura
+          const btnWrap = document.createElement('div');
+          btnWrap.style.marginTop = 'auto';
+
+          if (edicao.link && edicao.link.trim()) {
+            const btn = document.createElement('a');
+            btn.href = edicao.link;
+            btn.target = '_blank';
+            btn.rel = 'noopener';
+            btn.className = 'btn btn-secondary btn-sm';
+            btn.style.width = '100%';
+            btn.textContent = 'Ler edição';
+            btnWrap.appendChild(btn);
+          } else {
+            const btn = document.createElement('button');
+            btn.className = 'btn btn-secondary btn-sm btn-disabled';
+            btn.disabled = true;
+            btn.style.width = '100%';
+            btn.textContent = 'Em breve';
+            btnWrap.appendChild(btn);
+          }
+
+          item.appendChild(frame);
+          item.appendChild(title);
+          item.appendChild(date);
+          item.appendChild(btnWrap);
+
+          gridContainer.appendChild(item);
+        });
+      }
+
+      // Constrói os botões do filtro por ano
+      function buildFiltroAnos(itens) {
+        if (!filtroAnosContainer) return;
+        const anosSet = new Set();
+        itens.forEach(it => {
+          const ano = extrairAno(it.data);
+          if (ano) anosSet.add(ano);
+        });
+
+        const anos = Array.from(anosSet).sort().reverse();
+        filtroAnosContainer.innerHTML = '';
+
+        // Botão Todos
+        const btnTodos = document.createElement('button');
+        btnTodos.className = `btn btn-sm ${anoSelecionado === 'todos' ? 'btn-primary is-active' : 'btn-secondary'} filter-year-btn`;
+        btnTodos.dataset.year = 'todos';
+        btnTodos.textContent = 'Todos';
+        btnTodos.addEventListener('click', () => setFiltroAno('todos'));
+        filtroAnosContainer.appendChild(btnTodos);
+
+        anos.forEach(ano => {
+          const btn = document.createElement('button');
+          btn.className = `btn btn-sm ${anoSelecionado === ano ? 'btn-primary is-active' : 'btn-secondary'} filter-year-btn`;
+          btn.dataset.year = ano;
+          btn.textContent = ano;
+          btn.addEventListener('click', () => setFiltroAno(ano));
+          filtroAnosContainer.appendChild(btn);
+        });
+      }
+
+      function setFiltroAno(ano) {
+        anoSelecionado = ano;
+        const buttons = filtroAnosContainer.querySelectorAll('.filter-year-btn');
+        buttons.forEach(btn => {
+          if (btn.dataset.year === ano) {
+            btn.className = 'btn btn-sm btn-primary is-active filter-year-btn';
+          } else {
+            btn.className = 'btn btn-sm btn-secondary filter-year-btn';
+          }
+        });
+
+        if (ano === 'todos') {
+          renderGrid(todasEdicoes);
+        } else {
+          const filtradas = todasEdicoes.filter(it => extrairAno(it.data) === ano);
+          renderGrid(filtradas);
+        }
+      }
+
+      // Inicialização
+      try {
+        if (loadingEl) loadingEl.style.display = 'block';
+
+        let data = [];
+        if (window.ANPAQ && typeof window.ANPAQ.fetchSheet === 'function') {
+          data = await window.ANPAQ.fetchSheet('Revista');
+        }
+
+        // Ordena por número de edição decrescente (mais recente primeiro)
+        data.sort((a, b) => {
+          const numA = parseInt(a.edicao, 10) || 0;
+          const numB = parseInt(b.edicao, 10) || 0;
+          return numB - numA;
+        });
+
+        todasEdicoes = data;
+
+        if (todasEdicoes.length > 0) {
+          renderDestaque(todasEdicoes[0]);
+          buildFiltroAnos(todasEdicoes);
+          renderGrid(todasEdicoes);
+        } else {
+          if (emptyEl) emptyEl.style.display = 'block';
+        }
+      } catch (err) {
+        console.error('[ANPAQ] Erro ao carregar edições da revista:', err);
+      } finally {
+        if (loadingEl) loadingEl.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

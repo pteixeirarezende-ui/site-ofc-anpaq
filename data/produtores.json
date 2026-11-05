@@ -1,0 +1,74 @@
+[
+  {
+    "nome": "Acauã Artesanato Ltda",
+    "cidade": "Botelhos",
+    "estado": "MG",
+    "selo": "SIM",
+    "site": "https://acaua.com.br",
+    "instagram": "@cachacaacaua",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Agrimar Agro Indústria e Comércio Ltda",
+    "cidade": "Itaverava",
+    "estado": "MG",
+    "selo": "NAO",
+    "site": "",
+    "instagram": "",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Agro Pastoril dos Poções Ltda",
+    "cidade": "Jequitibá",
+    "estado": "MG",
+    "selo": "SIM",
+    "site": "",
+    "instagram": "@cachacapocoes",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Agroindustrial e Pecuária Nossa Senhora do Pilar Ltda",
+    "cidade": "Pitangui",
+    "estado": "MG",
+    "selo": "SIM",
+    "site": "https://cachacapilar.com.br",
+    "instagram": "@cachacapilar",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Agroindustrial Monte Alto Ltda",
+    "cidade": "Salinas",
+    "estado": "MG",
+    "selo": "SIM",
+    "site": "https://cachacamontealto.com.br",
+    "instagram": "@cachacamontealto",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Agronegócios Fazenda Lagoa Seca do Brasil Ltda",
+    "cidade": "Itumbiara",
+    "estado": "GO",
+    "selo": "NAO",
+    "site": "",
+    "instagram": "",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Agropecuária Roda D'Água Ltda",
+    "cidade": "Tarumirim",
+    "estado": "MG",
+    "selo": "SIM",
+    "site": "",
+    "instagram": "@cachacarodadagua",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Aguardente Arruda Ltda",
+    "cidade": "Lamim",
+    "estado": "MG",
+    "selo": "NAO",
+    "site": "",
+    "instagram": "",
+    "publicar": "SIM"
+  }
+]
