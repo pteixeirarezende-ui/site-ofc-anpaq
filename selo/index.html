@@ -46,7 +46,7 @@
   <link rel="preload" href="/assets/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/playfair-display-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/img/bg-alambique.webp" as="image" type="image/webp" fetchpriority="high">
-<link rel="stylesheet" href="/assets/site.css?v=20261106c"/>
+<link rel="stylesheet" href="/assets/site.css?v=20261106d"/>
 </head>
 <body>
 
@@ -152,7 +152,71 @@
       </div>
     </section>
 
-    <!-- ─── 2. O QUE O SELO GARANTE (3 CARDS) ─── -->
+    <!-- ─── 2. COMO FUNCIONA O SELO ─── -->
+    <section class="section section--dark" id="como-funciona">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" style="color:var(--anpaq-gold-300);">Selo Nacional</span>
+          <div class="gold-line"></div>
+          <h2>Como funciona o selo</h2>
+          <p>Do alambique à garrafa: o que cada parte do selo significa.</p>
+        </div>
+
+        <div class="selo-how-grid">
+          <!-- Coluna Esquerda: Pontos 1 e 3 -->
+          <div class="selo-how-col selo-how-col--left">
+            <div class="selo-how-point reveal">
+              <div class="selo-how-num" aria-hidden="true">1</div>
+              <div class="selo-how-info">
+                <h3>Produção em alambique de cobre</h3>
+                <p>Destilação que garante e preserva a verdadeira tradição, aroma e sabor da cachaça.</p>
+              </div>
+            </div>
+            <div class="selo-how-point reveal">
+              <div class="selo-how-num" aria-hidden="true">3</div>
+              <div class="selo-how-info">
+                <h3>Código serial</h3>
+                <p>Garrafas numeradas: maior controle e publicidade.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Central: Selo Nacional -->
+          <div class="selo-how-center reveal">
+            <picture class="selo-how-picture">
+              <source srcset="/assets/img/selo-nacional-800.webp 800w, /assets/img/selo-nacional.webp 1120w" sizes="(max-width:700px) 90vw, 480px" type="image/webp">
+              <img src="/assets/img/selo-nacional.webp" width="1120" height="820" loading="lazy" decoding="async" alt="Selo Nacional da Cachaça de Alambique, com número de série e QR code" class="selo-how-img">
+            </picture>
+            <p class="selo-how-caption">Imagem ilustrativa. O número de série é um exemplo.</p>
+          </div>
+
+          <!-- Coluna Direita: Pontos 2 e 4 -->
+          <div class="selo-how-col selo-how-col--right">
+            <div class="selo-how-point reveal">
+              <div class="selo-how-num" aria-hidden="true">2</div>
+              <div class="selo-how-info">
+                <h3>Garantia de origem do produto</h3>
+                <p>Controle técnico da Associação nacional e pertencimento da cachaça de alambique. Expedição controlada.</p>
+              </div>
+            </div>
+            <div class="selo-how-point reveal">
+              <div class="selo-how-num" aria-hidden="true">4</div>
+              <div class="selo-how-info">
+                <h3>Validação digital com QR code específico</h3>
+                <p>Acessa a origem e a autenticidade da cachaça de alambique, a ANPAQ e o produtor dessa cachaça.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fecho Centralizado -->
+        <div class="selo-how-footer reveal">
+          <p class="selo-how-tagline">Confiança + Autenticidade + Transparência</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 3. O QUE O SELO GARANTE (3 CARDS) ─── -->
     <section class="section section--alt" id="garantias">
       <div class="container">
         <div class="section-header reveal">
@@ -250,7 +314,7 @@
           <div class="selo-preview-card">
             
             <div class="selo-badge-placeholder">
-              <img src="/assets/img/selo-anpaq-64px.png" alt="Selo Nacional da Cachaça de Alambique" class="selo-preview-img" width="64" height="77" loading="lazy">
+              <img src="/assets/img/selo-nacional-800.webp" width="200" height="146" loading="lazy" decoding="async" alt="Selo Nacional da Cachaça de Alambique" class="selo-preview-img">
             </div>
             <h3 class="selo-preview-title">Selo Nacional</h3>
             <p class="selo-preview-desc">
@@ -489,7 +553,7 @@
 
   <!-- Scripts -->
 
-  <script src="/assets/config.js?v=20261106c" defer></script>
-  <script src="/assets/site.js?v=20261106c" defer></script>
+  <script src="/assets/config.js?v=20261106d" defer></script>
+  <script src="/assets/site.js?v=20261106d" defer></script>
 </body>
 </html>
