@@ -864,7 +864,8 @@ main {
 
 /* ─── CTA-BAND (.cta-band) ─── */
 .cta-band {
-  background: linear-gradient(135deg, var(--anpaq-dark-950) 0%, var(--anpaq-dark-900) 60%, var(--anpaq-dark-800) 100%);
+  background-color: var(--anpaq-dark-950);
+  background-image: linear-gradient(135deg, var(--anpaq-dark-950) 0%, var(--anpaq-dark-900) 60%, var(--anpaq-dark-800) 100%);
   border-top: 1px solid rgba(201, 162, 39, 0.25);
   border-bottom: 1px solid rgba(201, 162, 39, 0.25);
   padding: clamp(var(--sp-12), 6vw, var(--sp-20)) 0;
@@ -903,7 +904,7 @@ main {
 }
 .cta-band-text p {
   font-size: var(--text-lg);
-  color: var(--anpaq-text-light-muted);
+  color: rgba(245, 241, 232, 0.88);
   margin-bottom: 0;
 }
 
@@ -1195,10 +1196,23 @@ main {
 /* ─── FOOTER INSTITUCIONAL COMPLETO ─── */
 .site-footer {
   background-color: var(--anpaq-dark-950);
-  color: var(--anpaq-text-light-muted);
-  border-top: 2px solid var(--anpaq-gold-700);
+  background-image: radial-gradient(ellipse 70% 120px at 50% 0%, rgba(201, 162, 39, 0.08), transparent 70%);
+  color: rgba(245, 241, 232, 0.88);
+  border-top: 1px solid rgba(201, 162, 39, 0.35);
   padding-top: clamp(var(--sp-12), 6vw, var(--sp-20));
   position: relative;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90%, 680px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--anpaq-gold-400), transparent);
+  pointer-events: none;
 }
 
 .footer-grid {
@@ -1219,7 +1233,7 @@ main {
 .footer-brand-desc {
   font-size: var(--text-base);
   line-height: 1.7;
-  color: var(--anpaq-text-light-muted);
+  color: rgba(245, 241, 232, 0.88);
   margin-bottom: var(--sp-4);
 }
 
@@ -1250,13 +1264,13 @@ main {
 
 .footer-link {
   font-size: var(--text-sm);
-  color: var(--anpaq-text-light-muted);
+  color: rgba(245, 241, 232, 0.88);
   transition: all var(--duration-fast) var(--ease-out);
   display: inline-flex;
   align-items: center;
   gap: var(--sp-2);
 }
-.footer-link:hover, .footer-link:focus {
+.footer-link:hover, .footer-link:focus, .footer-link:focus-visible {
   color: var(--anpaq-gold-300);
   transform: translateX(3px);
 }
@@ -1272,7 +1286,7 @@ main {
   display: flex;
   align-items: flex-start;
   gap: var(--sp-3);
-  color: var(--anpaq-text-light-muted);
+  color: rgba(245, 241, 232, 0.88);
 }
 .footer-contact-item svg {
   width: 18px;
@@ -1291,7 +1305,7 @@ main {
   gap: var(--sp-3);
   text-align: center;
   font-size: var(--text-xs);
-  color: var(--anpaq-text-light-subtle);
+  color: rgba(245, 241, 232, 0.82);
 }
 
 .footer-legal-warning {
@@ -1310,9 +1324,11 @@ main {
   justify-content: center;
 }
 .footer-meta-links a {
-  color: var(--anpaq-text-light-muted);
+  color: rgba(245, 241, 232, 0.85);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
-.footer-meta-links a:hover {
+.footer-meta-links a:hover, .footer-meta-links a:focus-visible {
   color: var(--anpaq-gold-300);
   text-decoration: underline;
 }
@@ -3239,6 +3255,21 @@ main {
   color: var(--anpaq-dark-900) !important;
 }
 
+/* Linha do tempo em seções escuras (.section--dark, .theme-dark) */
+.section--dark .timeline-title,
+.theme-dark .timeline-title {
+  color: var(--anpaq-cream-100) !important;
+}
+.section--dark .timeline-desc,
+.theme-dark .timeline-desc {
+  color: rgba(245, 241, 232, 0.88) !important;
+}
+.section--dark .timeline-item.glass-card,
+.theme-dark .timeline-item.glass-card {
+  background: rgba(33, 26, 20, 0.75) !important;
+  border: 1px solid rgba(201, 162, 39, 0.3) !important;
+}
+
 /* ─── HERO & PAGE-HERO BACKGROUND PICTURE OPTIMIZATION ─── */
 .hero-bg,
 .hero-bg img,
@@ -3289,11 +3320,15 @@ main {
 /* Alto contraste garantido para texto legal do rodapé */
 .footer-bottom,
 .footer-bottom p {
-  color: #C2B8AB !important;
+  color: #DCD5C9 !important;
 }
 .footer-bottom a {
-  color: #C2B8AB !important;
+  color: #DCD5C9 !important;
   text-decoration: underline;
+}
+.footer-bottom a:hover,
+.footer-bottom a:focus-visible {
+  color: var(--anpaq-gold-300) !important;
 }
 
 /* ─── CTA-BAND INNER (.cta-band-inner) ─── */
@@ -3314,7 +3349,7 @@ main {
 
 .cta-band-inner p {
   font-size: var(--text-lg);
-  color: var(--anpaq-text-light-muted);
+  color: rgba(245, 241, 232, 0.88) !important;
   line-height: 1.6;
   margin-bottom: var(--sp-8);
   max-width: 680px;
@@ -3530,13 +3565,17 @@ main > section:first-of-type .section-header * {
   background-color: rgba(201, 162, 39, 0.12);
 }
 
-/* ─── CORREÇÃO DE CONTRASTE EM FUNDOS ESCUROS (.cta-band, .mobile-drawer, .site-footer & .on-dark) ─── */
+/* ─── CORREÇÃO DE CONTRASTE EM FUNDOS ESCUROS (.cta-band, .mobile-drawer, .site-footer, .section--dark & .on-dark) ─── */
 .cta-band .btn-ghost,
 .cta-band .btn-ghost:visited,
 .cta-band-inner .btn-ghost,
 .cta-band-inner .btn-ghost:visited,
 .site-footer .btn-ghost,
 .site-footer .btn-ghost:visited,
+.section--dark .btn-ghost,
+.section--dark .btn-ghost:visited,
+.theme-dark .btn-ghost,
+.theme-dark .btn-ghost:visited,
 .on-dark .btn-ghost,
 .on-dark .btn-ghost:visited,
 .btn-ghost.on-dark,
@@ -3554,6 +3593,10 @@ main > section:first-of-type .section-header * {
 .cta-band-inner .btn-ghost:focus-visible,
 .site-footer .btn-ghost:hover,
 .site-footer .btn-ghost:focus-visible,
+.section--dark .btn-ghost:hover,
+.section--dark .btn-ghost:focus-visible,
+.theme-dark .btn-ghost:hover,
+.theme-dark .btn-ghost:focus-visible,
 .on-dark .btn-ghost:hover,
 .on-dark .btn-ghost:focus-visible,
 .btn-ghost.on-dark:hover,
@@ -3566,6 +3609,8 @@ main > section:first-of-type .section-header * {
 .cta-band .btn-outline,
 .cta-band-inner .btn-outline,
 .site-footer .btn-outline,
+.section--dark .btn-outline,
+.theme-dark .btn-outline,
 .on-dark .btn-outline,
 .btn-outline.on-dark {
   color: var(--anpaq-gold-300) !important;
@@ -3579,6 +3624,10 @@ main > section:first-of-type .section-header * {
 .cta-band-inner .btn-outline:focus-visible,
 .site-footer .btn-outline:hover,
 .site-footer .btn-outline:focus-visible,
+.section--dark .btn-outline:hover,
+.section--dark .btn-outline:focus-visible,
+.theme-dark .btn-outline:hover,
+.theme-dark .btn-outline:focus-visible,
 .on-dark .btn-outline:hover,
 .on-dark .btn-outline:focus-visible,
 .btn-outline.on-dark:hover,
@@ -3594,6 +3643,10 @@ main > section:first-of-type .section-header * {
 .cta-band-inner .btn-outline:focus-visible,
 .site-footer .btn-ghost:focus-visible,
 .site-footer .btn-outline:focus-visible,
+.section--dark .btn-ghost:focus-visible,
+.section--dark .btn-outline:focus-visible,
+.theme-dark .btn-ghost:focus-visible,
+.theme-dark .btn-outline:focus-visible,
 .on-dark .btn-ghost:focus-visible,
 .on-dark .btn-outline:focus-visible,
 .btn-ghost.on-dark:focus-visible,
