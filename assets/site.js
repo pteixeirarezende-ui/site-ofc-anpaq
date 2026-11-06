@@ -98,6 +98,12 @@
 
   // ─── 3. SCROLL REVEAL ANIMATIONS ───
   function initScrollReveal() {
+    // Garante que elementos na primeira dobra nunca fiquem invisíveis
+    document.querySelectorAll('main > section:first-of-type .reveal, .hero .reveal, .page-hero .reveal').forEach(el => {
+      el.classList.remove('reveal');
+      el.classList.add('active');
+    });
+
     const reveals = document.querySelectorAll('.reveal');
     if (!reveals.length) return;
 
@@ -115,8 +121,8 @@
         }
       });
     }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.05,
+      rootMargin: '0px 0px -20px 0px'
     });
 
     reveals.forEach(el => observer.observe(el));

@@ -46,7 +46,7 @@
   <link rel="preload" href="/assets/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/playfair-display-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/img/bg-alambique.webp" as="image" type="image/webp" fetchpriority="high">
-<link rel="stylesheet" href="/assets/site.css"/>
+<link rel="stylesheet" href="/assets/site.css?v=20261106a"/>
 </head>
 <body>
 
@@ -137,6 +137,10 @@
 
     <!-- ─── 1. HERÓI DA PÁGINA ─── -->
     <section class="page-hero">
+      <picture class="page-hero-bg">
+        <source srcset="/assets/img/bg-alambique.webp" type="image/webp">
+        <img src="/assets/img/bg-alambique.jpg" alt="" fetchpriority="high" loading="eager" decoding="async" width="1122" height="1402">
+      </picture>
       <div class="page-hero-overlay"></div>
       <div class="container page-hero-content">
         <span class="eyebrow" style="color:var(--anpaq-gold-300);">Filiação Institucional</span>
@@ -383,7 +387,7 @@
 
   <!-- Scripts -->
 
-  <script src="/assets/config.js" defer></script>
-  <script src="/assets/site.js" defer></script>
+  <script src="/assets/config.js?v=20261106a" defer></script>
+  <script src="/assets/site.js?v=20261106a" defer></script>
 </body>
 </html>
