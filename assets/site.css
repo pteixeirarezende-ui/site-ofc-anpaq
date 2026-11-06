@@ -1354,12 +1354,13 @@ main {
 /* ─── HERÓI (DOBRA 1) ─── */
 .hero {
   position: relative;
-  min-height: clamp(660px, 88vh, 880px);
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: calc(var(--header-height) + clamp(var(--sp-6), 4vh, var(--sp-10))) 0 clamp(var(--sp-8), 6vh, var(--sp-14));
+  padding: clamp(var(--sp-4), 3vh, var(--sp-8)) var(--container-pad);
   background-color: var(--anpaq-dark-950);
   background-image: url('/assets/img/bg-alambique.jpg');
   background-image: url('/assets/img/bg-alambique.webp');
@@ -1755,15 +1756,12 @@ main {
 }
 
 @media (max-width: 640px) {
-  .hero {
-    min-height: auto;
-    padding-top: calc(var(--header-height) + var(--sp-6));
-    padding-bottom: var(--sp-10);
-  }
+  .hero,
   .page-hero {
-    min-height: auto;
-    padding-top: calc(var(--header-height) + var(--sp-6));
-    padding-bottom: var(--sp-8);
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100dvh - var(--header-height));
+    padding: clamp(var(--sp-4), 4vh, var(--sp-8)) var(--container-pad);
+    justify-content: center;
   }
   .pub-card {
     grid-template-columns: 1fr;
@@ -1788,9 +1786,11 @@ main {
     height: 38px;
   }
 
-  .hero {
-    min-height: auto;
-    padding: calc(var(--header-height) + var(--sp-4)) 0 var(--sp-6);
+  .hero,
+  .page-hero {
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100dvh - var(--header-height));
+    padding: var(--sp-4) var(--container-pad);
     justify-content: center;
   }
 
@@ -1860,12 +1860,13 @@ main {
 /* ─── HERÓI DE PÁGINAS INTERNAS (.page-hero) ─── */
 .page-hero {
   position: relative;
-  min-height: clamp(380px, 48vh, 500px);
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: calc(var(--header-height) + clamp(var(--sp-8), 6vh, var(--sp-16))) 0 clamp(var(--sp-8), 6vh, var(--sp-16));
+  padding: clamp(var(--sp-4), 4vh, var(--sp-10)) var(--container-pad);
   background-color: var(--anpaq-dark-950);
   background-image: url('/assets/img/bg-alambique.jpg');
   background-image: url('/assets/img/bg-alambique.webp');
