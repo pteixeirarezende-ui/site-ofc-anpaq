@@ -18,7 +18,7 @@
   --anpaq-dark-500: #5A4C3F;        /* Texto atenuado no escuro */
 
   /* ▸ Dourados (Alma da Cachaça de Alambique) */
-  --anpaq-gold-700: #8B6914;        /* Dourado profundo, texto sobre claro */
+  --anpaq-gold-700: #6E500B;        /* Dourado profundo, texto sobre claro */
   --anpaq-gold-600: #A68219;        /* Dourado médio, bordas ativas */
   --anpaq-gold-500: #C9A227;        /* ★ Dourado primário da marca e CTAs */
   --anpaq-gold-400: #D4A64A;        /* Dourado luminoso (hover) */
@@ -36,8 +36,8 @@
   /* ▸ Tipografia em fundo claro (Sem preto puro) */
   --anpaq-text-dark: #2C241D;       /* Texto principal — quase-preto aquecido */
   --anpaq-text-body: #4A3F35;       /* Texto corrido */
-  --anpaq-text-muted: #7D6F63;      /* Texto secundário */
-  --anpaq-text-subtle: #A69888;     /* Rótulos e metadados */
+  --anpaq-text-muted: #544B42;      /* Texto secundário */
+  --anpaq-text-subtle: #5C534A;     /* Rótulos e metadados */
 
   /* ▸ Tipografia em fundo escuro */
   --anpaq-text-light: #F5F1E8;      /* Texto principal sobre fundo escuro */
@@ -136,17 +136,7 @@ body {
 }
 
 /* ─── TEXTURA SUTIL DE GRANULAÇÃO DE ALAMBIQUE ─── */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  pointer-events: none;
-  opacity: 0.026;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 200px 200px;
-}
+/* Textura de ruído SVG pesada desativada para otimização mobile */
 
 img {
   display: block;
@@ -325,13 +315,7 @@ main {
   transition: all var(--duration-base) var(--ease-out);
 }
 
-@supports (backdrop-filter: blur(16px)) {
-  .site-header {
-    background-color: rgba(26, 20, 16, 0.90);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-  }
-}
+/* Header backdrop-filter simplificado para evitar queda de FPS no mobile */
 
 .site-header.scrolled {
   background-color: rgba(26, 20, 16, 0.90);
@@ -767,7 +751,7 @@ main {
 .step-num {
   font-family: var(--font-display);
   font-size: var(--text-3xl);
-  color: var(--anpaq-gold-500);
+  color: var(--anpaq-gold-700);
   line-height: 1;
   margin-bottom: var(--sp-3);
   display: inline-flex;
@@ -1545,8 +1529,8 @@ main {
 
 .selo-pillar-card {
   background: rgba(33, 26, 20, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  /* backdrop-filter: blur(12px); */
+  -webkit-/* backdrop-filter: blur(12px); */
   border: 1px solid rgba(201, 162, 39, 0.22);
   border-radius: var(--radius);
   padding: clamp(var(--sp-6), 3vw, var(--sp-8));
@@ -2690,13 +2674,7 @@ main {
   position: relative;
   overflow: hidden;
 }
-.pub-cover-placeholder::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
+/* Ruído SVG placeholder desativado */
 .pub-cover-placeholder-brand {
   font-family: var(--font-body);
   font-size: 0.65rem;
@@ -3028,13 +3006,7 @@ main {
   position: relative;
   overflow: hidden;
 }
-.pub-cover-placeholder::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
+/* Ruído SVG placeholder desativado */
 .pub-cover-placeholder-brand {
   font-family: var(--font-body);
   font-size: 0.65rem;
@@ -3109,4 +3081,90 @@ main {
     opacity: 1 !important;
     transform: none !important;
   }
+}
+
+/* Alto contraste acessível para botões e links em superfícies claras */
+.section--light .btn-outline,
+.section--surface .btn-outline,
+.section--warm .btn-outline {
+  color: var(--anpaq-gold-700);
+  border-color: var(--anpaq-gold-700);
+}
+.section--light .btn-ghost,
+.section--surface .btn-ghost,
+.section--warm .btn-ghost {
+  color: var(--anpaq-gold-700);
+}
+.section--light .section-header > p,
+.section--surface .section-header > p,
+.section--warm .section-header > p {
+  color: #4A423A;
+}
+.confirmar-badge {
+  color: #6E500B !important;
+  background: #FAF2DA !important;
+  border-color: rgba(110, 80, 11, 0.3) !important;
+}
+.timeline-date-badge {
+  color: #6E500B !important;
+  background: #FAF2DA !important;
+}
+.timeline-title {
+  color: var(--anpaq-dark-900) !important;
+}
+
+/* ─── HERO & PAGE-HERO BACKGROUND PICTURE OPTIMIZATION ─── */
+.hero-bg,
+.hero-bg img,
+.page-hero-bg,
+.page-hero-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-overlay,
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 13, 9, 0.60);
+  z-index: 1;
+}
+
+/* Garante contraste alto em botões secundários/ghost em cartões e áreas claras */
+.pub-card .btn-ghost,
+.event-card .btn-ghost,
+.btn-ghost {
+  color: #6E500B !important;
+  font-weight: 600;
+}
+.hero .btn-ghost,
+.section--dark .btn-ghost {
+  color: var(--anpaq-gold-300) !important;
+}
+.pub-card .btn-outline,
+.event-card .btn-outline,
+.btn-outline {
+  color: #6E500B !important;
+  border-color: #6E500B !important;
+  font-weight: 600;
+}
+.hero .btn-outline,
+.section--dark .btn-outline {
+  color: var(--anpaq-gold-400) !important;
+  border-color: var(--anpaq-gold-400) !important;
+}
+
+/* Alto contraste garantido para texto legal do rodapé */
+.footer-bottom,
+.footer-bottom p {
+  color: #C2B8AB !important;
+}
+.footer-bottom a {
+  color: #C2B8AB !important;
+  text-decoration: underline;
 }

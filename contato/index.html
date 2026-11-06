@@ -44,7 +44,8 @@
   </script>
 
   
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"/>
   <link rel="stylesheet" href="/assets/site.css"/>
@@ -221,7 +222,7 @@
     <!-- 1. INNER HERO -->
     <section class="section section--dark" style="padding-top: calc(var(--sp-24) + var(--header-height)); padding-bottom: var(--sp-12);">
       <div class="container">
-        <div class="section-header reveal" style="max-width: 820px; margin: 0 auto; text-align: center;">
+        <div class="section-header" style="max-width: 820px; margin: 0 auto; text-align: center;">
           <span class="eyebrow">Canais de Atendimento</span>
           <div class="gold-line" style="margin: var(--sp-4) auto var(--sp-6);"></div>
           <h1>Fale com a ANPAQ</h1>
@@ -349,10 +350,10 @@
               </div>
               <div>
                 <strong style="color: var(--anpaq-gold-300); font-size: var(--text-sm); display: block; margin-bottom: 2px;">Telefones</strong>
-                <p style="font-size: var(--text-sm); margin: 0; line-height: 1.6;">
-                  <a href="tel:+553134429181" style="color: var(--anpaq-cream-100); text-decoration: underline;">(31) 3442-9181</a><br/>
-                  <a href="tel:+5531998287495" style="color: var(--anpaq-cream-100); text-decoration: underline;">(31) 99828-7495</a>
-                </p>
+                <div style="display:flex; flex-direction:column; gap:8px;">
+                  <a href="tel:+553134429181" style="display:inline-flex; align-items:center; min-height:48px; color:var(--anpaq-cream-100); text-decoration:underline;">(31) 3442-9181</a>
+                  <a href="tel:+5531998287495" style="display:inline-flex; align-items:center; min-height:48px; color:var(--anpaq-cream-100); text-decoration:underline;">(31) 99828-7495</a>
+                </div>
               </div>
             </div>
 
@@ -419,7 +420,7 @@
 
         <!-- Coluna 2: Navegação -->
         <div>
-          <h4 class="footer-col-title">Navegação</h4>
+          <h3 class="footer-col-title">Navegação</h3>
           <ul class="footer-links">
             <li><a href="/selo/" class="footer-link">Selo Nacional</a></li>
             <li><a href="/a-anpaq/" class="footer-link">A ANPAQ</a></li>
@@ -436,7 +437,7 @@
 
         <!-- Coluna 3: Contato -->
         <div>
-          <h4 class="footer-col-title">Contato & Sede</h4>
+          <h3 class="footer-col-title">Contato & Sede</h3>
           <div class="footer-contact-list">
             <div class="footer-contact-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -466,10 +467,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="/assets/config.js"></script>
-  <script src="/assets/config.js"></script>
-  <script src="/assets/site.js"></script>
-  <script src="/assets/site.js"></script>
+  <script src="/assets/config.js" defer></script>
+  <script src="/assets/site.js" defer></script>
 
   <!-- Validação e Envio do Formulário de Contato -->
   <script>

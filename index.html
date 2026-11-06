@@ -60,7 +60,8 @@
   </script>
 
   
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"/>
   <link rel="stylesheet" href="/assets/site.css"/>
@@ -161,34 +162,38 @@
   <main id="main-content">
 
     <!-- ─── 1. HERÓI (DOBRA 1) ─── -->
-    <section class="hero" id="hero">
+        <section class="hero" id="hero">
+      <picture class="hero-bg">
+        <source srcset="/assets/img/bg-alambique.webp" type="image/webp">
+        <img src="/assets/img/bg-alambique.jpg" alt="" fetchpriority="high" loading="eager" decoding="async" width="1122" height="1402">
+      </picture>
       <div class="hero-overlay"></div>
       <div class="hero-glow"></div>
 
       <div class="container hero-content">
         <!-- 1. H1: Maior elemento -->
-        <h1 class="hero-headline reveal">
+        <h1 class="hero-headline">
           Cachaça de Alambique
         </h1>
 
         <!-- 2. Bloco: Selo Nacional / da Cachaça de Alambique -->
-        <div class="hero-selo-title reveal reveal-delay-1">
+        <div class="hero-selo-title">
           <span class="hero-selo-line1">Selo Nacional</span>
           <span class="hero-selo-line2">da Cachaça de Alambique</span>
         </div>
 
         <!-- 3. Logo Oficial ANPAQ -->
-        <div class="hero-logo-wrap reveal reveal-delay-2">
+        <div class="hero-logo-wrap">
           <img src="/assets/img/logo-anpaq.png" alt="ANPAQ — Associação Nacional da Cachaça de Alambique" class="hero-logo" width="180" height="54">
         </div>
 
         <!-- 4. Subtítulo Curto -->
-        <p class="hero-subtitle reveal reveal-delay-2">
+        <p class="hero-subtitle">
           Desde 1988 reunindo quem produz cachaça de alambique no Brasil.
         </p>
 
         <!-- 5. Dois Botões de Ação -->
-        <div class="hero-actions reveal reveal-delay-3">
+        <div class="hero-actions">
           <a href="/pre-cadastro/" class="btn btn-primary">
             Quero o selo no meu alambique
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -382,7 +387,10 @@
             <div class="pub-cover-wrap">
               <picture>
                 <source srcset="/assets/img/revista-capa-95.webp" type="image/webp">
+                <picture>
+                <source srcset="/assets/img/revista-capa-95.webp" type="image/webp">
                 <img src="/assets/img/revista-capa-95.jpg" alt="Capa da Revista Cachaça de Alambique com Notícias - Edição 95" class="pub-cover" loading="lazy" width="180" height="254">
+              </picture>
               </picture>
             </div>
             <div class="pub-body">
@@ -550,7 +558,7 @@
 
         <!-- Coluna 2: Navegação -->
         <div>
-          <h4 class="footer-col-title">Navegação</h4>
+          <h3 class="footer-col-title">Navegação</h3>
           <ul class="footer-links">
             <li><a href="/selo/" class="footer-link">Selo Nacional</a></li>
             <li><a href="/a-anpaq/" class="footer-link">A ANPAQ</a></li>
@@ -567,7 +575,7 @@
 
         <!-- Coluna 3: Contato -->
         <div>
-          <h4 class="footer-col-title">Contato & Sede</h4>
+          <h3 class="footer-col-title">Contato & Sede</h3>
           <div class="footer-contact-list">
             <div class="footer-contact-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -597,8 +605,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="/assets/config.js"></script>
-  <script src="/assets/site.js"></script>
+  <script src="/assets/config.js" defer></script>
+  <script src="/assets/site.js" defer></script>
   <script>
     (function() {
       const container = document.getElementById('homeEventsContainer');
