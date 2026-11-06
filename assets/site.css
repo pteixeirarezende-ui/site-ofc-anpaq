@@ -3472,3 +3472,30 @@ main > section:first-of-type .section-header * {
     order: 0;
   }
 }
+
+/* ─── STRETCHED LINK NO CARD DA REVISTA (#publicacoes) ─── */
+#publicacoes .pub-card {
+  position: relative;
+  cursor: pointer;
+}
+
+#publicacoes .pub-card .btn {
+  position: static;
+}
+
+#publicacoes .pub-card .btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+#publicacoes .pub-card:has(.btn:focus-visible) {
+  outline: 2px solid var(--anpaq-gold-500);
+  outline-offset: 3px;
+}
+
+#publicacoes .pub-card:hover .btn {
+  color: var(--anpaq-gold-600);
+  background-color: rgba(201, 162, 39, 0.12);
+}
