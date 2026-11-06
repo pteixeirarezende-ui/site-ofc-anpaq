@@ -1,23 +1,9 @@
 [
   {
-    "data": "2026-04-15",
-    "titulo": "Já saiu o Anuário da Cachaça 2024/2025",
-    "resumo": "Publicação oficial do MAPA reúne as edições do Anuário da Cachaça num só lugar sobre a cadeia produtiva da cachaça de alambique em todo o Brasil.",
+    "data": "",
+    "titulo": "Anuário da Cachaça 2024/2025",
+    "resumo": "Publicação do Ministério da Agricultura e Pecuária.",
     "link": "/anuario/",
-    "publicar": "SIM"
-  },
-  {
-    "data": "2026-03-10",
-    "titulo": "Cartilha Sebrae orienta regularização e boas práticas no alambique",
-    "resumo": "Em cooperação com a ANPAQ, o Sebrae disponibiliza guia prático e detalhado para produtores sobre as etapas de formalização, registros no MAPA e Boas Práticas de Fabricação.",
-    "link": "/guia-do-produtor/#cartilha",
-    "publicar": "SIM"
-  },
-  {
-    "data": "2026-02-20",
-    "titulo": "Edição 99 da Revista Cachaça de Alambique com Notícias",
-    "resumo": "Confira matérias técnicas exclusivas sobre sustentabilidade na destilação, inovação em equipamentos e o avanço do Selo Nacional da Cachaça de Alambique.",
-    "link": "/revista/",
     "publicar": "SIM"
   }
 ]

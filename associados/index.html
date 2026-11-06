@@ -4,14 +4,14 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Associados | ANPAQ — Cachaça de Alambique</title>
-  <meta name="description" content="Guia oficial de associados da ANPAQ. Conheça os produtores de cachaça de alambique, marcas com Selo Nacional e fornecedores."/>
+  <meta name="description" content="Rede de associados da ANPAQ. Conheça os produtores, fornecedores e prestadores de serviço da cachaça de alambique."/>
   <link rel="canonical" href="https://anpaq.com.br/associados/"/>
   <link rel="icon" href="/favicon.ico" sizes="any"/>
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://anpaq.com.br/associados/"/>
   <meta property="og:title" content="Associados | ANPAQ — Cachaça de Alambique"/>
-  <meta property="og:description" content="Guia oficial de associados da ANPAQ. Conheça os produtores de cachaça de alambique, marcas com Selo Nacional e fornecedores."/>
+  <meta property="og:description" content="Rede de associados da ANPAQ. Conheça os produtores, fornecedores e prestadores de serviço da cachaça de alambique."/>
   <meta property="og:image" content="https://anpaq.com.br/assets/img/og-default.jpg"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:url" content="https://anpaq.com.br/associados/"/>
   <meta name="twitter:title" content="Associados | ANPAQ — Cachaça de Alambique"/>
-  <meta name="twitter:description" content="Guia oficial de associados da ANPAQ. Conheça os produtores de cachaça de alambique, marcas com Selo Nacional e fornecedores."/>
+  <meta name="twitter:description" content="Rede de associados da ANPAQ. Conheça os produtores, fornecedores e prestadores de serviço da cachaça de alambique."/>
   <meta name="twitter:image" content="https://anpaq.com.br/assets/img/og-default.jpg"/>
   <script type="application/ld+json">
 {
@@ -148,11 +148,11 @@
     <section class="page-hero">
       <div class="page-hero-overlay"></div>
       <div class="container page-hero-content reveal">
-        <span class="eyebrow" style="color:var(--anpaq-gold-300);">Guia Oficial</span>
+        <span class="eyebrow" style="color:var(--anpaq-gold-300);">Associados</span>
         <div class="gold-line"></div>
         <h1 class="page-hero-title">Associados ANPAQ</h1>
         <p class="page-hero-subtitle">
-          A rede nacional que conecta produtores de cachaça de alambique, marcas com Selo Nacional e fornecedores especializados.
+          A rede nacional de produtores, fornecedores e prestadores de serviço da cachaça de alambique.
         </p>
       </div>
     </section>
@@ -197,6 +197,7 @@
         <!-- Barra de Contador -->
         <div class="results-count-bar reveal">
           <span id="resultsCount">Carregando associados...</span>
+          <span style="font-size:var(--text-xs); color:var(--anpaq-text-muted); font-style:italic;">Lista parcial — em atualização.</span>
           <span id="abaDescricao" style="font-weight:600; color:var(--anpaq-gold-700);">Produtores associados</span>
         </div>
 
@@ -243,7 +244,7 @@
             <span class="eyebrow" style="color:var(--anpaq-gold-300);">Seja um associado</span>
             <h2>Quer que sua marca ou empresa apareça aqui?</h2>
             <p>
-              Associe-se à ANPAQ para ter visibilidade nacional no guia oficial, acesso ao Selo Nacional e representação do seu alambique.
+              Associe-se à ANPAQ para ter visibilidade na rede de associados, acesso ao Selo Nacional e representação do seu alambique.
             </p>
           </div>
           <div>
@@ -455,13 +456,7 @@
           }
           card.appendChild(header);
 
-          // Serviço para fornecedor
-          if (item.servico) {
-            const serv = document.createElement('span');
-            serv.className = 'associado-servico';
-            serv.textContent = item.servico;
-            card.appendChild(serv);
-          }
+          // Linha de servico removida dos cards
 
           // Localização (Cidade/UF)
           const loc = document.createElement('div');
@@ -586,7 +581,7 @@
           const matchesBusca = !buscaTerm || 
             (item.nome && item.nome.toLowerCase().includes(buscaTerm)) ||
             (item.cidade && item.cidade.toLowerCase().includes(buscaTerm)) ||
-            (item.servico && item.servico.toLowerCase().includes(buscaTerm));
+            false;
 
           // Estado
           const matchesEstado = !estadoTerm || ((item.estado || '').trim().toUpperCase() === estadoTerm);

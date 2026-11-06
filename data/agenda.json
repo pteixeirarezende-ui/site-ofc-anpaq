@@ -40,7 +40,7 @@
     "organizador": "Marketpress",
     "contato": "(11) 98347-2093",
     "link": "https://cachacatradefair.com.br",
-    "anpaq": "SIM",
+    "anpaq": "NAO",
     "publicar": "SIM"
   },
   {
@@ -84,7 +84,7 @@
     "organizador": "APACS",
     "contato": "APACS Salinas",
     "link": "",
-    "anpaq": "SIM",
+    "anpaq": "NAO",
     "publicar": "SIM"
   },
   {
@@ -117,7 +117,7 @@
     "organizador": "Expocachaça",
     "contato": "(31) 99813-9731",
     "link": "https://expocachaca.com.br",
-    "anpaq": "SIM",
+    "anpaq": "NAO",
     "publicar": "SIM"
   },
   {
@@ -150,7 +150,7 @@
     "organizador": "MM Projetos e Consultoria",
     "contato": "(83) 98690-6155",
     "link": "",
-    "anpaq": "SIM",
+    "anpaq": "NAO",
     "publicar": "SIM"
   },
   {
@@ -172,7 +172,7 @@
     "organizador": "UFLA",
     "contato": "(35) 99985-3727",
     "link": "",
-    "anpaq": "SIM",
+    "anpaq": "NAO",
     "publicar": "SIM"
   }
 ]

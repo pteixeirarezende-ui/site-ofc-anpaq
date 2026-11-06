@@ -1,40 +1,6 @@
 [
   {
-    "edicao": "99",
-    "data": "2026-04",
-    "titulo": "Edição 99 — Inovações e Sustentabilidade",
-    "capa_url": "",
-    "link": "",
-    "publicar": "SIM"
-  },
-  {
-    "edicao": "98",
-    "data": "2026-02",
-    "titulo": "Edição 98 — Panorama da Cachaça de Alambique",
-    "capa_url": "",
-    "link": "",
-    "publicar": "SIM"
-  },
-  {
-    "edicao": "97",
-    "data": "2025-11",
-    "titulo": "Edição 97 — Mercado e Exportação",
-    "capa_url": "",
-    "link": "",
-    "publicar": "SIM"
-  },
-  {
-    "edicao": "96",
-    "data": "2025-08",
-    "titulo": "Edição 96 — Tecnologia na Destilação",
-    "capa_url": "",
-    "link": "",
-    "publicar": "SIM"
-  },
-  {
     "edicao": "95",
-    "data": "2025-05",
-    "titulo": "Edição 95 — Tradição e Fortalecimento Setorial",
     "capa_url": "/assets/img/revista-capa-95.jpg",
     "link": "",
     "publicar": "SIM"

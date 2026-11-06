@@ -500,13 +500,7 @@
             dateBadge.textContent = formatarPeriodo(ev.inicio, ev.fim);
             badgeWrap.appendChild(dateBadge);
 
-            if (String(ev.anpaq).trim().toUpperCase() === 'SIM') {
-              const anpaqBadge = document.createElement('span');
-              anpaqBadge.className = 'badge badge-sm';
-              anpaqBadge.style.cssText = 'background: rgba(201, 162, 39, 0.2); color: var(--anpaq-gold-700); border-color: rgba(201, 162, 39, 0.4); font-weight: 700;';
-              anpaqBadge.textContent = 'ANPAQ Presente';
-              badgeWrap.appendChild(anpaqBadge);
-            }
+            // Badge "ANPAQ Presente" removido temporariamente até confirmação oficial de estande ou participação
 
             cardTop.appendChild(badgeWrap);
 

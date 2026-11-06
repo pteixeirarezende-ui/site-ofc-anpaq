@@ -172,16 +172,13 @@
             </div>
             <div class="pub-highlight-body">
               <span class="badge" style="background: rgba(201, 162, 39, 0.15); color: var(--anpaq-gold-700); border-color: rgba(201, 162, 39, 0.3); margin-bottom: var(--sp-3);">Edição em Destaque</span>
-              <h2 style="font-family: var(--font-display); font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl)); margin-bottom: var(--sp-2); color: var(--anpaq-dark-900);">Edição 99 — Inovações e Sustentabilidade</h2>
-              <p style="color: var(--anpaq-text-muted); font-size: var(--text-sm); margin-bottom: var(--sp-6); font-weight: 500;">
-                Publicada em Abril de 2026 · Distribuição Gratuita
-              </p>
+              <h2 style="font-family: var(--font-display); font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl)); margin-bottom: var(--sp-2); color: var(--anpaq-dark-900);">Edição 95</h2>
               <p style="color: var(--anpaq-dark-800); line-height: 1.6; margin-bottom: var(--sp-8);">
                 Revista distribuída gratuitamente em todo o Brasil. Matérias técnicas, novidades regulatórias, eventos e divulgação da cachaça de alambique.
               </p>
               <div style="display: flex; gap: var(--sp-4); flex-wrap: wrap;">
-                <button class="btn btn-primary btn-disabled" disabled>
-                  Ler a edição (Em breve)
+                <button class="btn btn-primary btn-disabled" disabled aria-disabled="true">
+                  Em breve
                 </button>
                 <a href="#todas-edicoes" class="btn btn-secondary">
                   Ver acervo de edições
@@ -203,15 +200,7 @@
           <p>Consulte as edições anteriores e acesse os conteúdos técnicos publicados pela ANPAQ.</p>
         </div>
 
-        <!-- Filtro por Ano -->
-        <div class="filters reveal" style="margin-bottom: var(--sp-8);">
-          <span style="font-size: var(--text-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--anpaq-text-muted); align-self: center;">Filtrar por ano:</span>
-          <div id="filtro-anos" style="display: flex; gap: var(--sp-2); flex-wrap: wrap;">
-            <button class="btn btn-sm btn-primary filter-year-btn is-active" data-year="todos">Todos</button>
-            <button class="btn btn-sm btn-secondary filter-year-btn" data-year="2026">2026</button>
-            <button class="btn btn-sm btn-secondary filter-year-btn" data-year="2025">2025</button>
-          </div>
-        </div>
+
 
         <!-- Feedback de Carregamento -->
         <div id="revista-loading" style="display: none; text-align: center; padding: var(--sp-12);">
@@ -372,13 +361,10 @@
     document.addEventListener('DOMContentLoaded', async () => {
       const destaqueContainer = document.getElementById('revista-destaque-container');
       const gridContainer = document.getElementById('revista-grid');
-      const filtroAnosContainer = document.getElementById('filtro-anos');
       const loadingEl = document.getElementById('revista-loading');
       const emptyEl = document.getElementById('revista-empty');
 
       let todasEdicoes = [];
-      let anoSelecionado = 'todos';
-
       // Utilitário de formatação de mês/ano
       function formatarData(dataStr) {
         if (!dataStr) return '';
@@ -459,44 +445,9 @@
 
         const title = document.createElement('h2');
         title.style.cssText = 'font-family: var(--font-display); font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl)); margin-bottom: var(--sp-2); color: var(--anpaq-dark-900);';
-        title.textContent = edicao.titulo || `Edição ${edicao.edicao}`;
+        title.textContent = `Edição ${edicao.edicao}`;
 
-        const metaDate = document.createElement('p');
-        metaDate.style.cssText = 'color: var(--anpaq-text-muted); font-size: var(--text-sm); margin-bottom: var(--sp-6); font-weight: 500;';
-        metaDate.textContent = `Publicada em ${formatarData(edicao.data)} · Distribuição Gratuita`;
-
-        const desc = document.createElement('p');
-        desc.style.cssText = 'color: var(--anpaq-dark-800); line-height: 1.6; margin-bottom: var(--sp-8);';
-        desc.textContent = 'Revista distribuída gratuitamente em todo o Brasil. Matérias técnicas, novidades regulatórias, eventos e divulgação da cachaça de alambique.';
-
-        const actions = document.createElement('div');
-        actions.style.cssText = 'display: flex; gap: var(--sp-4); flex-wrap: wrap;';
-
-        if (edicao.link && edicao.link.trim()) {
-          const btnLer = document.createElement('a');
-          btnLer.href = edicao.link;
-          btnLer.target = '_blank';
-          btnLer.rel = 'noopener';
-          btnLer.className = 'btn btn-primary';
-          btnLer.textContent = 'Ler a edição';
-          actions.appendChild(btnLer);
-        } else {
-          const btnDisabled = document.createElement('button');
-          btnDisabled.className = 'btn btn-primary btn-disabled';
-          btnDisabled.disabled = true;
-          btnDisabled.textContent = 'Ler a edição (Em breve)';
-          actions.appendChild(btnDisabled);
-        }
-
-        const btnAcervo = document.createElement('a');
-        btnAcervo.href = '#todas-edicoes';
-        btnAcervo.className = 'btn btn-secondary';
-        btnAcervo.textContent = 'Ver acervo de edições';
-        actions.appendChild(btnAcervo);
-
-        body.appendChild(badge);
-        body.appendChild(title);
-        body.appendChild(metaDate);
+        // Data omitida pois não há data no cadastro
         body.appendChild(desc);
         body.appendChild(actions);
 
@@ -558,11 +509,9 @@
           // Título e Data
           const title = document.createElement('h3');
           title.className = 'pub-meta-title';
-          title.textContent = edicao.titulo || `Edição ${edicao.edicao}`;
+          title.textContent = `Edição ${edicao.edicao}`;
 
-          const date = document.createElement('div');
-          date.className = 'pub-meta-date';
-          date.textContent = formatarData(edicao.data);
+          // Sem data
 
           // Botão de Leitura
           const btnWrap = document.createElement('div');
@@ -588,61 +537,14 @@
 
           item.appendChild(frame);
           item.appendChild(title);
-          item.appendChild(date);
+          // item.appendChild(date);
           item.appendChild(btnWrap);
 
           gridContainer.appendChild(item);
         });
       }
 
-      // Constrói os botões do filtro por ano
-      function buildFiltroAnos(itens) {
-        if (!filtroAnosContainer) return;
-        const anosSet = new Set();
-        itens.forEach(it => {
-          const ano = extrairAno(it.data);
-          if (ano) anosSet.add(ano);
-        });
-
-        const anos = Array.from(anosSet).sort().reverse();
-        filtroAnosContainer.innerHTML = '';
-
-        // Botão Todos
-        const btnTodos = document.createElement('button');
-        btnTodos.className = `btn btn-sm ${anoSelecionado === 'todos' ? 'btn-primary is-active' : 'btn-secondary'} filter-year-btn`;
-        btnTodos.dataset.year = 'todos';
-        btnTodos.textContent = 'Todos';
-        btnTodos.addEventListener('click', () => setFiltroAno('todos'));
-        filtroAnosContainer.appendChild(btnTodos);
-
-        anos.forEach(ano => {
-          const btn = document.createElement('button');
-          btn.className = `btn btn-sm ${anoSelecionado === ano ? 'btn-primary is-active' : 'btn-secondary'} filter-year-btn`;
-          btn.dataset.year = ano;
-          btn.textContent = ano;
-          btn.addEventListener('click', () => setFiltroAno(ano));
-          filtroAnosContainer.appendChild(btn);
-        });
-      }
-
-      function setFiltroAno(ano) {
-        anoSelecionado = ano;
-        const buttons = filtroAnosContainer.querySelectorAll('.filter-year-btn');
-        buttons.forEach(btn => {
-          if (btn.dataset.year === ano) {
-            btn.className = 'btn btn-sm btn-primary is-active filter-year-btn';
-          } else {
-            btn.className = 'btn btn-sm btn-secondary filter-year-btn';
-          }
-        });
-
-        if (ano === 'todos') {
-          renderGrid(todasEdicoes);
-        } else {
-          const filtradas = todasEdicoes.filter(it => extrairAno(it.data) === ano);
-          renderGrid(filtradas);
-        }
-      }
+      // Filtro por ano removido
 
       // Inicialização
       try {
@@ -664,7 +566,6 @@
 
         if (todasEdicoes.length > 0) {
           renderDestaque(todasEdicoes[0]);
-          buildFiltroAnos(todasEdicoes);
           renderGrid(todasEdicoes);
         } else {
           if (emptyEl) emptyEl.style.display = 'block';

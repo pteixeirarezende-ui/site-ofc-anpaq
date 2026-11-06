@@ -378,10 +378,12 @@
 
           const content = document.createElement('div');
 
-          const dateEl = document.createElement('div');
-          dateEl.className = 'noticia-date';
-          dateEl.textContent = formatarDataExtenso(noticia.data);
-          content.appendChild(dateEl);
+          if (noticia.data && noticia.data.trim()) {
+            const dateEl = document.createElement('div');
+            dateEl.className = 'noticia-date';
+            dateEl.textContent = formatarDataExtenso(noticia.data);
+            content.appendChild(dateEl);
+          }
 
           const titleEl = document.createElement('h3');
           titleEl.className = 'noticia-title';
