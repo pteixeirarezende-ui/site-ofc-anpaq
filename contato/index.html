@@ -158,12 +158,6 @@
           <a href="/revista/" class="nav-link">Revista</a>
         </div>
         <div class="nav-item">
-          <a href="/anuario/" class="nav-link">Anuário</a>
-        </div>
-        <div class="nav-item">
-          <a href="/guia-do-produtor/" class="nav-link">Guia do produtor</a>
-        </div>
-        <div class="nav-item">
           <a href="/agenda/" class="nav-link">Agenda</a>
         </div>
         <div class="nav-item">
@@ -205,8 +199,6 @@
         </div>
       </div>
       <a href="/revista/" class="mobile-nav-link">Revista</a>
-      <a href="/anuario/" class="mobile-nav-link">Anuário</a>
-      <a href="/guia-do-produtor/" class="mobile-nav-link">Guia do produtor</a>
       <a href="/agenda/" class="mobile-nav-link">Agenda</a>
       <a href="/contato/" class="mobile-nav-link is-active">Contato</a>
     </nav>
@@ -426,10 +418,7 @@
             <li><a href="/a-anpaq/" class="footer-link">A ANPAQ</a></li>
             <li><a href="/associados/" class="footer-link">Associados</a></li>
             <li><a href="/revista/" class="footer-link">Revista</a></li>
-            <li><a href="/anuario/" class="footer-link">Anuário</a></li>
-            <li><a href="/guia-do-produtor/" class="footer-link">Guia do produtor</a></li>
             <li><a href="/agenda/" class="footer-link">Agenda</a></li>
-            <li><a href="/noticias/" class="footer-link">Notícias</a></li>
             <li><a href="/contato/" class="footer-link">Contato</a></li>
             <li><a href="/associe-se/" class="footer-link" style="color:var(--anpaq-gold-400);font-weight:600;">Associe-se</a></li>
           </ul>
@@ -587,25 +576,56 @@
               });
 
               if (!res.ok) throw new Error(`HTTP error ${res.status}`);
-            }
 
-            // Sucesso (tanto com endpoint quanto com fallback institucional)
-            form.reset();
-            if (feedbackEl) {
-              feedbackEl.style.display = 'block';
-              feedbackEl.style.background = 'rgba(74, 124, 89, 0.15)';
-              feedbackEl.style.border = '1px solid rgba(74, 124, 89, 0.4)';
-              feedbackEl.style.color = 'var(--anpaq-green-600)';
-              feedbackEl.innerHTML = '<strong>Mensagem enviada com sucesso!</strong> Agradecemos seu contato. Nossa equipe responderá em breve no horário de atendimento (09h às 14h).';
+              form.reset();
+              if (feedbackEl) {
+                feedbackEl.style.display = 'block';
+                feedbackEl.style.background = 'rgba(74, 124, 89, 0.15)';
+                feedbackEl.style.border = '1px solid rgba(74, 124, 89, 0.4)';
+                feedbackEl.style.color = 'var(--anpaq-green-600)';
+                feedbackEl.textContent = 'Mensagem enviada com sucesso! Agradecemos seu contato. Nossa equipe responderá em breve.';
+              }
+            } else {
+              // Endpoint vazio: redireciona para WhatsApp com mensagem pronta
+              const textoWhatsApp = `*Contato via Site ANPAQ*
+
+*Nome:* ${payload.nome}
+*Assunto:* ${payload.assunto}
+*Mensagem:* ${payload.mensagem}
+*E-mail:* ${payload.email}
+*Telefone:* ${payload.telefone || 'Não informado'}`;
+              const waUrl = `https://wa.me/5531998287495?text=${encodeURIComponent(textoWhatsApp)}`;
+              window.open(waUrl, '_blank');
+
+              form.reset();
+              if (feedbackEl) {
+                feedbackEl.style.display = 'block';
+                feedbackEl.style.background = 'rgba(201, 162, 39, 0.15)';
+                feedbackEl.style.border = '1px solid var(--anpaq-gold-500)';
+                feedbackEl.style.color = 'var(--anpaq-dark-900)';
+                feedbackEl.textContent = 'Falta só um passo: abrimos o WhatsApp da ANPAQ com sua mensagem pronta. Toque em enviar por lá.';
+              }
             }
           } catch (err) {
             console.warn('[ANPAQ] Envio do formulário de contato:', err);
+            // Em caso de erro na requisição, também abre o WhatsApp
+            const textoWhatsApp = `*Contato via Site ANPAQ*
+
+*Nome:* ${payload.nome}
+*Assunto:* ${payload.assunto}
+*Mensagem:* ${payload.mensagem}
+*E-mail:* ${payload.email}
+*Telefone:* ${payload.telefone || 'Não informado'}`;
+            const waUrl = `https://wa.me/5531998287495?text=${encodeURIComponent(textoWhatsApp)}`;
+            window.open(waUrl, '_blank');
+
+            form.reset();
             if (feedbackEl) {
               feedbackEl.style.display = 'block';
               feedbackEl.style.background = 'rgba(201, 162, 39, 0.15)';
-              feedbackEl.style.border = '1px solid var(--anpaq-gold-400)';
+              feedbackEl.style.border = '1px solid var(--anpaq-gold-500)';
               feedbackEl.style.color = 'var(--anpaq-dark-900)';
-              feedbackEl.innerHTML = 'Recebemos seus dados. Caso prefira atendimento imediato, entre em contato diretamente pelo WhatsApp: <strong>(31) 99828-7495</strong>.';
+              feedbackEl.textContent = 'Falta só um passo: abrimos o WhatsApp da ANPAQ com sua mensagem pronta. Toque em enviar por lá.';
             }
           } finally {
             submitBtn.disabled = false;

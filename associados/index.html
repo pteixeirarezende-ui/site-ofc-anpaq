@@ -84,12 +84,6 @@
           <a href="/revista/" class="nav-link">Revista</a>
         </div>
         <div class="nav-item">
-          <a href="/anuario/" class="nav-link">Anuário</a>
-        </div>
-        <div class="nav-item">
-          <a href="/guia-do-produtor/" class="nav-link">Guia do produtor</a>
-        </div>
-        <div class="nav-item">
           <a href="/agenda/" class="nav-link">Agenda</a>
         </div>
         <div class="nav-item">
@@ -131,8 +125,6 @@
         </div>
       </div>
       <a href="/revista/" class="mobile-nav-link">Revista</a>
-      <a href="/anuario/" class="mobile-nav-link">Anuário</a>
-      <a href="/guia-do-produtor/" class="mobile-nav-link">Guia do produtor</a>
       <a href="/agenda/" class="mobile-nav-link">Agenda</a>
       <a href="/contato/" class="mobile-nav-link">Contato</a>
     </nav>
@@ -166,6 +158,11 @@
     <section class="section section--surface" id="diretorio">
       <h2 class="sr-only">Diretório de Associados</h2>
       <div class="container">
+
+        <!-- Nota de Lista Parcial -->
+        <div id="notaListaParcial" class="reveal" style="background: var(--anpaq-cream-200); border-left: 3px solid var(--anpaq-gold-500); padding: 0.75rem 1rem; margin-bottom: var(--sp-6); border-radius: var(--radius-sm); font-size: var(--text-sm); color: var(--anpaq-text-dark);">
+          Lista parcial, em atualização. Para confirmar se uma marca ou empresa é associada, fale com a ANPAQ.
+        </div>
 
         <!-- Abas de Navegação -->
         <div class="tab-nav reveal" role="tablist" aria-label="Categorias de Associados">
@@ -250,7 +247,7 @@
             <span class="eyebrow" style="color:var(--anpaq-gold-300);">Seja um associado</span>
             <h2>Quer que sua marca ou empresa apareça aqui?</h2>
             <p>
-              Associe-se à ANPAQ para ter visibilidade na rede de associados, acesso ao Selo Nacional e representação do seu alambique.
+              Associe-se à ANPAQ para ter visibilidade nacional na lista de associados, acesso ao programa do Selo Nacional e representação do seu alambique.
             </p>
           </div>
           <div>
@@ -287,10 +284,7 @@
             <li><a href="/a-anpaq/" class="footer-link">A ANPAQ</a></li>
             <li><a href="/associados/" class="footer-link">Associados</a></li>
             <li><a href="/revista/" class="footer-link">Revista</a></li>
-            <li><a href="/anuario/" class="footer-link">Anuário</a></li>
-            <li><a href="/guia-do-produtor/" class="footer-link">Guia do produtor</a></li>
             <li><a href="/agenda/" class="footer-link">Agenda</a></li>
-            <li><a href="/noticias/" class="footer-link">Notícias</a></li>
             <li><a href="/contato/" class="footer-link">Contato</a></li>
             <li><a href="/associe-se/" class="footer-link" style="color:var(--anpaq-gold-400);font-weight:600;">Associe-se</a></li>
           </ul>
@@ -334,6 +328,11 @@
   <!-- Lógica Dinâmica do Diretório de Associados -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Oculta nota de lista parcial se houver endpoint configurado
+      if (window.ANPAQ_CONFIG && window.ANPAQ_CONFIG.sheetsEndpoint && window.ANPAQ_CONFIG.sheetsEndpoint.trim() !== '') {
+        const nota = document.getElementById('notaListaParcial');
+        if (nota) nota.style.display = 'none';
+      }
       // Elementos de UI
       const tabProdutores = document.getElementById('tabProdutores');
       const tabFornecedores = document.getElementById('tabFornecedores');

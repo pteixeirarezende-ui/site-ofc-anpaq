@@ -34,32 +34,32 @@
     },
     {
       "source": "/a-anpaq/notícias.html",
-      "destination": "/noticias/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/a-anpaq/not%C3%ADcias.html",
-      "destination": "/noticias/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/a-anpaq/notícias",
-      "destination": "/noticias/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/a-anpaq/not%C3%ADcias",
-      "destination": "/noticias/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/a-anpaq/legislação.html",
-      "destination": "/guia-do-produtor/#legislacao",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/a-anpaq/legisla%C3%A7%C3%A3o.html",
-      "destination": "/guia-do-produtor/#legislacao",
+      "destination": "/",
       "permanent": true
     },
     {
@@ -79,22 +79,22 @@
     },
     {
       "source": "/anuário/:path*",
-      "destination": "/anuario/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/anu%C3%A1rio/:path*",
-      "destination": "/anuario/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/regularize-seu-alambique.html",
-      "destination": "/guia-do-produtor/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/regularize-seu-alambique/cartilha-sebrae.html",
-      "destination": "/guia-do-produtor/#cartilha",
+      "destination": "/",
       "permanent": true
     },
     {
@@ -114,12 +114,12 @@
     },
     {
       "source": "/component/content/article/8-notícias/:path*",
-      "destination": "/noticias/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/component/content/article/8-not%C3%ADcias/:path*",
-      "destination": "/noticias/",
+      "destination": "/",
       "permanent": true
     },
     {
@@ -129,12 +129,12 @@
     },
     {
       "source": "/component/content/article/10-legislação/:path*",
-      "destination": "/guia-do-produtor/#legislacao",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/component/content/article/10-legisla%C3%A7%C3%A3o/:path*",
-      "destination": "/guia-do-produtor/#legislacao",
+      "destination": "/",
       "permanent": true
     },
     {
@@ -147,6 +147,26 @@
         }
       ],
       "destination": "/associados/",
+      "permanent": true
+    },
+    {
+      "source": "/index.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/noticias/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/anuario/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guia-do-produtor/:path*",
+      "destination": "/",
       "permanent": true
     }
   ],

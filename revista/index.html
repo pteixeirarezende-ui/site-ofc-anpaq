@@ -84,12 +84,6 @@
           <a href="/revista/" class="nav-link is-active" aria-current="page">Revista</a>
         </div>
         <div class="nav-item">
-          <a href="/anuario/" class="nav-link">Anuário</a>
-        </div>
-        <div class="nav-item">
-          <a href="/guia-do-produtor/" class="nav-link">Guia do produtor</a>
-        </div>
-        <div class="nav-item">
           <a href="/agenda/" class="nav-link">Agenda</a>
         </div>
         <div class="nav-item">
@@ -131,8 +125,6 @@
         </div>
       </div>
       <a href="/revista/" class="mobile-nav-link is-active">Revista</a>
-      <a href="/anuario/" class="mobile-nav-link">Anuário</a>
-      <a href="/guia-do-produtor/" class="mobile-nav-link">Guia do produtor</a>
       <a href="/agenda/" class="mobile-nav-link">Agenda</a>
       <a href="/contato/" class="mobile-nav-link">Contato</a>
     </nav>
@@ -178,10 +170,10 @@
                 Revista distribuída gratuitamente em todo o Brasil. Matérias técnicas, novidades regulatórias, eventos e divulgação da cachaça de alambique.
               </p>
               <div style="display: flex; gap: var(--sp-4); flex-wrap: wrap;">
-                <button class="btn btn-primary btn-disabled" disabled aria-disabled="true">
-                  Em breve
-                </button>
-                <a href="#todas-edicoes" class="btn btn-secondary">
+                <a href="/contato/" class="btn btn-primary">
+                  Solicitar a edição
+                </a>
+                <a href="#todas-edicoes" class="btn btn-secondary" id="btnVerAcervo" style="display: none;">
                   Ver acervo de edições
                 </a>
               </div>
@@ -192,7 +184,7 @@
     </section>
 
     <!-- 3. TODAS AS EDIÇÕES (ACERVO) -->
-    <section class="section section--warm" id="todas-edicoes" style="padding-top: var(--sp-12); padding-bottom: var(--sp-16);">
+    <section class="section section--warm" id="todas-edicoes" style="display: none; padding-top: var(--sp-12); padding-bottom: var(--sp-16);">
       <div class="container">
         <div class="section-header reveal" style="margin-bottom: var(--sp-8);">
           <span class="eyebrow">Acervo Histórico</span>
@@ -311,10 +303,7 @@
             <li><a href="/a-anpaq/" class="footer-link">A ANPAQ</a></li>
             <li><a href="/associados/" class="footer-link">Associados</a></li>
             <li><a href="/revista/" class="footer-link">Revista</a></li>
-            <li><a href="/anuario/" class="footer-link">Anuário</a></li>
-            <li><a href="/guia-do-produtor/" class="footer-link">Guia do produtor</a></li>
             <li><a href="/agenda/" class="footer-link">Agenda</a></li>
-            <li><a href="/noticias/" class="footer-link">Notícias</a></li>
             <li><a href="/contato/" class="footer-link">Contato</a></li>
             <li><a href="/associe-se/" class="footer-link" style="color:var(--anpaq-gold-400);font-weight:600;">Associe-se</a></li>
           </ul>
@@ -362,35 +351,13 @@
       const gridContainer = document.getElementById('revista-grid');
       const loadingEl = document.getElementById('revista-loading');
       const emptyEl = document.getElementById('revista-empty');
+      const todasEdicoesSection = document.getElementById('todas-edicoes');
+      const btnVerAcervo = document.getElementById('btnVerAcervo');
 
       let todasEdicoes = [];
-      // Utilitário de formatação de mês/ano
-      function formatarData(dataStr) {
-        if (!dataStr) return '';
-        const meses = [
-          'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
-          'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
-        ];
-        // Se vier como YYYY-MM
-        const parts = String(dataStr).split('-');
-        if (parts.length === 2) {
-          const ano = parts[0];
-          const mesIndex = parseInt(parts[1], 10) - 1;
-          if (mesIndex >= 0 && mesIndex < 12) {
-            return `${meses[mesIndex]} de ${ano}`;
-          }
-        }
-        return dataStr;
-      }
-
-      function extrairAno(dataStr) {
-        if (!dataStr) return '';
-        const match = String(dataStr).match(/\d{4}/);
-        return match ? match[0] : '';
-      }
 
       // Renderiza a Edição em Destaque
-      function renderDestaque(edicao) {
+      function renderDestaque(edicao, hasMultiple) {
         if (!destaqueContainer || !edicao) return;
 
         destaqueContainer.innerHTML = '';
@@ -410,27 +377,6 @@
           img.height = 1600;
           img.loading = 'eager';
           coverWrap.appendChild(img);
-        } else {
-          const placeholder = document.createElement('div');
-          placeholder.className = 'pub-cover-placeholder';
-          placeholder.style.height = '100%';
-
-          const brand = document.createElement('div');
-          brand.className = 'pub-cover-placeholder-brand';
-          brand.textContent = 'ANPAQ REVISTA';
-
-          const num = document.createElement('div');
-          num.className = 'pub-cover-placeholder-num';
-          num.textContent = `Nº ${edicao.edicao}`;
-
-          const sub = document.createElement('div');
-          sub.className = 'pub-cover-placeholder-sub';
-          sub.textContent = formatarData(edicao.data);
-
-          placeholder.appendChild(brand);
-          placeholder.appendChild(num);
-          placeholder.appendChild(sub);
-          coverWrap.appendChild(placeholder);
         }
 
         // Corpo
@@ -446,7 +392,39 @@
         title.style.cssText = 'font-family: var(--font-display); font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl)); margin-bottom: var(--sp-2); color: var(--anpaq-dark-900);';
         title.textContent = `Edição ${edicao.edicao}`;
 
-        // Data omitida pois não há data no cadastro
+        const desc = document.createElement('p');
+        desc.style.cssText = 'color: var(--anpaq-dark-800); line-height: 1.6; margin-bottom: var(--sp-8);';
+        desc.textContent = 'Revista distribuída gratuitamente em todo o Brasil. Matérias técnicas, novidades regulatórias, eventos e divulgação da cachaça de alambique.';
+
+        const actions = document.createElement('div');
+        actions.style.cssText = 'display: flex; gap: var(--sp-4); flex-wrap: wrap;';
+
+        if (edicao.link && edicao.link.trim()) {
+          const btn = document.createElement('a');
+          btn.href = edicao.link;
+          btn.target = '_blank';
+          btn.rel = 'noopener';
+          btn.className = 'btn btn-primary';
+          btn.textContent = 'Ler edição';
+          actions.appendChild(btn);
+        } else {
+          const btn = document.createElement('a');
+          btn.href = '/contato/';
+          btn.className = 'btn btn-primary';
+          btn.textContent = 'Solicitar a edição';
+          actions.appendChild(btn);
+        }
+
+        if (hasMultiple) {
+          const btnAcervo = document.createElement('a');
+          btnAcervo.href = '#todas-edicoes';
+          btnAcervo.className = 'btn btn-secondary';
+          btnAcervo.textContent = 'Ver acervo de edições';
+          actions.appendChild(btnAcervo);
+        }
+
+        body.appendChild(badge);
+        body.appendChild(title);
         body.appendChild(desc);
         body.appendChild(actions);
 
@@ -470,7 +448,6 @@
           const item = document.createElement('div');
           item.className = 'pub-cover-item';
 
-          // Frame da Capa
           const frame = document.createElement('div');
           frame.className = 'pub-cover-frame';
 
@@ -483,36 +460,12 @@
             img.height = 1600;
             img.loading = 'lazy';
             frame.appendChild(img);
-          } else {
-            const placeholder = document.createElement('div');
-            placeholder.className = 'pub-cover-placeholder';
-
-            const brand = document.createElement('div');
-            brand.className = 'pub-cover-placeholder-brand';
-            brand.textContent = 'ANPAQ';
-
-            const num = document.createElement('div');
-            num.className = 'pub-cover-placeholder-num';
-            num.textContent = `Nº ${edicao.edicao}`;
-
-            const sub = document.createElement('div');
-            sub.className = 'pub-cover-placeholder-sub';
-            sub.textContent = formatarData(edicao.data);
-
-            placeholder.appendChild(brand);
-            placeholder.appendChild(num);
-            placeholder.appendChild(sub);
-            frame.appendChild(placeholder);
           }
 
-          // Título e Data
           const title = document.createElement('h3');
           title.className = 'pub-meta-title';
           title.textContent = `Edição ${edicao.edicao}`;
 
-          // Sem data
-
-          // Botão de Leitura
           const btnWrap = document.createElement('div');
           btnWrap.style.marginTop = 'auto';
 
@@ -526,24 +479,20 @@
             btn.textContent = 'Ler edição';
             btnWrap.appendChild(btn);
           } else {
-            const btn = document.createElement('button');
-            btn.className = 'btn btn-secondary btn-sm btn-disabled';
-            btn.disabled = true;
+            const btn = document.createElement('a');
+            btn.href = '/contato/';
+            btn.className = 'btn btn-secondary btn-sm';
             btn.style.width = '100%';
-            btn.textContent = 'Em breve';
+            btn.textContent = 'Solicitar a edição';
             btnWrap.appendChild(btn);
           }
 
           item.appendChild(frame);
           item.appendChild(title);
-          // item.appendChild(date);
           item.appendChild(btnWrap);
-
           gridContainer.appendChild(item);
         });
       }
-
-      // Filtro por ano removido
 
       // Inicialização
       try {
@@ -554,18 +503,21 @@
           data = await window.ANPAQ.fetchSheet('Revista');
         }
 
-        // Ordena por número de edição decrescente (mais recente primeiro)
-        data.sort((a, b) => {
-          const numA = parseInt(a.edicao, 10) || 0;
-          const numB = parseInt(b.edicao, 10) || 0;
-          return numB - numA;
-        });
-
+        data.sort((a, b) => (parseInt(b.edicao, 10) || 0) - (parseInt(a.edicao, 10) || 0));
         todasEdicoes = data;
 
         if (todasEdicoes.length > 0) {
-          renderDestaque(todasEdicoes[0]);
-          renderGrid(todasEdicoes);
+          const hasMultiple = todasEdicoes.length > 1;
+          renderDestaque(todasEdicoes[0], hasMultiple);
+
+          if (hasMultiple) {
+            if (todasEdicoesSection) todasEdicoesSection.style.display = '';
+            if (btnVerAcervo) btnVerAcervo.style.display = '';
+            renderGrid(todasEdicoes);
+          } else {
+            if (todasEdicoesSection) todasEdicoesSection.style.display = 'none';
+            if (btnVerAcervo) btnVerAcervo.style.display = 'none';
+          }
         } else {
           if (emptyEl) emptyEl.style.display = 'block';
         }
