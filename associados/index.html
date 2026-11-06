@@ -153,52 +153,65 @@
     </section>
 
     <!-- ─── 2. DIRETÓRIO COM ABAS E FILTROS ─── -->
+        <!-- ─── 2. DIRETÓRIO COM ABAS E FILTROS ─── -->
     <section class="section section--surface" id="diretorio">
       <h2 class="sr-only">Diretório de Associados</h2>
       <div class="container">
 
-        <!-- Nota de Lista Parcial -->
-        <div id="notaListaParcial" class="reveal" style="background: var(--anpaq-cream-200); border-left: 3px solid var(--anpaq-gold-500); padding: 0.75rem 1rem; margin-bottom: var(--sp-6); border-radius: var(--radius-sm); font-size: var(--text-sm); color: var(--anpaq-text-dark);">
-          Lista parcial, em atualização. Para confirmar se uma marca ou empresa é associada, fale com a ANPAQ.
-        </div>
+        <!-- Linha Discreta de Atualização -->
+        <p class="associados-nota-atualizacao">
+          Lista atualizada em novembro de 2026. Para confirmar se uma marca ou empresa é associada, <a href="/contato/">fale com a ANPAQ</a>.
+        </p>
 
         <!-- Abas de Navegação -->
-        <div class="tab-nav reveal" role="tablist" aria-label="Categorias de Associados">
+        <div class="tab-nav" role="tablist" aria-label="Categorias de Associados">
           <button type="button" class="tab-btn active" id="tabProdutores" role="tab" aria-selected="true" aria-controls="associadosContainer">
-            Produtores de Alambique
+            Produtores <span id="countProdutores"></span>
           </button>
           <button type="button" class="tab-btn" id="tabFornecedores" role="tab" aria-selected="false" aria-controls="associadosContainer">
-            Fornecedores e Prestadores
+            Fornecedores e prestadores <span id="countFornecedores"></span>
           </button>
         </div>
 
         <!-- Barra de Filtros -->
-        <div class="associados-filter-bar reveal">
-          <div class="filter-search">
-            <svg class="filter-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            <input type="text" id="filterBusca" class="filter-input" placeholder="Buscar por nome, marca ou cidade..." aria-label="Buscar associado">
+        <div class="associados-filter-bar" id="filterBar">
+          <div class="filter-group filter-search-wrap">
+            <label for="filterBusca" class="sr-only">Buscar associado</label>
+            <div class="filter-search">
+              <svg class="filter-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="filterBusca" class="filter-input" placeholder="Buscar por nome, marca ou cidade..." autocomplete="off">
+            </div>
           </div>
 
-          <select id="filterEstado" class="filter-select" aria-label="Filtrar por Estado">
-            <option value="">Todos os Estados</option>
-          </select>
+          <div class="filter-group">
+            <label for="filterEstado" class="sr-only">Filtrar por Estado</label>
+            <select id="filterEstado" class="filter-select">
+              <option value="">Todos os Estados</option>
+            </select>
+          </div>
 
-          <select id="filterCidade" class="filter-select" aria-label="Filtrar por Cidade">
-            <option value="">Todas as Cidades</option>
-          </select>
+          <div class="filter-group" id="groupFilterRegiao">
+            <label for="filterRegiao" class="sr-only">Filtrar por Região</label>
+            <select id="filterRegiao" class="filter-select">
+              <option value="">Todas as Regiões</option>
+            </select>
+          </div>
 
-          <select id="filterOrdenacao" class="filter-select" aria-label="Ordenar resultados">
-            <option value="nome-asc">Nome (A-Z)</option>
-            <option value="nome-desc">Nome (Z-A)</option>
-            <option value="cidade-asc">Cidade (A-Z)</option>
-            <option value="estado-asc">Estado (A-Z)</option>
-          </select>
+          <div class="filter-group" id="groupFilterTipo">
+            <label for="filterTipo" class="sr-only">Filtrar por Tipo</label>
+            <select id="filterTipo" class="filter-select">
+              <option value="">Todos os Tipos</option>
+            </select>
+          </div>
+
+          <div class="filter-group filter-action-wrap">
+            <button type="button" class="btn-limpar" id="btnLimparFiltros">Limpar filtros</button>
+          </div>
         </div>
 
-        <!-- Barra de Contador -->
-        <div class="results-count-bar reveal">
-          <span id="resultsCount">Carregando associados...</span>
-          <span id="abaDescricao" style="font-weight:600; color:var(--anpaq-gold-700);">Produtores associados</span>
+        <!-- Linha de Resultado -->
+        <div class="results-count-bar">
+          <span id="resultsCount" aria-live="polite">Carregando associados...</span>
         </div>
 
         <!-- Estado de Carregamento -->
@@ -207,31 +220,34 @@
           <p style="color:var(--anpaq-text-muted);">Consultando dados atualizados da associação...</p>
         </div>
 
-        <!-- Grade de Cards Dinâmicos -->
-        <div class="associados-grid" id="associadosContainer" style="display:none;" role="region" aria-live="polite">
-          <!-- Cards gerados via JavaScript com textContent -->
+        <!-- Grade de Cards (Articles Estáticos Não-Clicáveis) -->
+        <div class="associados-grid" id="associadosContainer" style="display:none;" role="region" aria-label="Lista de associados">
+          <!-- Gerado dinamicamente via JavaScript -->
         </div>
 
         <!-- Estado Vazio -->
-        <div id="emptyState" class="empty-state" style="display:none;">
-          <svg class="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-          <h2 class="empty-state-title">Nenhum associado encontrado</h2>
-          <p class="empty-state-desc">Não localizamos nenhum registro correspondente aos filtros aplicados.</p>
-          <button type="button" class="btn btn-outline" id="btnLimparFiltros">Limpar Filtros</button>
+        <div id="emptyState" class="empty-state" style="display:none; text-align:center; padding: var(--sp-12) var(--sp-4);">
+          <svg class="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:48px; height:48px; margin:0 auto var(--sp-3); color:var(--anpaq-gold-600);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          <p class="empty-state-msg" style="font-size: var(--text-lg); color: var(--anpaq-text-dark); margin: 0 auto var(--sp-4); max-width: 520px;">
+            Nenhum associado encontrado com esses filtros.
+          </p>
+          <button type="button" class="btn btn-outline" id="btnLimparFiltrosEmpty">Limpar filtros</button>
         </div>
 
         <!-- Estado de Erro -->
-        <div id="errorState" class="empty-state" style="display:none;">
-          <svg class="empty-state-icon text-error" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-          <h2 class="empty-state-title">Falha ao carregar a lista</h2>
-          <p class="empty-state-desc">Ocorreu um erro temporário na recuperação dos dados. Entre em contato para mais informações.</p>
+        <div id="errorState" class="empty-state" style="display:none; text-align:center; padding: var(--sp-12) var(--sp-4);">
+          <svg class="empty-state-icon text-error" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:48px; height:48px; margin:0 auto var(--sp-3); color:var(--anpaq-error);"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          <h3 class="empty-state-title" style="margin-bottom:var(--sp-2);">Falha ao carregar a lista</h3>
+          <p class="empty-state-desc" style="color:var(--anpaq-text-muted); margin-bottom:var(--sp-4);">Ocorreu um erro temporário na recuperação dos dados. Entre em contato para mais informações.</p>
           <a href="/contato/" class="btn btn-primary">Fale com a ANPAQ</a>
         </div>
 
-        <!-- Paginação -->
-        <nav class="pagination" id="paginationContainer" style="display:none;" aria-label="Navegação da lista de associados">
-          <!-- Gerado dinamicamente -->
-        </nav>
+        <!-- Botão Mostrar Mais (+24) -->
+        <div class="load-more-wrap" id="loadMoreWrap" style="display:none;">
+          <button type="button" class="btn-mostrar-mais" id="btnMostrarMais">
+            Mostrar mais (+24)
+          </button>
+        </div>
 
       </div>
     </section>
@@ -324,365 +340,410 @@
   <script src="/assets/config.js?v=20261106a" defer></script>
   <script src="/assets/site.js?v=20261106a" defer></script>
 
-  <!-- Lógica Dinâmica do Diretório de Associados -->
+    <!-- Lógica Dinâmica do Diretório de Associados -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Oculta nota de lista parcial se houver endpoint configurado
-      if (window.ANPAQ_CONFIG && window.ANPAQ_CONFIG.sheetsEndpoint && window.ANPAQ_CONFIG.sheetsEndpoint.trim() !== '') {
-        const nota = document.getElementById('notaListaParcial');
-        if (nota) nota.style.display = 'none';
-      }
       // Elementos de UI
       const tabProdutores = document.getElementById('tabProdutores');
       const tabFornecedores = document.getElementById('tabFornecedores');
+      const countProdutores = document.getElementById('countProdutores');
+      const countFornecedores = document.getElementById('countFornecedores');
+      const filterBar = document.getElementById('filterBar');
       const filterBusca = document.getElementById('filterBusca');
       const filterEstado = document.getElementById('filterEstado');
-      const filterCidade = document.getElementById('filterCidade');
-      const filterOrdenacao = document.getElementById('filterOrdenacao');
+      const groupFilterRegiao = document.getElementById('groupFilterRegiao');
+      const filterRegiao = document.getElementById('filterRegiao');
+      const groupFilterTipo = document.getElementById('groupFilterTipo');
+      const filterTipo = document.getElementById('filterTipo');
+      const btnLimparFiltros = document.getElementById('btnLimparFiltros');
+      const btnLimparFiltrosEmpty = document.getElementById('btnLimparFiltrosEmpty');
       const resultsCount = document.getElementById('resultsCount');
-      const abaDescricao = document.getElementById('abaDescricao');
       const loadingState = document.getElementById('loadingState');
       const associadosContainer = document.getElementById('associadosContainer');
       const emptyState = document.getElementById('emptyState');
       const errorState = document.getElementById('errorState');
-      const paginationContainer = document.getElementById('paginationContainer');
-      const btnLimparFiltros = document.getElementById('btnLimparFiltros');
+      const loadMoreWrap = document.getElementById('loadMoreWrap');
+      const btnMostrarMais = document.getElementById('btnMostrarMais');
 
-      // Estado do componente
-      let currentAba = 'Produtores'; // 'Produtores' ou 'Fornecedores'
-      let rawData = [];
+      // Estado interno
+      let currentAba = 'Produtores';
+      let allProdutores = [];
+      let allFornecedores = [];
       let filteredData = [];
-      let currentPage = 1;
-      const pageSize = 24;
+      let visibleCount = 24;
 
-      // Lê parâmetro da URL: ?tipo=produtor|fornecedor
-      const urlParams = new URLSearchParams(window.location.search);
-      const tipoParam = (urlParams.get('tipo') || '').toLowerCase();
-      if (tipoParam === 'fornecedor' || tipoParam === 'fornecedores') {
-        currentAba = 'Fornecedores';
-      } else {
-        currentAba = 'Produtores';
+      // Normalização para busca insensível a maiúsculas e acentuação
+      function normalizeStr(val) {
+        if (!val) return '';
+        return String(val)
+          .normalize('NFD')
+          .replace(/[̀-ͯ]/g, '')
+          .toLowerCase()
+          .trim();
       }
 
-      // Atualiza interface das abas
-      function updateTabsUI() {
-        if (currentAba === 'Produtores') {
-          tabProdutores.classList.add('active');
-          tabProdutores.setAttribute('aria-selected', 'true');
-          tabFornecedores.classList.remove('active');
-          tabFornecedores.setAttribute('aria-selected', 'false');
-          abaDescricao.textContent = 'Produtores associados';
+      // Constrói o elemento <article> estático não-clicável para um associado
+      function createCard(item, isProd) {
+        const card = document.createElement('article');
+        card.className = 'associado-card';
+
+        // 1. Etiqueta / Badge de Tipo
+        const badge = document.createElement('span');
+        badge.className = 'associado-badge';
+        if (isProd) {
+          const rawTipo = (item.tipo || '').trim();
+          badge.textContent = rawTipo || 'Produtor';
         } else {
-          tabFornecedores.classList.add('active');
-          tabFornecedores.setAttribute('aria-selected', 'true');
-          tabProdutores.classList.remove('active');
-          tabProdutores.setAttribute('aria-selected', 'false');
-          abaDescricao.textContent = 'Fornecedores e Prestadores';
+          badge.textContent = 'Fornecedor / prestador';
         }
+        card.appendChild(badge);
+
+        // 2. Título (h2): Razão Social / Nome
+        const title = document.createElement('h2');
+        title.className = 'associado-title';
+        title.textContent = (item.nome || '').trim();
+        card.appendChild(title);
+
+        // 3. Se houver marcas (Produtores)
+        if (isProd && item.marcas && item.marcas.trim()) {
+          const marcasWrap = document.createElement('div');
+          marcasWrap.className = 'associado-marcas';
+
+          const marcasLabel = document.createElement('span');
+          marcasLabel.className = 'associado-marcas-label';
+          marcasLabel.textContent = 'marcas:';
+
+          const marcasText = document.createElement('span');
+          marcasText.className = 'associado-marcas-text';
+          marcasText.textContent = item.marcas.trim();
+
+          marcasWrap.appendChild(marcasLabel);
+          marcasWrap.appendChild(document.createTextNode(' '));
+          marcasWrap.appendChild(marcasText);
+          card.appendChild(marcasWrap);
+        }
+
+        // 4. Se houver serviço (Fornecedores)
+        if (!isProd && item.servico && item.servico.trim()) {
+          const servicoWrap = document.createElement('div');
+          servicoWrap.className = 'associado-servico';
+
+          const servicoText = document.createElement('span');
+          servicoText.className = 'associado-servico-text';
+          servicoText.textContent = item.servico.trim();
+
+          servicoWrap.appendChild(servicoText);
+          card.appendChild(servicoWrap);
+        }
+
+        // 5. Linha de Localização (Cidade / UF) e Região
+        const cidade = (item.cidade || '').trim();
+        const estado = (item.estado || '').trim();
+        const regiao = isProd && item.regiao ? item.regiao.trim() : '';
+
+        let locText = '';
+        if (cidade && estado) {
+          locText = `${cidade} / ${estado}`;
+        } else if (estado) {
+          locText = estado;
+        } else if (cidade) {
+          locText = cidade;
+        }
+
+        if (locText || regiao) {
+          const locWrap = document.createElement('div');
+          locWrap.className = 'associado-location';
+
+          if (locText) {
+            locWrap.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+            const spanLoc = document.createElement('span');
+            spanLoc.className = 'associado-loc-text';
+            spanLoc.textContent = locText;
+            locWrap.appendChild(spanLoc);
+          }
+
+          if (regiao) {
+            const spanReg = document.createElement('span');
+            spanReg.className = 'associado-regiao';
+            spanReg.textContent = locText ? `· ${regiao}` : regiao;
+            locWrap.appendChild(spanReg);
+          }
+
+          card.appendChild(locWrap);
+        }
+
+        return card;
       }
 
-      // Popula Select de Estados com base nos dados
-      function populateEstados() {
-        const estados = [...new Set(rawData.map(d => (d.estado || '').trim()).filter(Boolean))].sort();
+      // Popula select de UFs com base apenas nos registros da aba ativa
+      function populateUFs(items) {
+        const ufs = [...new Set(items.map(d => (d.estado || '').trim().toUpperCase()).filter(Boolean))]
+          .sort((a, b) => a.localeCompare(b, 'pt-BR'));
+
         filterEstado.innerHTML = '<option value="">Todos os Estados</option>';
-        estados.forEach(uf => {
+        ufs.forEach(uf => {
           const opt = document.createElement('option');
           opt.value = uf;
           opt.textContent = uf;
           filterEstado.appendChild(opt);
         });
-        populateCidades();
       }
 
-      // Popula Select de Cidades (dependente de Estado)
-      function populateCidades() {
-        const ufSelecionada = filterEstado.value.trim().toUpperCase();
-        let cidades = rawData
-          .filter(d => !ufSelecionada || (d.estado || '').trim().toUpperCase() === ufSelecionada)
-          .map(d => (d.cidade || '').trim())
-          .filter(Boolean);
-        cidades = [...new Set(cidades)].sort();
+      // Popula select de Regiões (apenas Produtores)
+      function populateRegioes() {
+        const regioes = [...new Set(allProdutores.map(d => (d.regiao || '').trim()).filter(Boolean))]
+          .sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }));
 
-        filterCidade.innerHTML = '<option value="">Todas as Cidades</option>';
-        cidades.forEach(cid => {
+        filterRegiao.innerHTML = '<option value="">Todas as Regiões</option>';
+        regioes.forEach(reg => {
           const opt = document.createElement('option');
-          opt.value = cid;
-          opt.textContent = cid;
-          filterCidade.appendChild(opt);
+          opt.value = reg;
+          opt.textContent = reg;
+          filterRegiao.appendChild(opt);
         });
       }
 
-      // Renderiza os cards usando textContent estrito (sem innerHTML para dados)
-      function renderCards(items) {
+      // Popula select de Tipos (apenas Produtores)
+      function populateTipos() {
+        const tipos = [...new Set(allProdutores.map(d => (d.tipo || '').trim()).filter(Boolean))]
+          .sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }));
+
+        filterTipo.innerHTML = '<option value="">Todos os Tipos</option>';
+        tipos.forEach(t => {
+          const opt = document.createElement('option');
+          opt.value = t;
+          opt.textContent = t;
+          filterTipo.appendChild(opt);
+        });
+      }
+
+      // Alterna entre as abas Produtores e Fornecedores
+      function switchTab(aba) {
+        currentAba = aba;
+        const isProd = currentAba === 'Produtores';
+
+        // Atualiza botões das abas
+        tabProdutores.classList.toggle('active', isProd);
+        tabProdutores.setAttribute('aria-selected', isProd ? 'true' : 'false');
+        tabFornecedores.classList.toggle('active', !isProd);
+        tabFornecedores.setAttribute('aria-selected', !isProd ? 'true' : 'false');
+
+        // Exibe/Oculta filtros exclusivos de Produtores
+        groupFilterRegiao.style.display = isProd ? '' : 'none';
+        groupFilterTipo.style.display = isProd ? '' : 'none';
+        filterBar.classList.toggle('is-fornecedores', !isProd);
+
+        // Placeholder dinâmico de busca
+        filterBusca.placeholder = isProd ? 'Buscar por nome, marca ou cidade...' : 'Buscar por nome, serviço ou cidade...';
+
+        // Limpa campos de filtro ao trocar de aba
+        filterBusca.value = '';
+        filterEstado.value = '';
+        if (filterRegiao) filterRegiao.value = '';
+        if (filterTipo) filterTipo.value = '';
+
+        // Atualiza lista de estados da aba
+        populateUFs(isProd ? allProdutores : allFornecedores);
+
+        // Atualiza URL sem recarregar
+        const url = new URL(window.location);
+        if (isProd) {
+          url.searchParams.delete('tipo');
+        } else {
+          url.searchParams.set('tipo', 'fornecedor');
+        }
+        window.history.replaceState({}, '', url);
+
+        applyFilters();
+      }
+
+      // Aplica busca e filtros sobre a lista inteira
+      function applyFilters() {
+        const isProd = currentAba === 'Produtores';
+        const rawItems = isProd ? allProdutores : allFornecedores;
+
+        const q = normalizeStr(filterBusca.value);
+        const uf = filterEstado.value.trim().toUpperCase();
+        const reg = isProd && filterRegiao ? filterRegiao.value.trim().toLowerCase() : '';
+        const tipo = isProd && filterTipo ? filterTipo.value.trim().toLowerCase() : '';
+
+        filteredData = rawItems.filter(item => {
+          // Busca textual (sem diferenciar acento nem maiúscula)
+          if (q) {
+            const nomeNorm = normalizeStr(item.nome);
+            const cidNorm = normalizeStr(item.cidade);
+            if (isProd) {
+              const marcasNorm = normalizeStr(item.marcas);
+              if (!nomeNorm.includes(q) && !marcasNorm.includes(q) && !cidNorm.includes(q)) {
+                return false;
+              }
+            } else {
+              const servNorm = normalizeStr(item.servico);
+              if (!nomeNorm.includes(q) && !servNorm.includes(q) && !cidNorm.includes(q)) {
+                return false;
+              }
+            }
+          }
+
+          // Filtro por Estado (UF)
+          if (uf) {
+            if ((item.estado || '').trim().toUpperCase() !== uf) {
+              return false;
+            }
+          }
+
+          // Filtro por Região (Produtores)
+          if (isProd && reg) {
+            if ((item.regiao || '').trim().toLowerCase() !== reg) {
+              return false;
+            }
+          }
+
+          // Filtro por Tipo (Produtores)
+          if (isProd && tipo) {
+            if ((item.tipo || '').trim().toLowerCase() !== tipo) {
+              return false;
+            }
+          }
+
+          return true;
+        });
+
+        // Ordem alfabética por nome, ignorando acento
+        filteredData.sort((a, b) => {
+          const nomeA = (a.nome || '').trim();
+          const nomeB = (b.nome || '').trim();
+          return nomeA.localeCompare(nomeB, 'pt-BR', { sensitivity: 'base' });
+        });
+
+        // Linha de contagem de resultado
+        const total = filteredData.length;
+        resultsCount.textContent = `${total} ${total === 1 ? 'associado encontrado' : 'associados encontrados'}`;
+
+        // Reinicia para os primeiros 24 cards
+        visibleCount = 24;
+        renderGrid();
+      }
+
+      // Renderiza os cards na grade
+      function renderGrid() {
         associadosContainer.innerHTML = '';
 
-        if (!items || items.length === 0) {
+        if (filteredData.length === 0) {
           associadosContainer.style.display = 'none';
           emptyState.style.display = 'block';
-          paginationContainer.style.display = 'none';
-          resultsCount.textContent = '0 resultados';
+          loadMoreWrap.style.display = 'none';
           return;
         }
 
         emptyState.style.display = 'none';
         associadosContainer.style.display = 'grid';
 
-        const total = items.length;
-        resultsCount.textContent = `${total} ${total === 1 ? 'resultado encontrado' : 'resultados encontrados'}`;
-
-        // Paginação
-        const totalPages = Math.ceil(total / pageSize);
-        if (currentPage > totalPages) currentPage = 1;
-        const start = (currentPage - 1) * pageSize;
-        const pageItems = items.slice(start, start + pageSize);
+        const isProd = currentAba === 'Produtores';
+        const pageItems = filteredData.slice(0, visibleCount);
 
         pageItems.forEach(item => {
-          const card = document.createElement('div');
-          card.className = 'associado-card';
-
-          // Cabeçalho com nome e badge do selo
-          const header = document.createElement('div');
-          header.className = 'associado-header';
-
-          const title = document.createElement('h2');
-          title.className = 'associado-title';
-          title.textContent = item.nome || 'Associado';
-          header.appendChild(title);
-
-          // Selo Nacional se selo === 'SIM'
-          if (String(item.selo || '').trim().toUpperCase() === 'SIM') {
-            const badge = document.createElement('span');
-            badge.className = 'badge badge-gold';
-            badge.textContent = 'Selo Nacional';
-            header.appendChild(badge);
-          }
-          card.appendChild(header);
-
-          // Linha de servico removida dos cards
-
-          // Localização (Cidade/UF)
-          const loc = document.createElement('div');
-          loc.className = 'associado-location';
-          loc.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
-          
-          const locText = document.createElement('span');
-          const cidade = item.cidade ? item.cidade.trim() : '';
-          const estado = item.estado ? item.estado.trim() : '';
-          locText.textContent = cidade && estado ? `${cidade} / ${estado}` : (cidade || estado || 'Brasil');
-          loc.appendChild(locText);
-          card.appendChild(loc);
-
-          // Links (Site / Instagram)
-          const hasSite = Boolean(item.site && item.site.trim());
-          const hasInsta = Boolean(item.instagram && item.instagram.trim());
-
-          if (hasSite || hasInsta) {
-            const links = document.createElement('div');
-            links.className = 'associado-links';
-
-            if (hasSite) {
-              const aSite = document.createElement('a');
-              aSite.className = 'associado-link';
-              aSite.href = item.site.startsWith('http') ? item.site : `https://${item.site}`;
-              aSite.target = '_blank';
-              aSite.rel = 'noopener noreferrer';
-              aSite.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>';
-              const spanSite = document.createElement('span');
-              spanSite.textContent = 'Website';
-              aSite.appendChild(spanSite);
-              links.appendChild(aSite);
-            }
-
-            if (hasInsta) {
-              const aInsta = document.createElement('a');
-              aInsta.className = 'associado-link';
-              const cleanInsta = item.instagram.replace(/^@/, '').trim();
-              aInsta.href = `https://instagram.com/${cleanInsta}`;
-              aInsta.target = '_blank';
-              aInsta.rel = 'noopener noreferrer';
-              aInsta.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>';
-              const spanInsta = document.createElement('span');
-              spanInsta.textContent = item.instagram.startsWith('@') ? item.instagram : `@${item.instagram}`;
-              aInsta.appendChild(spanInsta);
-              links.appendChild(aInsta);
-            }
-
-            card.appendChild(links);
-          }
-
-          associadosContainer.appendChild(card);
+          associadosContainer.appendChild(createCard(item, isProd));
         });
 
-        renderPagination(totalPages);
-      }
-
-      // Renderiza botões de paginação acessíveis
-      function renderPagination(totalPages) {
-        if (totalPages <= 1) {
-          paginationContainer.style.display = 'none';
-          return;
+        // Controle do botão Mostrar mais (+24)
+        if (filteredData.length > visibleCount) {
+          loadMoreWrap.style.display = 'block';
+        } else {
+          loadMoreWrap.style.display = 'none';
         }
+      }
 
-        paginationContainer.innerHTML = '';
-        paginationContainer.style.display = 'flex';
+      // Botão Mostrar Mais
+      btnMostrarMais.addEventListener('click', () => {
+        const isProd = currentAba === 'Produtores';
+        const nextBatch = filteredData.slice(visibleCount, visibleCount + 24);
+        visibleCount += 24;
 
-        // Botão Anterior
-        const prevBtn = document.createElement('button');
-        prevBtn.className = 'page-btn';
-        prevBtn.innerHTML = '«';
-        prevBtn.setAttribute('aria-label', 'Página anterior');
-        if (currentPage === 1) prevBtn.setAttribute('disabled', 'true');
-        prevBtn.addEventListener('click', () => {
-          if (currentPage > 1) {
-            currentPage--;
-            renderCards(filteredData);
-            document.getElementById('diretorio').scrollIntoView({ behavior: 'smooth' });
-          }
+        nextBatch.forEach(item => {
+          associadosContainer.appendChild(createCard(item, isProd));
         });
-        paginationContainer.appendChild(prevBtn);
 
-        // Números de páginas
-        for (let i = 1; i <= totalPages; i++) {
-          const pageBtn = document.createElement('button');
-          pageBtn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
-          pageBtn.textContent = i;
-          if (i === currentPage) pageBtn.setAttribute('aria-current', 'page');
-          pageBtn.addEventListener('click', () => {
-            currentPage = i;
-            renderCards(filteredData);
-            document.getElementById('diretorio').scrollIntoView({ behavior: 'smooth' });
-          });
-          paginationContainer.appendChild(pageBtn);
+        if (visibleCount >= filteredData.length) {
+          loadMoreWrap.style.display = 'none';
         }
+      });
 
-        // Botão Próximo
-        const nextBtn = document.createElement('button');
-        nextBtn.className = 'page-btn';
-        nextBtn.innerHTML = '»';
-        nextBtn.setAttribute('aria-label', 'Próxima página');
-        if (currentPage === totalPages) nextBtn.setAttribute('disabled', 'true');
-        nextBtn.addEventListener('click', () => {
-          if (currentPage < totalPages) {
-            currentPage++;
-            renderCards(filteredData);
-            document.getElementById('diretorio').scrollIntoView({ behavior: 'smooth' });
-          }
-        });
-        paginationContainer.appendChild(nextBtn);
+      // Limpar Filtros
+      function clearAllFilters() {
+        filterBusca.value = '';
+        filterEstado.value = '';
+        if (filterRegiao) filterRegiao.value = '';
+        if (filterTipo) filterTipo.value = '';
+        applyFilters();
+        filterBusca.focus();
       }
 
-      // Aplica filtros combinados
-      function applyFilters() {
-        const buscaTerm = filterBusca.value.trim().toLowerCase();
-        const estadoTerm = filterEstado.value.trim().toUpperCase();
-        const cidadeTerm = filterCidade.value.trim().toLowerCase();
-        const ordenacao = filterOrdenacao.value;
-
-        filteredData = rawData.filter(item => {
-          // Busca textual (nome, cidade, servico)
-          const matchesBusca = !buscaTerm || 
-            (item.nome && item.nome.toLowerCase().includes(buscaTerm)) ||
-            (item.cidade && item.cidade.toLowerCase().includes(buscaTerm)) ||
-            false;
-
-          // Estado
-          const matchesEstado = !estadoTerm || ((item.estado || '').trim().toUpperCase() === estadoTerm);
-
-          // Cidade
-          const matchesCidade = !cidadeTerm || ((item.cidade || '').trim().toLowerCase() === cidadeTerm);
-
-          return matchesBusca && matchesEstado && matchesCidade;
-        });
-
-        // Ordenação
-        filteredData.sort((a, b) => {
-          const nomeA = (a.nome || '').toLowerCase();
-          const nomeB = (b.nome || '').toLowerCase();
-          const cidA = (a.cidade || '').toLowerCase();
-          const cidB = (b.cidade || '').toLowerCase();
-          const ufA = (a.estado || '').toUpperCase();
-          const ufB = (b.estado || '').toUpperCase();
-
-          switch (ordenacao) {
-            case 'nome-desc': return nomeB.localeCompare(nomeA);
-            case 'cidade-asc': return cidA.localeCompare(cidB) || nomeA.localeCompare(nomeB);
-            case 'estado-asc': return ufA.localeCompare(ufB) || nomeA.localeCompare(nomeB);
-            case 'nome-asc':
-            default:
-              return nomeA.localeCompare(nomeB);
-          }
-        });
-
-        currentPage = 1;
-        renderCards(filteredData);
+      btnLimparFiltros.addEventListener('click', clearAllFilters);
+      if (btnLimparFiltrosEmpty) {
+        btnLimparFiltrosEmpty.addEventListener('click', clearAllFilters);
       }
 
-      // Carrega dados da aba
-      async function loadData() {
+      // Eventos de input nos filtros
+      filterBusca.addEventListener('input', applyFilters);
+      filterEstado.addEventListener('change', applyFilters);
+      filterRegiao.addEventListener('change', applyFilters);
+      filterTipo.addEventListener('change', applyFilters);
+
+      // Eventos de clique nas abas
+      tabProdutores.addEventListener('click', () => {
+        if (currentAba !== 'Produtores') switchTab('Produtores');
+      });
+
+      tabFornecedores.addEventListener('click', () => {
+        if (currentAba !== 'Fornecedores') switchTab('Fornecedores');
+      });
+
+      // Carregamento inicial de dados
+      async function initData() {
         loadingState.style.display = 'block';
         associadosContainer.style.display = 'none';
         emptyState.style.display = 'none';
         errorState.style.display = 'none';
-        paginationContainer.style.display = 'none';
-        resultsCount.textContent = 'Carregando...';
-
-        updateTabsUI();
+        loadMoreWrap.style.display = 'none';
+        resultsCount.textContent = 'Carregando associados...';
 
         try {
-          rawData = await window.ANPAQ.fetchSheet(currentAba);
+          const [pData, fData] = await Promise.all([
+            window.ANPAQ.fetchSheet('Produtores'),
+            window.ANPAQ.fetchSheet('Fornecedores')
+          ]);
+
+          allProdutores = (pData || []).filter(item => String(item.publicar || 'SIM').trim().toUpperCase() === 'SIM');
+          allFornecedores = (fData || []).filter(item => String(item.publicar || 'SIM').trim().toUpperCase() === 'SIM');
+
+          // Contagens dinâmicas nas abas
+          countProdutores.textContent = `(${allProdutores.length})`;
+          countFornecedores.textContent = `(${allFornecedores.length})`;
+
+          // Preenche selects estáticos de Produtores
+          populateRegioes();
+          populateTipos();
+
           loadingState.style.display = 'none';
 
-          populateEstados();
-          applyFilters();
+          // Detecta aba inicial via URL
+          const urlParams = new URLSearchParams(window.location.search);
+          const tipoParam = (urlParams.get('tipo') || '').toLowerCase();
+          if (tipoParam === 'fornecedor' || tipoParam === 'fornecedores') {
+            switchTab('Fornecedores');
+          } else {
+            switchTab('Produtores');
+          }
         } catch (err) {
           loadingState.style.display = 'none';
           errorState.style.display = 'block';
-          resultsCount.textContent = 'Erro ao carregar';
+          resultsCount.textContent = 'Falha ao carregar a lista de associados';
+          console.error('[ANPAQ] Erro ao carregar associados:', err);
         }
       }
 
-      // Eventos de clique nas abas
-      tabProdutores.addEventListener('click', () => {
-        if (currentAba !== 'Produtores') {
-          currentAba = 'Produtores';
-          const newUrl = new URL(window.location);
-          newUrl.searchParams.set('tipo', 'produtor');
-          window.history.replaceState({}, '', newUrl);
-          filterBusca.value = '';
-          loadData();
-        }
-      });
-
-      tabFornecedores.addEventListener('click', () => {
-        if (currentAba !== 'Fornecedores') {
-          currentAba = 'Fornecedores';
-          const newUrl = new URL(window.location);
-          newUrl.searchParams.set('tipo', 'fornecedor');
-          window.history.replaceState({}, '', newUrl);
-          filterBusca.value = '';
-          loadData();
-        }
-      });
-
-      // Eventos de Filtro
-      filterBusca.addEventListener('input', applyFilters);
-      filterEstado.addEventListener('change', () => {
-        populateCidades();
-        applyFilters();
-      });
-      filterCidade.addEventListener('change', applyFilters);
-      filterOrdenacao.addEventListener('change', applyFilters);
-
-      btnLimparFiltros.addEventListener('click', () => {
-        filterBusca.value = '';
-        filterEstado.value = '';
-        populateCidades();
-        filterOrdenacao.value = 'nome-asc';
-        applyFilters();
-      });
-
-      // Inicialização
-      loadData();
+      initData();
     });
   </script>
 </body>

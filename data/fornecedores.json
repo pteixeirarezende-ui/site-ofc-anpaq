@@ -1,49 +1,218 @@
 [
   {
-    "nome": "Acqua Embalagens Ltda",
+    "nome": "Acqua Embalagens",
+    "servico": "Fornecedor de garrafas e embalagens de vidro",
     "cidade": "Belo Horizonte",
     "estado": "MG",
     "publicar": "SIM"
   },
   {
-    "nome": "Confraria Mineira da Cachaça — CONFALA",
+    "nome": "Benjamim de Almeida Mendes",
+    "servico": "Consultor",
+    "cidade": "Salvador",
+    "estado": "BA",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Confraria de Cachaça Copo Furado do Rio de Janeiro",
+    "servico": "Confraria",
+    "cidade": "Rio de Janeiro",
+    "estado": "RJ",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Confraria Mineira da Cachaça - CONFALA",
+    "servico": "Confraria",
     "cidade": "Belo Horizonte",
     "estado": "MG",
     "publicar": "SIM"
   },
   {
     "nome": "CRUD Soluções em Software de Gestão e Consultoria",
+    "servico": "Software para cachaça",
     "cidade": "Ouro Preto",
     "estado": "MG",
     "publicar": "SIM"
   },
   {
-    "nome": "D&R Alambiques e Cobres Ltda",
-    "cidade": "Belo Horizonte",
-    "estado": "MG",
-    "publicar": "SIM"
-  },
-  {
-    "nome": "Deville Comunicação",
+    "nome": "DeVille Comunicação",
+    "servico": "",
     "cidade": "Belo Horizonte",
     "estado": "MG",
     "publicar": "SIM"
   },
   {
     "nome": "Direção Sul Comércio de Embalagens Ltda",
+    "servico": "Embalagens de vidro para indústria alimentícia, de bebidas e fabricação de itens diversos . Potes, garrafas, frascos, tampas e rolhas",
     "cidade": "Curitiba",
     "estado": "PR",
     "publicar": "SIM"
   },
   {
-    "nome": "Distribuidora Savana Ltda",
+    "nome": "Distribuidora Savana",
+    "servico": "Distribuição cachaças. Liocres, toneis, etc",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "D&R Alambiques e Cobres Ltda",
+    "servico": "Fornecedor fabricante de equipamentos",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Espaço Gráfico Ltda - Grafix",
+    "servico": "Confecção de rótulos adesivos para produtos finais como cachaças, cervejas, vinhos, cosméticos, laticínios e outros, e/ou meio publicitário",
     "cidade": "Belo Horizonte",
     "estado": "MG",
     "publicar": "SIM"
   },
   {
     "nome": "Fábrica de Alambiques Santa Efigênia Ltda",
+    "servico": "",
     "cidade": "Itaverava",
+    "estado": "MG",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Fernando Antônio Leite - ME",
+    "servico": "Consultor de meio ambiente e assessor em eventos",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Ferrarezi Biotecnologia Ltda - BIOMADE",
+    "servico": "Laboratório de Análises",
+    "cidade": "São José do Rio Preto",
+    "estado": "SP",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Garrafaria Serra Negra Ltda",
+    "servico": "",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "IBI - Instituto Brasileiro de Integração - Cultura, Turismo e Cidadania",
+    "servico": "Elaboração de projetos em parceria com o Governo Federal, governos estaduais e municipais e entidades publicas privadas",
+    "cidade": "Brasília",
+    "estado": "DF",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Integra Consultoria e Treinamentos Ltda",
+    "servico": "Responsabilidade Técnica, Cursos e treinamentos em bebidas, registros de estabelecimentos e produtos no MAPA, Rotulagem de Bebidas, Elaboração de doc. Controle de qualidade e rastreabilidade, projetos arquiteonicos e layout segundo ANVISA e MAPA, Defesa de notificações e autuações, desenvolvimento de novos produtos",
+    "cidade": "Anápolis",
+    "estado": "GO",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "José Carlos Cabral Linhares",
+    "servico": "Prestação de serviços jurídicos na área da propriedade industrial e intelectual; atuação junto ao INPI com a realização de registros de marcas e software e junto a OMPI para registro de direitos",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "José Raimundo",
+    "servico": "",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Kely Cristina Barbosa Machado",
+    "servico": "Sommelier",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "LABM - Laboratório Amazile Biagioni Maia Ltda",
+    "servico": "Laboratório",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Riverpack Embalagens",
+    "servico": "tampas e garrafas",
+    "cidade": "Monte Belo do Sul",
+    "estado": "RS",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Lallemand Soluções Biológicas",
+    "servico": "",
+    "cidade": "Piracicaba",
+    "estado": "SP",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "LCC Nogueira Tanoaria Ltda",
+    "servico": "Fabricação, revenda e manutenção barril carvalho, venda barril de Inox, mobiliário madeira de barril de carvalho",
+    "cidade": "Resende",
+    "estado": "RJ",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "LNF Latino Americana Consultoria, Assessoria e Importação Ltda",
+    "servico": "",
+    "cidade": "Bento Gonçalves",
+    "estado": "RS",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Metalurgica Vale do Inox Ltda - Metainox",
+    "servico": "Reservatórios, dornas, caixas d'água em aço inox, equipamentos para cachaça, cervejaria, apicultura. Equipamentos inox sob medida",
+    "cidade": "João Monlevade",
+    "estado": "MG",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "MM Projetos e Consultoria - BRASIL CACHAÇAS",
+    "servico": "Projetos, Consultoria e Eventos - Feira e Seminário da Brasil Cachaças",
+    "cidade": "João Pessoa",
+    "estado": "PB",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Nutiare Comercio de Alimentos EIRELI",
+    "servico": "Restaurante",
+    "cidade": "Rio de Janeiro",
+    "estado": "RJ",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Premier Pack Comércio de Embalagens Ltda",
+    "servico": "Com. atacadista de embalagens, fabricação de embalagens vidro, fabricação artigos de vidro e design de produto",
+    "cidade": "Santana de Parnaíba",
+    "estado": "SP",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Ramos Girardi Comércio e Representações Ltda",
+    "servico": "Serviços de consultoria, fornecimento de produtos, tratamento de água, etc",
+    "cidade": "Porto Alegre",
+    "estado": "RS",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Titular Consultoria em Marcas e Patentes Ltda",
+    "servico": "Marcas e Patentes",
+    "cidade": "",
+    "estado": "",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Trilha Real Comercial e Produções Ltda",
+    "servico": "Cachaçaria",
+    "cidade": "Belo Horizonte e Nova Lima",
     "estado": "MG",
     "publicar": "SIM"
   }

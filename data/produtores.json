@@ -1,50 +1,1163 @@
 [
   {
-    "nome": "Acauã Artesanato Ltda",
-    "cidade": "Botelhos",
+    "nome": "Ben Artesanal Alimentos e Bebidas Ltda",
+    "marcas": "Ben – Licor fino de doce de Leite com café e cachaça.",
+    "tipo": "Produtor",
+    "cidade": "Resende Costa",
     "estado": "MG",
+    "regiao": "Campo das Vertentes",
     "publicar": "SIM"
   },
   {
-    "nome": "Agrimar Agro Indústria e Comércio Ltda",
-    "cidade": "Itaverava",
+    "nome": "Destilaria Barrosinha Ltda",
+    "marcas": "Barrosinha",
+    "tipo": "Produtor",
+    "cidade": "Barroso",
     "estado": "MG",
+    "regiao": "Campo das Vertentes",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Destilaria Candeeiro Ltda",
+    "marcas": "Candeeiro",
+    "tipo": "Produtor",
+    "cidade": "Ibertioga",
+    "estado": "MG",
+    "regiao": "Campo das Vertentes",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Indústria de Bebidas Barreiro Ltda",
+    "marcas": "Caieira Velha e Palmeira D'Agua",
+    "tipo": "Produtor",
+    "cidade": "Carandaí",
+    "estado": "MG",
+    "regiao": "Campo das Vertentes",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Velho Ferreira Indústria e Comércio Ltda",
+    "marcas": "Velho Ferreira",
+    "tipo": "Produtor",
+    "cidade": "Prados",
+    "estado": "MG",
+    "regiao": "Campo das Vertentes",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Páramo Agroindustria e Comércio Ltda - ME",
+    "marcas": "Mazuma Mineira",
+    "tipo": "Produtor",
+    "cidade": "Tiradentes",
+    "estado": "MG",
+    "regiao": "Campo das Vertentes",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Pousada Campestre Vila Tiradentes Ltda",
+    "marcas": "Alferes ouro e prata",
+    "tipo": "Produtor",
+    "cidade": "Tiradentes",
+    "estado": "MG",
+    "regiao": "Campo das Vertentes",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Destilaria e Engarrafadora Porto Faria Ltda.",
+    "marcas": "Porto Faria",
+    "tipo": "Produtor",
+    "cidade": "Curvelo",
+    "estado": "MG",
+    "regiao": "Central Mineira",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Fazenda Berro D'Agua Ltda",
+    "marcas": "Lorena Tradicional e Lorena 21 Especial",
+    "tipo": "Produtor",
+    "cidade": "Morro da Garça",
+    "estado": "MG",
+    "regiao": "Central Mineira",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Melicana Destilaria e Serviços Ltda",
+    "marcas": "Melicana Tracional Castanheira, Amburana, Três Madeieras, Aguardente Melado",
+    "tipo": "Produtor",
+    "cidade": "Bom Despacho",
+    "estado": "MG",
+    "regiao": "Central Mineira",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Flor das Gerais Agroindustria Exportação e Serviços Ltda",
+    "marcas": "Flor das Gerais",
+    "tipo": "Produtor",
+    "cidade": "Felixlândia",
+    "estado": "MG",
+    "regiao": "Central Mineira",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaça Barreiras Ltda",
+    "marcas": "Barreiras carvalho e prata",
+    "tipo": "Produtor",
+    "cidade": "Senador Modestino Gonçalves",
+    "estado": "MG",
+    "regiao": "Jequitinhonha",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Agrimar Agro Industria e Comércio Ltda",
+    "marcas": "Mestre Ribeiro",
+    "tipo": "Produtor",
+    "cidade": "Nova Lima",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
     "publicar": "SIM"
   },
   {
     "nome": "Agro Pastoril dos Poções Ltda",
+    "marcas": "Isaura e Duvido",
+    "tipo": "Produtor",
     "cidade": "Jequitibá",
     "estado": "MG",
+    "regiao": "Metropolitana/BH",
     "publicar": "SIM"
   },
   {
-    "nome": "Agroindustrial e Pecuária Nossa Senhora do Pilar Ltda",
+    "nome": "Bebidas de Destilados SD Ltda",
+    "marcas": "Frazão",
+    "tipo": "Produtor",
     "cidade": "Pitangui",
     "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Aguardente Conceição do Para - Eireli",
+    "marcas": "Jatobá prata, ouro e melado",
+    "tipo": "Produtor",
+    "cidade": "Conceição do Pará",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaça Vitalina Ltda",
+    "marcas": "Vitalina ouro",
+    "tipo": "Produtor",
+    "cidade": "Jaboticatubas",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Capim Cheiroso Comércio de Cachaça Ltda",
+    "marcas": "Capim Cheiroso Topázio, Cristal e Caipira",
+    "tipo": "Produtor",
+    "cidade": "Santa Bárbara",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Carol Abreu Pereira",
+    "marcas": "Pai Dela",
+    "tipo": "Proprietário de marca",
+    "cidade": "Pará de Minas",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Comercial Industrial Três Pessoas Ltda",
+    "marcas": "Água da Bica e Rainha do Milênio",
+    "tipo": "Produtor",
+    "cidade": "Brumadinho",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cristal Agropec Agricultura Pecuária e Ind. Ltda",
+    "marcas": "Marcan e Viva",
+    "tipo": "Produtor",
+    "cidade": "Onça de Pitangui",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Destilaria Siriema Ltda",
+    "marcas": "Ouro 1, Salinas Ouro 1, Ouro Mineiro, Dona Branca, Santuário de Minas e Famosinha",
+    "tipo": "Produtor",
+    "cidade": "Jequitibá",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Uniagro União Agropecuaria Imp & Exp de Bebidas Ltda",
+    "marcas": "Germana",
+    "tipo": "Produtor",
+    "cidade": "Nova União",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Gomes e Vasconcelos Ind. e Com. de Aguardente Ltda",
+    "marcas": "",
+    "tipo": "Produtor",
+    "cidade": "Contagem",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Engenho Buriti de Minas Ltda",
+    "marcas": "Ladila, Cêbesta, Apruma, Arreda, do Padre, Buriti e Bananinha Satu",
+    "tipo": "Produtor",
+    "cidade": "Papagaios",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Destilaria Sagrada Agroindustrial Ltda",
+    "marcas": "Sagrada (carvalho e amburana - blend), Sagrada inox e Sagrada Jequitibá prata, Sagrada Amburana",
+    "tipo": "Produtor",
+    "cidade": "Bom Jesus do Amparo",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Indústria Comércio e Engarrafamento de Aguardente de Cana Ecológica",
+    "marcas": "Fascinação",
+    "tipo": "Produtor",
+    "cidade": "Salinas",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Indústria Comércio e Exportação de Cachaça Salinas Ltda",
+    "marcas": "Valiosa e Salineira",
+    "tipo": "Produtor",
+    "cidade": "Salinas",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Indústria e Comércio de Bebidas Engenho do Coronel Ltda",
+    "marcas": "Engenho do Coronel prata, ouro e Reserva do Coronel ouro, Estrela do Coronel ouro (amburana) Caninha do Coronel ouro (carvalho)",
+    "tipo": "Produtor",
+    "cidade": "Taquaraçu de Minas",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Indústria e Comércio de Cachaça Rio Manso Ltda",
+    "marcas": "Vira Copos Ouro e Prata",
+    "tipo": "Produtor",
+    "cidade": "Rio Manso",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Industrias Reunidas de Bebidas Tatuzinho 3 Fazendas",
+    "marcas": "Alambique Diamonde",
+    "tipo": "Produtor",
+    "cidade": "Jequitibá",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Jeceaba Agroindustria e Comércio Ltda",
+    "marcas": "Jeceaba Premium (jequitibá e carvalho), Padrão (jequitibá), Classica (inox)",
+    "tipo": "Produtor",
+    "cidade": "Jeceaba",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaça Caraíbas Ltda",
+    "marcas": "Caraíbas",
+    "tipo": "Produtor",
+    "cidade": "Paraopeba",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Mauricio Uzeda Mascarenhas - ME",
+    "marcas": "Fazendão",
+    "tipo": "Produtor",
+    "cidade": "Jequitibá",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "PI Company Comercial Ltda",
+    "marcas": "Família Mineira (distribuição)",
+    "tipo": "Distribuidor",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Restaurante Maria das Tranças Ltda",
+    "marcas": "Maria das Tranças prata, balsamo, amburana, carvalho francês",
+    "tipo": "Produtor",
+    "cidade": "Pitangui",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Salinense Ecommerce Vip Ltda",
+    "marcas": "Ouro do Sertão Balsamo, jetuitibá, umburana e carvalho europeu",
+    "tipo": "Proprietário de marca",
+    "cidade": "Salinas",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Santissima Agroindustria Pitangui Ltda - ME",
+    "marcas": "Bem Me Quer ouro, prata e umburana, Santa Romana ouro e prata, Souza Paiol ouro e prata",
+    "tipo": "Produtor",
+    "cidade": "Pitangui",
+    "estado": "MG",
+    "regiao": "Metropolitana/BH",
     "publicar": "SIM"
   },
   {
     "nome": "Agroindustrial Monte Alto Ltda",
+    "marcas": "Monte Alto",
+    "tipo": "Produtor",
     "cidade": "Salinas",
     "estado": "MG",
+    "regiao": "Norte de Minas",
     "publicar": "SIM"
   },
   {
-    "nome": "Agronegócios Fazenda Lagoa Seca do Brasil Ltda",
-    "cidade": "Itumbiara",
-    "estado": "GO",
+    "nome": "Associação Prod. Artesanais de Cachaça de Salinas-APACS",
+    "marcas": "",
+    "tipo": "Associação / cooperativa",
+    "cidade": "Salinas",
+    "estado": "MG",
+    "regiao": "Norte de Minas",
     "publicar": "SIM"
   },
   {
-    "nome": "Agropecuária Roda D'Água Ltda",
+    "nome": "Coop.Prod.Cach.Alamb.Micro Reg.Salinas - COOPERCACHAÇA",
+    "marcas": "Terra de Ouro",
+    "tipo": "Associação / cooperativa",
+    "cidade": "Salinas",
+    "estado": "MG",
+    "regiao": "Norte de Minas",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Fábrica de Cachaça Canoas Eireli - MG",
+    "marcas": "Ubaí Umbruana",
+    "tipo": "Produtor",
+    "cidade": "Ubaí",
+    "estado": "MG",
+    "regiao": "Norte de Minas",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Fazenda Salinas Indústria e Comércio de Bebidas Ltda",
+    "marcas": "Lua Nova e Salinas",
+    "tipo": "Produtor",
+    "cidade": "Salinas",
+    "estado": "MG",
+    "regiao": "Norte de Minas",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Seleta e Boazinha Ind. Com. Imp. Export. Ltda",
+    "marcas": "Seleta, Boazinha e Saliboa",
+    "tipo": "Produtor",
+    "cidade": "Salinas",
+    "estado": "MG",
+    "regiao": "Norte de Minas",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Viena Fazendas Reunidas Ltda.",
+    "marcas": "Pirapora e Barranqueira",
+    "tipo": "Produtor",
+    "cidade": "Buritizeiro",
+    "estado": "MG",
+    "regiao": "Norte de Minas",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Wandi Milton Ribeiro",
+    "marcas": "Graciosa",
+    "tipo": "Produtor",
+    "cidade": "Montes Claros",
+    "estado": "MG",
+    "regiao": "Norte de Minas",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Acauã Artesanato Ltda",
+    "marcas": "Amago da Tradição",
+    "tipo": "Produtor",
+    "cidade": "Botelhos",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique Ouro Verde Ltda",
+    "marcas": "Divina Cana",
+    "tipo": "Produtor",
+    "cidade": "Três Pontas",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Bocaina Agroindustria e Com. de Cachaça Ltda",
+    "marcas": "Bocaina amburana",
+    "tipo": "Produtor",
+    "cidade": "Lavras",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Bolivar de Matos",
+    "marcas": "Casa Amarela",
+    "tipo": "Produtor",
+    "cidade": "Ervália",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaça Moça de Família Ltda",
+    "marcas": "Moça de Família prata e carvalho",
+    "tipo": "Produtor",
+    "cidade": "Ervália",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Destilaria Ipoema Ltda",
+    "marcas": "Ipoema, Mineiriana caravalho, amburana, clássica",
+    "tipo": "Produtor",
+    "cidade": "Ipoema",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Destilaria Pouso Alegre Industria e Comércio Ltda",
+    "marcas": "Dona Diva prata, ouro, amburana, premium, extra premium.",
+    "tipo": "Produtor",
+    "cidade": "Pouso Alegre",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaça João Mendes Ltda EPP",
+    "marcas": "João Mendes prata e João Mendes carvalho",
+    "tipo": "Produtor",
+    "cidade": "Perdões",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaçaria Autêntica Se Sobrá Ltda",
+    "marcas": "Se Sobrá carvalho, Se Sobra Jatobá, Manda Chuva Jatobá",
+    "tipo": "Produtor",
+    "cidade": "Alfenas",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Carneiro Spindola Ltda",
+    "marcas": "São Domingos",
+    "tipo": "Produtor",
+    "cidade": "Guaxupé",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Engarrafadora Estiva Ltda",
+    "marcas": "Rainha da Cana Prata, Rainha da Cana ouro, Reserva Especial, Paraíba, Rainha da Cana - Bebidas alcoolicas mistas",
+    "tipo": "Produtor",
+    "cidade": "Alto do Rio Doce",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Engenho Chapadão de Minas Ltda",
+    "marcas": "Terra do Zebu",
+    "tipo": "Produtor",
+    "cidade": "Uberaba",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "HB Industria e Comércio de Bebidas Ltda",
+    "marcas": "Urucuiana",
+    "tipo": "Produtor",
+    "cidade": "Buritis",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Hotel Fazenda do Timbo Ltda",
+    "marcas": "100 Limite",
+    "tipo": "Produtor",
+    "cidade": "Careaçu",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Indústria e Comércio de Bebidas Barrilitro Ltda",
+    "marcas": "Barrilitro",
+    "tipo": "Produtor",
+    "cidade": "Fernandes Tourinho",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Industria e Comércio de Cachaça Gouveia Brasil Ltda",
+    "marcas": "Gouveia Brasil",
+    "tipo": "Produtor",
+    "cidade": "Turvolândia",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Jacy do Prado Barbosa Neto",
+    "marcas": "Terra sem Mal",
+    "tipo": "Produtor",
+    "cidade": "Gonçalves",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Jorge Vieira Barbosa",
+    "marcas": "Porto de Minas",
+    "tipo": "Produtor",
+    "cidade": "Alfenas",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Lindolfo Dias Produção, Industria e Comércio de Bebidas",
+    "marcas": "Limeira Clássica, Moinho Limeira Ouro e Moinho Limeira Prata Moenda de Minas Ouro, Moenda de Minas Prata, Prata Edição Especial 100 anos",
+    "tipo": "Produtor",
+    "cidade": "Machado",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Nova Cambuí Estandartizador e Engarrafador de Cachaça Ltda",
+    "marcas": "Catendê e Fazenda Cambhuy",
+    "tipo": "Produtor",
+    "cidade": "Perdões",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Engenho Prosa Mineira Ltda",
+    "marcas": "Prosa Mineira Tradicional, Clássica, Ouro e Carvalho",
+    "tipo": "Produtor",
+    "cidade": "Santa Rita de Caldas",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Ricardo Moukhaiber Zhouri Eireli - ME",
+    "marcas": "Prêmio Líquido",
+    "tipo": "Produtor",
+    "cidade": "Aiuruoca",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Tiê Industria e Comércio Ltda",
+    "marcas": "Tiê ouro e Prata",
+    "tipo": "Produtor",
+    "cidade": "Aiuruoca",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaçaria Terras de Kubera Ltda",
+    "marcas": "Terras de Kubera Bertholletia e Terras de Kubera",
+    "tipo": "Produtor",
+    "cidade": "Uberaba",
+    "estado": "MG",
+    "regiao": "Sul/Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique Rio Fundo Ltda",
+    "marcas": "Se sobrá nós bebe",
+    "tipo": "Produtor",
+    "cidade": "Carmo do Rio Claro",
+    "estado": "MG",
+    "regiao": "Sudoeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique Dona Clara",
+    "marcas": "Onda Clara",
+    "tipo": "Produtor",
+    "cidade": "Patos de Minas",
+    "estado": "MG",
+    "regiao": "Triângulo/Alto Paran.",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaça Batista Ltda",
+    "marcas": "Batista",
+    "tipo": "Produtor",
+    "cidade": "Sacramento",
+    "estado": "MG",
+    "regiao": "Triângulo/Alto Paran.",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Chicrala Agroindustrial Ltda",
+    "marcas": "Segredo de Araxá, Carnaval ouro e Carnaval prata",
+    "tipo": "Produtor",
+    "cidade": "Araxá",
+    "estado": "MG",
+    "regiao": "Triângulo/Alto Paran.",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Indústria e Comércio de Cachaça Marbella",
+    "marcas": "Benvinda, Primeira Dama e Primeira Dama ouro",
+    "tipo": "Produtor",
+    "cidade": "Patos de Minas",
+    "estado": "MG",
+    "regiao": "Triângulo/Alto Paran.",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Tropeira Rural Ltda",
+    "marcas": "Ventania e GRM",
+    "tipo": "Produtor",
+    "cidade": "Araguari",
+    "estado": "MG",
+    "regiao": "Triângulo/Alto Paran.",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Vanderley Pereira de Azevedo - ME",
+    "marcas": "Vanderley Azevedo",
+    "tipo": "Produtor",
+    "cidade": "Ituiutaba",
+    "estado": "MG",
+    "regiao": "Triângulo/Alto Paran.",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Agropecuaria Roda D'água Ltda.",
+    "marcas": "Lenda Mineira",
+    "tipo": "Produtor",
     "cidade": "Tarumirim",
     "estado": "MG",
+    "regiao": "Vale do Rio Doce",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaçaria O Paraíso Ltda",
+    "marcas": "Paraisana e Meritíssima",
+    "tipo": "Produtor",
+    "cidade": "Sabinópolis",
+    "estado": "MG",
+    "regiao": "Vale do Rio Doce",
     "publicar": "SIM"
   },
   {
     "nome": "Aguardente Arruda Ltda",
+    "marcas": "Arruda",
+    "tipo": "Produtor",
     "cidade": "Lamim",
     "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Aguardente Guaraciaba Ltda",
+    "marcas": "Guaraciaba",
+    "tipo": "Produtor",
+    "cidade": "Guaraciaba",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique Costa Rica de Guarani Ltda",
+    "marcas": "Dom Bré e Costa Rica",
+    "tipo": "Produtor",
+    "cidade": "Guarani",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique Vista Verde Ltda - ME",
+    "marcas": "Morro Velho, Empório 267, Cachaça do Marreco",
+    "tipo": "Produtor",
+    "cidade": "Bicas",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique Risadinha Ltda",
+    "marcas": "Risadinha e Velho Parol",
+    "tipo": "Produtor",
+    "cidade": "Piranga",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaça Casa Verde Ltda - ME",
+    "marcas": "Casa Verde prata, Casa Verde ouro, Casa Verde premium ouro, preminha ouro, Fortaleza ouro, Fortaleza prata Da Venda ouro, Da Venda prata",
+    "tipo": "Produtor",
+    "cidade": "Teixeiras",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaça Skiva Ltda",
+    "marcas": "Skiva",
+    "tipo": "Produtor",
+    "cidade": "Rio Espera",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaça Tira Magoa Ltda - ME",
+    "marcas": "Jequeri e Tira Mágoa",
+    "tipo": "Produtor",
+    "cidade": "Jequeri",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Cachaçaria Vargas Ltda",
+    "marcas": "Torrão de Miraí",
+    "tipo": "Produtor",
+    "cidade": "Miraí",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Coop. Prod. De Cachaça Artesanal de Alamb. do Vale do Piranga - COOPERVAPI",
+    "marcas": "Essência das Gerais",
+    "tipo": "Associação / cooperativa",
+    "cidade": "Ponte Nova",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Douglas Moreira Resende - ME",
+    "marcas": "Sô Nico",
+    "tipo": "Produtor",
+    "cidade": "Dores do Turvo",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "D'Vale do Piranga Importação e Exportação de Bebidas Ltda",
+    "marcas": "Vale do Piranga, D'Vale Ag prata (jequitibá), D'Vale Pt Platinum Red (Amburana) e Trigo Leve",
+    "tipo": "Produtor",
+    "cidade": "Piranga",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Germinas - Assoc. dos Produtores de Cachaça do Vale do Piranga",
+    "marcas": "",
+    "tipo": "Associação / cooperativa",
+    "cidade": "Piranga",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "MWBX Agronegócios Ltda EPP",
+    "marcas": "Velha Aroeira, Aroeirinha, Se Sobrá Nóis Vende, Confraria Chico Mineiro ouro e prata",
+    "tipo": "Produtor",
+    "cidade": "Porto Firme",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Nova Fortaleza Agropecuária Ltda",
+    "marcas": "Du Botti Ouro e Prata",
+    "tipo": "Produtor",
+    "cidade": "Belmiro Braga",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Pirapetinga Destilaria Ltda",
+    "marcas": "Vale do Piranga Tradicional",
+    "tipo": "Produtor",
+    "cidade": "Piranga",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Roch´s - Confecções, Bebidas e Doces Ltda",
+    "marcas": "Reserva dos Rocha, Vitória, Cabocla, Gostosa e Beija-Flor",
+    "tipo": "Produtor",
+    "cidade": "Guarará",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Valdinei Vicente de Assis",
+    "marcas": "Rio Mineiro",
+    "tipo": "Produtor",
+    "cidade": "Rio Melo - Rio Espera",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Agronegócios Fazenda Lagoa Seca do Brasil Ltda",
+    "marcas": "Canela de Ema",
+    "tipo": "Produtor",
+    "cidade": "Itumbiara",
+    "estado": "GO",
+    "regiao": "Centro Oeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique Cambeba do Brasil Ltda",
+    "marcas": "Cambeba Orgânica Silver, Cambeba envelhecida carvalho 1 ano e 5 anos e Mata Preguiça",
+    "tipo": "Produtor",
+    "cidade": "Alexânia",
+    "estado": "GO",
+    "regiao": "Centro Oeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique Amana do Brasil",
+    "marcas": "Remedin ouro (carvalho)",
+    "tipo": "Produtor",
+    "cidade": "Sobradinho",
+    "estado": "DF",
+    "regiao": "Centro Oeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Associação dos Produtores Artesainais de Cachaça da Região de Calcária - APAC-RC",
+    "marcas": "",
+    "tipo": "Associação / cooperativa",
+    "cidade": "Córrego Fundo",
+    "estado": "MG",
+    "regiao": "Centro Oeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Associação Goiânia dos Produtores de Cachaça de Alambique - AGOPCAL",
+    "marcas": "",
+    "tipo": "Associação / cooperativa",
+    "cidade": "Catalão",
+    "estado": "GO",
+    "regiao": "Centro Oeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Terra Pequena Indústria e Comércio Ltda",
+    "marcas": "Terra Piri, Terra Pequena, Domingos Braga, Gezinha",
+    "tipo": "Produtor",
+    "cidade": "Pirenópolis",
+    "estado": "GO",
+    "regiao": "Centro Oeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Zanin & Cia Ltda",
+    "marcas": "Sucuri",
+    "tipo": "Produtor",
+    "cidade": "Comodoro",
+    "estado": "MT",
+    "regiao": "Centro Oeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Coop. dos Prod. Associados de Cana e seus derivados da Microregião de Abaíra - COOPAMA",
+    "marcas": "Abaíra",
+    "tipo": "Associação / cooperativa",
+    "cidade": "Abaíra",
+    "estado": "BA",
+    "regiao": "Nordeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Brejo dos Bois Ind Ltda",
+    "marcas": "Brejo dos Bois",
+    "tipo": "Produtor",
+    "cidade": "Junqueiros",
+    "estado": "AL",
+    "regiao": "Nordeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Destilaria Berto Ltda",
+    "marcas": "Mar Aberto Classica, amburana e cumaru",
+    "tipo": "Produtor",
+    "cidade": "Porto Seguro",
+    "estado": "BA",
+    "regiao": "Nordeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Gogó da Ema Industria de Bebidas Ltda",
+    "marcas": "Gogó da Ema Inox, Reserva Especial, Rock and Roll",
+    "tipo": "Produtor",
+    "cidade": "São Sebastião",
+    "estado": "AL",
+    "regiao": "Nordeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Holanda & Coelho Ltda",
+    "marcas": "Vale do Riachão",
+    "tipo": "Produtor",
+    "cidade": "Floriano",
+    "estado": "PI",
+    "regiao": "Nordeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Indústria e Comércio de Bebidas Cio da Terra Ltda",
+    "marcas": "Matriarca",
+    "tipo": "Produtor",
+    "cidade": "Caravelas/Medeiros Neto",
+    "estado": "BA",
+    "regiao": "Nordeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Indústria e Comércio de Bebidas Jardim das Laranjeiras Ltda",
+    "marcas": "Boa Luz ouro e Xingó ouro Gold Ouro, Xingó Silver Prata, Boate Azul",
+    "tipo": "Produtor",
+    "cidade": "Laranjeiras",
+    "estado": "SE",
+    "regiao": "Nordeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Oto B. Silva - ME",
+    "marcas": "Sanhaçu Freijó, carvalho, umburana e Sanhaçu origem (inox)",
+    "tipo": "Produtor",
+    "cidade": "Chão Grande",
+    "estado": "PE",
+    "regiao": "Nordeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Sussuapara Agroindustrial Ltda",
+    "marcas": "Reserva do Zito",
+    "tipo": "Produtor",
+    "cidade": "Passagem Franca",
+    "estado": "MA",
+    "regiao": "Nordeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique Ouro Fino Ltda",
+    "marcas": "Wiba Branca, Wiba Blend de Carvalhos, Wiba Amburana, Wiba Premium, Double Soul, Dona Wiba",
+    "tipo": "Produtor",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "regiao": "Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique Princesa Izabel Ind. e Com. Ltda - ME",
+    "marcas": "Princesa Izabel",
+    "tipo": "Produtor",
+    "cidade": "Linhares",
+    "estado": "ES",
+    "regiao": "Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "TMS Distribuidora de Bebidas Ltda",
+    "marcas": "Beijo da Onça Classica e Beijo da Onça carvalho & amburana",
+    "tipo": "Proprietário de marca",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "regiao": "Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Engenho Santo Mario Ltda",
+    "marcas": "Santo Mário e Jóia da Roça",
+    "tipo": "Produtor",
+    "cidade": "Catanduva",
+    "estado": "SP",
+    "regiao": "Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "FJC Ferreira Ltda",
+    "marcas": "De Buena, Oasis e Licor Dumon",
+    "tipo": "Proprietário de marca",
+    "cidade": "Dracena",
+    "estado": "SP",
+    "regiao": "Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Industria e Comércio de Aguardente Santa Barbara Ltda",
+    "marcas": "Dose Clássica",
+    "tipo": "Produtor",
+    "cidade": "Aracruz",
+    "estado": "ES",
+    "regiao": "Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "JLF Agropecuária Ltda",
+    "marcas": "Maginifica de Faria",
+    "tipo": "Produtor",
+    "cidade": "Vassouras",
+    "estado": "RJ",
+    "regiao": "Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Lagos do Vale Alambique Ltda",
+    "marcas": "Lagos do Vale prata. Ouro e especial",
+    "tipo": "Produtor",
+    "cidade": "Quatis",
+    "estado": "RJ",
+    "regiao": "Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Red Oak Comércio de Bebidas Eireli",
+    "marcas": "Pitangui ouro (balsamo e carvalho), prata (inox), amburana e balsamo",
+    "tipo": "Proprietário de marca",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "regiao": "Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Spirit Com. Importação e Exportação de Bebidas Ltda",
+    "marcas": "7 capelas",
+    "tipo": "Proprietário de marca",
+    "cidade": "Araraquara",
+    "estado": "SP",
+    "regiao": "Sudeste",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Alambique H Ltda",
+    "marcas": "Alambique H",
+    "tipo": "Produtor",
+    "cidade": "Blumenau",
+    "estado": "SC",
+    "regiao": "Sul",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Assoc. Catarinense de Produtores de Cachaça de Alambique e outros Destilados - ACAPAC",
+    "marcas": "",
+    "tipo": "Associação / cooperativa",
+    "cidade": "Criciúma",
+    "estado": "SC",
+    "regiao": "Sul",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "JB Barbosa Ltda",
+    "marcas": "Engenho da Pedra",
+    "tipo": "Produtor",
+    "cidade": "Cachoeira de Minas",
+    "estado": "MG",
+    "regiao": "Sul",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Regui Brasil Indústria e Comércio de Bebidas Ltda - Templo da Cachaça",
+    "marcas": "Regui Brasil, Trivisan, Torc e Dudani",
+    "tipo": "Produtor",
+    "cidade": "Curitiba",
+    "estado": "PR",
+    "regiao": "Sul",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Xanadu Agroindustria de Bebidas Premium Ltda - ME",
+    "marcas": "Xanadu, Intisica, Bruaca, Nho Bento, Blumenau Schnaps, Blumenau, Oktober Schnapes, Pomerode",
+    "tipo": "Produtor",
+    "cidade": "Blumenau",
+    "estado": "SC",
+    "regiao": "Sul",
+    "publicar": "SIM"
+  },
+  {
+    "nome": "Xingú Destilados Ind. e Com. EIRELI",
+    "marcas": "Xinguaça",
+    "tipo": "Produtor",
+    "cidade": "Altamira",
+    "estado": "PA",
+    "regiao": "Norte",
     "publicar": "SIM"
   }
 ]
