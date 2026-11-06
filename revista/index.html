@@ -135,12 +135,13 @@
   <main id="main-content">
 
     <!-- 1. INNER HERO -->
-    <section class="section section--dark" style="padding-top: calc(var(--sp-24) + var(--header-height)); padding-bottom: var(--sp-12);">
-      <div class="container">
+    <section class="section section--dark grid-paper" style="position:relative; overflow:hidden; padding-top: calc(var(--sp-24) + var(--header-height)); padding-bottom: var(--sp-12);">
+      <div class="glow glow-gold" style="width:480px; height:480px; top:-100px; right:-100px; opacity:0.18;"></div>
+      <div class="container" style="position:relative; z-index:1;">
         <div class="section-header" style="max-width: 820px; margin: 0 auto; text-align: center;">
-          <span class="eyebrow">Publicações Oficiais</span>
+          <span class="eyebrow"><span class="pulse-dot"></span>Publicações Oficiais</span>
           <div class="gold-line" style="margin: var(--sp-4) auto var(--sp-6);"></div>
-          <h1>Cachaça de Alambique com Notícias</h1>
+          <h1>Cachaça de Alambique com <span class="shimmer">Notícias</span></h1>
           <p style="font-size: var(--text-lg); color: var(--anpaq-text-light-muted); line-height: 1.6;">
             A revista oficial da ANPAQ, distribuída gratuitamente em todo o Brasil. Informação técnica, legislação, tendências de mercado e tecnologia para o fortalecimento contínuo da cachaça de alambique.
           </p>
@@ -199,7 +200,7 @@
         </div>
 
         <!-- Grid de Capas -->
-        <div id="revista-grid" class="pub-grid-covers reveal">
+        <div id="revista-grid" class="pub-grid-covers">
           <!-- Itens preenchidos dinamicamente pelo script -->
         </div>
 
@@ -265,8 +266,10 @@
     </section>
 
     <!-- 5. CTA DIVULGAÇÃO -->
-    <section class="cta-band">
-      <div class="container cta-band-inner reveal">
+    <section class="cta-band grid-paper" style="position:relative; overflow:hidden;">
+      <div class="glow glow-gold" style="width:550px; height:550px; top:50%; left:50%; transform:translate(-50%, -50%); opacity:0.18;"></div>
+      <div class="container cta-band-inner reveal" style="position:relative; z-index:1;">
+        <span class="eyebrow" style="color:var(--anpaq-gold-300); margin-bottom:var(--sp-2);"><span class="pulse-dot"></span>Visibilidade Editorial</span>
         <h2>Divulgue seus produtos e serviços na Revista da ANPAQ</h2>
         <p>Conecte sua empresa diretamente aos principais produtores, alambiques e profissionais do setor da cachaça em todo o Brasil.</p>
         <div class="cta-band-actions">
@@ -491,6 +494,10 @@
           item.appendChild(btnWrap);
           gridContainer.appendChild(item);
         });
+
+        if (window.ANPAQ && typeof window.ANPAQ.refreshReveals === 'function') {
+          window.ANPAQ.refreshReveals();
+        }
       }
 
       // Inicialização

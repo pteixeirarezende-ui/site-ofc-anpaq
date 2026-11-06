@@ -163,12 +163,12 @@
       <div class="container hero-content">
         <!-- 1. H1: Maior elemento -->
         <h1 class="hero-headline">
-          Cachaça de Alambique
+          Cachaça de <span class="shimmer">Alambique</span>
         </h1>
 
         <!-- 2. Bloco: Selo Nacional / da Cachaça de Alambique -->
         <div class="hero-selo-title">
-          <span class="hero-selo-line1">Selo Nacional</span>
+          <span class="hero-selo-line1"><span class="pulse-dot"></span>Selo Nacional</span>
           <span class="hero-selo-line2">da Cachaça de Alambique</span>
         </div>
 
@@ -214,12 +214,35 @@
       </div>
     </section>
 
+    <!-- ─── FAIXA EDITORIAL CONTÍNUA (MARQUEE) ─── -->
+    <div class="marquee-ribbon" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Cachaça de Alambique</span><span class="marquee-diamond">◆</span>
+        <span>Selo Nacional</span><span class="marquee-diamond">◆</span>
+        <span>Tradição Artesanal</span><span class="marquee-diamond">◆</span>
+        <span>Certificação MAPA</span><span class="marquee-diamond">◆</span>
+        <span>Laudo Físico-Químico</span><span class="marquee-diamond">◆</span>
+        <span>Alambique de Cobre</span><span class="marquee-diamond">◆</span>
+        <span>Rastreabilidade por QR Code</span><span class="marquee-diamond">◆</span>
+        <!-- Duplicação para loop contínuo -->
+        <span>Cachaça de Alambique</span><span class="marquee-diamond">◆</span>
+        <span>Selo Nacional</span><span class="marquee-diamond">◆</span>
+        <span>Tradição Artesanal</span><span class="marquee-diamond">◆</span>
+        <span>Certificação MAPA</span><span class="marquee-diamond">◆</span>
+        <span>Laudo Físico-Químico</span><span class="marquee-diamond">◆</span>
+        <span>Alambique de Cobre</span><span class="marquee-diamond">◆</span>
+        <span>Rastreabilidade por QR Code</span><span class="marquee-diamond">◆</span>
+      </div>
+    </div>
+
     <!-- ─── 2. O SELO NACIONAL (DOBRA 2 — FUNDO FOTOGRÁFICO) ─── -->
-    <section class="section section--selo-feature" id="selo-nacional">
+    <section class="section section--selo-feature grid-paper" id="selo-nacional" style="position:relative; overflow:hidden;">
+      <div class="glow glow-gold" style="width:500px; height:500px; top:-120px; right:-100px;"></div>
+      <div class="glow glow-warm" style="width:360px; height:360px; bottom:-80px; left:-80px;"></div>
       <div class="section-overlay"></div>
       <div class="container" style="position:relative; z-index:1;">
         <div class="section-header reveal">
-          <span class="eyebrow" style="color:var(--anpaq-gold-300);">Padrão Oficial & Origem</span>
+          <span class="eyebrow" style="color:var(--anpaq-gold-300);"><span class="pulse-dot"></span>Padrão Oficial & Origem</span>
           <div class="gold-line"></div>
           <h2>O Selo Nacional da Cachaça de Alambique</h2>
           <p>
@@ -229,7 +252,7 @@
 
         <div class="selo-pillars-grid">
           <!-- Pilar 1: Certificação MAPA -->
-          <div class="selo-pillar-card reveal">
+          <div class="selo-pillar-card glass-card reveal">
             <div class="selo-pillar-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
@@ -240,7 +263,7 @@
           </div>
 
           <!-- Pilar 2: Laudo Físico-Químico -->
-          <div class="selo-pillar-card reveal reveal-delay-1">
+          <div class="selo-pillar-card glass-card reveal reveal-delay-1">
             <div class="selo-pillar-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.31"></path><path d="M14 2v7.31"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path><path d="M5.52 16h12.96"></path></svg>
             </div>
@@ -251,7 +274,7 @@
           </div>
 
           <!-- Pilar 3: Código Serial e QR Code -->
-          <div class="selo-pillar-card reveal reveal-delay-2">
+          <div class="selo-pillar-card glass-card reveal reveal-delay-2">
             <div class="selo-pillar-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
             </div>
@@ -345,8 +368,11 @@
 
           <div>
             <div class="card card--featured">
-              <span class="badge badge-gold" style="align-self: flex-start; margin-bottom: var(--sp-4);">Entidade Nacional</span>
+              <span class="badge badge-gold" style="align-self: flex-start; margin-bottom: var(--sp-4);"><span class="pulse-dot"></span>Entidade Nacional</span>
               <h3 style="margin-bottom: var(--sp-3);">Compromisso com o Produtor</h3>
+              <p class="anpaq-quote" style="margin: var(--sp-3) 0 var(--sp-4);">
+                "Apoiar o desenvolvimento do setor produtivo e valorizar a autêntica cachaça de alambique brasileira."
+              </p>
               <p>
                 Representamos alambiques de diversas regiões do Brasil, oferecendo suporte institucional, publicações técnicas e iniciativas de fortalecimento de mercado.
               </p>
@@ -399,11 +425,12 @@
     
 
     <!-- ─── 8. FAIXA FINAL DE CTA ─── -->
-    <section class="cta-band" id="faixa-cta">
-      <div class="container">
+    <section class="cta-band grid-paper" id="faixa-cta" style="position:relative; overflow:hidden;">
+      <div class="glow glow-gold" style="width:550px; height:550px; top:50%; left:50%; transform:translate(-50%, -50%); opacity:0.18;"></div>
+      <div class="container" style="position:relative; z-index:1;">
         <div class="cta-band-content reveal">
           <div class="cta-band-text">
-            <span class="eyebrow" style="color:var(--anpaq-gold-300);">Filiação Institucional</span>
+            <span class="eyebrow" style="color:var(--anpaq-gold-300);"><span class="pulse-dot"></span>Filiação Institucional</span>
             <h2>Faça parte da ANPAQ</h2>
             <p>
               Fortaleça a cachaça de alambique no Brasil, tenha acesso ao programa do Selo Nacional e integre a entidade que defende os produtores desde 1988.

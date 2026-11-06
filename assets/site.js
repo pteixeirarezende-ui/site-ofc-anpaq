@@ -1,19 +1,21 @@
 /**
  * ANPAQ — Script Principal do Site
- * Suporte a menu mobile, dropdowns, animações ao rolar e carregamento de planilhas.
+ * Suporte a menu mobile, dropdowns, animações ao rolar, micro-interações e dados.
  */
 
 (function () {
   'use strict';
 
-  // ─── 1. NAVBAR SCROLL EFFECT ───
+  let globalRevealObserver = null;
+
+  // ─── 1. NAVBAR SCROLL EFFECT & SUAVE ───
   function initHeaderScroll() {
     const header = document.querySelector('.site-header');
     if (!header) return;
 
     let ticking = false;
     const checkScroll = () => {
-      if (window.scrollY > 30) {
+      if (window.scrollY > 24) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
@@ -44,7 +46,6 @@
       mobileDrawer.classList.add('open');
       navToggle.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
-      // Foco no botão de fechar para acessibilidade
       if (drawerClose) drawerClose.focus();
     };
 
@@ -96,39 +97,66 @@
     });
   }
 
-  // ─── 3. SCROLL REVEAL ANIMATIONS ───
+  // ─── 3. SCROLL REVEAL ANIMATIONS (DESIGN SYSTEM) ───
   function initScrollReveal() {
     // Garante que elementos na primeira dobra nunca fiquem invisíveis
-    document.querySelectorAll('main > section:first-of-type .reveal, .hero .reveal, .page-hero .reveal').forEach(el => {
-      el.classList.remove('reveal');
-      el.classList.add('active');
+    document.querySelectorAll('main > section:first-of-type .reveal, main > section:first-of-type .reveal-up, main > section:first-of-type .reveal-left, main > section:first-of-type .reveal-scale, main > section:first-of-type .reveal-fade, .hero .reveal, .page-hero .reveal').forEach(el => {
+      el.classList.remove('reveal', 'reveal-up', 'reveal-left', 'reveal-scale', 'reveal-fade');
+      el.classList.add('active', 'revealed');
     });
-
-    const reveals = document.querySelectorAll('.reveal');
-    if (!reveals.length) return;
 
     if (!('IntersectionObserver' in window)) {
       // Fallback para navegadores legados
-      reveals.forEach(el => el.classList.add('active'));
+      document.querySelectorAll('.reveal, .reveal-up, .reveal-left, .reveal-scale, .reveal-fade').forEach(el => {
+        el.classList.add('active', 'revealed');
+      });
       return;
     }
 
-    const observer = new IntersectionObserver((entries, obs) => {
+    globalRevealObserver = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('active');
+          entry.target.classList.add('active', 'revealed');
           obs.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.05,
-      rootMargin: '0px 0px -20px 0px'
+      threshold: 0.01,
+      rootMargin: '0px 0px 40px 0px'
     });
 
-    reveals.forEach(el => observer.observe(el));
+    refreshReveals();
   }
 
-  // ─── 4. UTILITÁRIO FETCH SHEET COM FALLBACK LOCAL ───
+  function refreshReveals() {
+    if (!globalRevealObserver) return;
+    const elements = document.querySelectorAll('.reveal:not(.active), .reveal-up:not(.revealed), .reveal-left:not(.revealed), .reveal-scale:not(.revealed), .reveal-fade:not(.revealed)');
+    elements.forEach(el => globalRevealObserver.observe(el));
+  }
+
+  // ─── 4. SMOOTH SCROLL PARA ANCHORS LOCAIS ───
+  function initSmoothAnchors() {
+    document.querySelectorAll('a[href^="#"]:not([href="#"]):not([href="#!"])').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const hash = this.getAttribute('href');
+        try {
+          const target = document.querySelector(hash);
+          if (target) {
+            e.preventDefault();
+            const header = document.querySelector('.site-header');
+            const headerHeight = header ? header.offsetHeight : 76;
+            const top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
+            window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+            if (history.pushState) {
+              history.pushState(null, null, hash);
+            }
+          }
+        } catch (_) {}
+      });
+    });
+  }
+
+  // ─── 5. UTILITÁRIO FETCH SHEET COM FALLBACK LOCAL ───
   /**
    * Carrega os dados de uma aba pública (Produtores, Fornecedores, Revista, Anuario, Agenda, Noticias).
    * Usa ANPAQ_CONFIG.sheetsEndpoint e faz fallback automático para /data/<aba>.json.
@@ -160,7 +188,6 @@
     // Tentativa 2: Fallback para /data/<aba>.json (ou caminho relativo)
     if (!data) {
       try {
-        // Tenta achar a raiz ou fallback relativo
         const basePath = window.location.pathname.includes('/site/')
           ? window.location.pathname.substring(0, window.location.pathname.indexOf('/site/') + 6)
           : '/';
@@ -168,7 +195,6 @@
 
         let localRes = await fetch(localUrl);
         if (!localRes.ok) {
-          // Fallback adicional relativo simples caso a rota seja aninhada
           localRes = await fetch(`../data/${aba.toLowerCase()}.json`);
         }
         if (!localRes.ok) {
@@ -194,17 +220,18 @@
     });
   }
 
-  // ─── 5. INICIALIZAÇÃO GERAL ───
+  // ─── 6. INICIALIZAÇÃO GERAL ───
   document.addEventListener('DOMContentLoaded', () => {
     initHeaderScroll();
     initMobileMenu();
     initScrollReveal();
+    initSmoothAnchors();
   });
 
   // Exporta para escopo global
   window.ANPAQ = {
-    fetchSheet: fetchSheet
+    fetchSheet: fetchSheet,
+    refreshReveals: refreshReveals
   };
 
 })();
-

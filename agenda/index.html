@@ -186,12 +186,13 @@
   <main id="main-content">
 
     <!-- 1. INNER HERO -->
-    <section class="section section--dark" style="padding-top: calc(var(--sp-24) + var(--header-height)); padding-bottom: var(--sp-12);">
-      <div class="container">
+    <section class="section section--dark grid-paper" style="position:relative; overflow:hidden; padding-top: calc(var(--sp-24) + var(--header-height)); padding-bottom: var(--sp-12);">
+      <div class="glow glow-gold" style="width:480px; height:480px; top:-100px; right:-100px; opacity:0.18;"></div>
+      <div class="container" style="position:relative; z-index:1;">
         <div class="section-header" style="max-width: 820px; margin: 0 auto; text-align: center;">
-          <span class="eyebrow">Calendário Oficial</span>
+          <span class="eyebrow"><span class="pulse-dot"></span>Calendário Oficial</span>
           <div class="gold-line" style="margin: var(--sp-4) auto var(--sp-6);"></div>
-          <h1>Agenda do Setor — Feiras, Eventos e Cursos</h1>
+          <h1>Agenda do Setor — <span class="shimmer">Feiras, Eventos e Cursos</span></h1>
           <p style="font-size: var(--text-lg); color: var(--anpaq-text-light-muted); line-height: 1.6;">
             Acompanhe o cronograma das principais feiras de negócios, encontros de produtores, dias de campo e capacitações técnicas do setor da cachaça de alambique em todo o Brasil.
           </p>
@@ -234,7 +235,7 @@
         <!-- Estado Vazio -->
         <div id="agenda-empty" class="empty-state" style="display: none; margin-top: var(--sp-8);">
           <h3>Nenhum evento futuro no momento</h3>
-          <p>Novas datas e feiras estão sendo confirmadas. Selecione "Ver Todos" para consultar o histórico ou acompanhe as atualizações da ANPAQ.</p>
+          <p>Novas datas e feiras estão sendo confirmadas. Selecione "Ver anteriores" para consultar o histórico ou acompanhe as atualizações da ANPAQ.</p>
           <div style="margin-top: var(--sp-4);">
             <button class="btn btn-secondary btn-sm" id="btn-forcar-todos">Ver anteriores</button>
           </div>
@@ -246,8 +247,10 @@
     </section>
 
     <!-- 3. CTA DIVULGAÇÃO DE EVENTO -->
-    <section class="cta-band">
-      <div class="container cta-band-inner reveal">
+    <section class="cta-band grid-paper" style="position:relative; overflow:hidden;">
+      <div class="glow glow-gold" style="width:550px; height:550px; top:50%; left:50%; transform:translate(-50%, -50%); opacity:0.18;"></div>
+      <div class="container cta-band-inner reveal" style="position:relative; z-index:1;">
+        <span class="eyebrow" style="color:var(--anpaq-gold-300); margin-bottom:var(--sp-2);"><span class="pulse-dot"></span>Divulgação Setorial</span>
         <h2>Sua entidade ou empresa vai realizar um evento do setor?</h2>
         <p>Divulgue sua feira, curso técnico ou festival de cachaça de alambique nos canais de comunicação da ANPAQ.</p>
         <div class="cta-band-actions">
@@ -415,6 +418,10 @@
         URL.revokeObjectURL(link.href);
       }
 
+      function escHTML(v) {
+        return String(v == null ? '' : v).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+      }
+
       function renderizar() {
         if (!containerEl) return;
         containerEl.innerHTML = '';
@@ -457,7 +464,7 @@
           const monthHeader = document.createElement('div');
           monthHeader.className = 'agenda-month-header';
 
-          const title = document.createElement('h3');
+          const title = document.createElement('h2');
           title.className = 'agenda-month-title';
           title.textContent = mesAno;
 
@@ -492,7 +499,7 @@
             cardTop.appendChild(badgeWrap);
 
             // Título do Evento
-            const eventTitle = document.createElement('h4');
+            const eventTitle = document.createElement('h3');
             eventTitle.className = 'event-title';
             eventTitle.textContent = ev.evento || 'Evento do Setor';
             cardTop.appendChild(eventTitle);
@@ -501,7 +508,7 @@
             if (ev.cidade_uf) {
               const loc = document.createElement('div');
               loc.className = 'event-location';
-              loc.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>${ev.cidade_uf}</span>`;
+              loc.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>${escHTML(ev.cidade_uf)}</span>`;
               cardTop.appendChild(loc);
             }
 
@@ -509,7 +516,7 @@
             if (ev.organizador) {
               const org = document.createElement('div');
               org.className = 'event-meta-line';
-              org.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span><strong>Org:</strong> ${ev.organizador}</span>`;
+              org.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span><strong>Org:</strong> ${escHTML(ev.organizador)}</span>`;
               cardTop.appendChild(org);
             }
 
@@ -517,7 +524,7 @@
             if (ev.contato) {
               const cont = document.createElement('div');
               cont.className = 'event-meta-line';
-              cont.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>${ev.contato}</span>`;
+              cont.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>${escHTML(ev.contato)}</span>`;
               cardTop.appendChild(cont);
             }
 
@@ -527,7 +534,7 @@
             const actions = document.createElement('div');
             actions.className = 'event-actions';
 
-            if (ev.link && ev.link.trim()) {
+            if (ev.link && /^https?:\/\//i.test(String(ev.link).trim())) {
               const btnLink = document.createElement('a');
               btnLink.href = ev.link;
               btnLink.target = '_blank';

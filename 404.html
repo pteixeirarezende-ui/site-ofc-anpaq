@@ -115,12 +115,13 @@
 
   <!-- ═══════════════ MAIN CONTENT ═══════════════ -->
   <main id="main-content">
-    <section class="section section--dark" style="min-height: 70vh; display: flex; align-items: center; padding-top: calc(var(--sp-24) + var(--header-height)); padding-bottom: var(--sp-16);">
-      <div class="container" style="text-align: center; max-width: 680px; margin: 0 auto;">
-        <span class="eyebrow" style="color: var(--anpaq-gold-400);">Erro 404</span>
+    <section class="section section--dark grid-paper" style="position:relative; overflow:hidden; min-height: 70vh; display: flex; align-items: center; padding-top: calc(var(--sp-24) + var(--header-height)); padding-bottom: var(--sp-16);">
+      <div class="glow glow-gold" style="width:500px; height:500px; top:50%; left:50%; transform:translate(-50%, -50%); opacity:0.18;"></div>
+      <div class="container" style="position:relative; z-index:1; text-align: center; max-width: 680px; margin: 0 auto;">
+        <span class="eyebrow" style="color: var(--anpaq-gold-400);"><span class="pulse-dot"></span>Erro 404</span>
         <div class="gold-line" style="margin: var(--sp-3) auto var(--sp-6);"></div>
         <h1 style="font-family: var(--font-display); font-size: clamp(var(--text-3xl), 5vw, var(--text-5xl)); margin-bottom: var(--sp-4); color: var(--anpaq-cream-100);">
-          Página não encontrada
+          Página <span class="shimmer">não encontrada</span>
         </h1>
         <p style="font-size: var(--text-base); color: var(--anpaq-text-light-muted); line-height: 1.6; margin-bottom: var(--sp-8);">
           O endereço que você tentou acessar não existe ou foi modificado durante a transição para o novo portal da ANPAQ. Utilize as opções abaixo para encontrar o que procura:

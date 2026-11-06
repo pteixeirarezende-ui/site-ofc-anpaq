@@ -143,9 +143,9 @@
       </picture>
       <div class="page-hero-overlay"></div>
       <div class="container page-hero-content">
-        <span class="eyebrow" style="color:var(--anpaq-gold-300);">Associados</span>
+        <span class="eyebrow" style="color:var(--anpaq-gold-300);"><span class="pulse-dot"></span>Rede Oficial</span>
         <div class="gold-line"></div>
-        <h1 class="page-hero-title">Associados ANPAQ</h1>
+        <h1 class="page-hero-title">Associados <span class="shimmer">ANPAQ</span></h1>
         <p class="page-hero-subtitle">
           A rede nacional de produtores, fornecedores e prestadores de serviço da cachaça de alambique.
         </p>
@@ -253,11 +253,12 @@
     </section>
 
     <!-- ─── 3. FAIXA FINAL DE CTA ─── -->
-    <section class="cta-band" id="faixa-cta">
-      <div class="container">
+    <section class="cta-band grid-paper" id="faixa-cta" style="position:relative; overflow:hidden;">
+      <div class="glow glow-gold" style="width:550px; height:550px; top:50%; left:50%; transform:translate(-50%, -50%); opacity:0.18;"></div>
+      <div class="container" style="position:relative; z-index:1;">
         <div class="cta-band-content reveal">
           <div class="cta-band-text">
-            <span class="eyebrow" style="color:var(--anpaq-gold-300);">Seja um associado</span>
+            <span class="eyebrow" style="color:var(--anpaq-gold-300);"><span class="pulse-dot"></span>Seja um associado</span>
             <h2>Quer que sua marca ou empresa apareça aqui?</h2>
             <p>
               Associe-se à ANPAQ para ter visibilidade nacional na lista de associados, acesso ao programa do Selo Nacional e representação do seu alambique.
@@ -645,6 +646,10 @@
         pageItems.forEach(item => {
           associadosContainer.appendChild(createCard(item, isProd));
         });
+
+        if (window.ANPAQ && typeof window.ANPAQ.refreshReveals === 'function') {
+          window.ANPAQ.refreshReveals();
+        }
 
         // Controle do botão Mostrar mais (+24)
         if (filteredData.length > visibleCount) {
