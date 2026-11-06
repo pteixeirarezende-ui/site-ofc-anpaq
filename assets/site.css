@@ -3516,3 +3516,53 @@ main > section:first-of-type .section-header * {
   color: var(--anpaq-gold-600);
   background-color: rgba(201, 162, 39, 0.12);
 }
+
+/* ─── CORREÇÃO DE CONTRASTE EM FUNDOS ESCUROS (.cta-band & .mobile-drawer) ─── */
+.cta-band .btn-ghost,
+.cta-band .btn-ghost:visited {
+  color: var(--anpaq-gold-300) !important;
+  border: 1px solid var(--anpaq-gold-400);
+  background: transparent;
+  padding-left: var(--sp-5);
+  padding-right: var(--sp-5);
+}
+
+.cta-band .btn-ghost:hover,
+.cta-band .btn-ghost:focus-visible {
+  color: var(--anpaq-dark-950) !important;
+  background-color: var(--anpaq-gold-300);
+  border-color: var(--anpaq-gold-300);
+}
+
+.cta-band .btn-outline {
+  color: var(--anpaq-gold-300) !important;
+  border-color: var(--anpaq-gold-400) !important;
+  background: transparent;
+}
+
+.cta-band .btn-outline:hover,
+.cta-band .btn-outline:focus-visible {
+  color: var(--anpaq-dark-950) !important;
+  background-color: var(--anpaq-gold-300);
+  border-color: var(--anpaq-gold-300) !important;
+}
+
+.cta-band .btn-ghost:focus-visible,
+.cta-band .btn-outline:focus-visible {
+  outline: 2px solid var(--anpaq-gold-400);
+  outline-offset: 3px;
+}
+
+/* Botão de fechar da gaveta mobile sobre fundo escuro */
+.mobile-drawer .btn-ghost,
+#drawer-close {
+  color: var(--anpaq-gold-400) !important;
+  background: transparent;
+}
+
+.mobile-drawer .btn-ghost:hover,
+.mobile-drawer .btn-ghost:focus-visible,
+#drawer-close:hover,
+#drawer-close:focus-visible {
+  color: var(--anpaq-gold-300) !important;
+}
