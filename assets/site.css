@@ -3517,9 +3517,17 @@ main > section:first-of-type .section-header * {
   background-color: rgba(201, 162, 39, 0.12);
 }
 
-/* ─── CORREÇÃO DE CONTRASTE EM FUNDOS ESCUROS (.cta-band & .mobile-drawer) ─── */
+/* ─── CORREÇÃO DE CONTRASTE EM FUNDOS ESCUROS (.cta-band, .mobile-drawer, .site-footer & .on-dark) ─── */
 .cta-band .btn-ghost,
-.cta-band .btn-ghost:visited {
+.cta-band .btn-ghost:visited,
+.cta-band-inner .btn-ghost,
+.cta-band-inner .btn-ghost:visited,
+.site-footer .btn-ghost,
+.site-footer .btn-ghost:visited,
+.on-dark .btn-ghost,
+.on-dark .btn-ghost:visited,
+.btn-ghost.on-dark,
+.btn-ghost.on-dark:visited {
   color: var(--anpaq-gold-300) !important;
   border: 1px solid var(--anpaq-gold-400);
   background: transparent;
@@ -3528,27 +3536,55 @@ main > section:first-of-type .section-header * {
 }
 
 .cta-band .btn-ghost:hover,
-.cta-band .btn-ghost:focus-visible {
+.cta-band .btn-ghost:focus-visible,
+.cta-band-inner .btn-ghost:hover,
+.cta-band-inner .btn-ghost:focus-visible,
+.site-footer .btn-ghost:hover,
+.site-footer .btn-ghost:focus-visible,
+.on-dark .btn-ghost:hover,
+.on-dark .btn-ghost:focus-visible,
+.btn-ghost.on-dark:hover,
+.btn-ghost.on-dark:focus-visible {
   color: var(--anpaq-dark-950) !important;
   background-color: var(--anpaq-gold-300);
   border-color: var(--anpaq-gold-300);
 }
 
-.cta-band .btn-outline {
+.cta-band .btn-outline,
+.cta-band-inner .btn-outline,
+.site-footer .btn-outline,
+.on-dark .btn-outline,
+.btn-outline.on-dark {
   color: var(--anpaq-gold-300) !important;
   border-color: var(--anpaq-gold-400) !important;
   background: transparent;
 }
 
 .cta-band .btn-outline:hover,
-.cta-band .btn-outline:focus-visible {
+.cta-band .btn-outline:focus-visible,
+.cta-band-inner .btn-outline:hover,
+.cta-band-inner .btn-outline:focus-visible,
+.site-footer .btn-outline:hover,
+.site-footer .btn-outline:focus-visible,
+.on-dark .btn-outline:hover,
+.on-dark .btn-outline:focus-visible,
+.btn-outline.on-dark:hover,
+.btn-outline.on-dark:focus-visible {
   color: var(--anpaq-dark-950) !important;
   background-color: var(--anpaq-gold-300);
   border-color: var(--anpaq-gold-300) !important;
 }
 
 .cta-band .btn-ghost:focus-visible,
-.cta-band .btn-outline:focus-visible {
+.cta-band .btn-outline:focus-visible,
+.cta-band-inner .btn-ghost:focus-visible,
+.cta-band-inner .btn-outline:focus-visible,
+.site-footer .btn-ghost:focus-visible,
+.site-footer .btn-outline:focus-visible,
+.on-dark .btn-ghost:focus-visible,
+.on-dark .btn-outline:focus-visible,
+.btn-ghost.on-dark:focus-visible,
+.btn-outline.on-dark:focus-visible {
   outline: 2px solid var(--anpaq-gold-400);
   outline-offset: 3px;
 }
