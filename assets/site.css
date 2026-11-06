@@ -1359,7 +1359,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: clamp(var(--sp-8), 6vh, var(--sp-16)) 0 clamp(var(--sp-6), 4vh, var(--sp-10));
+  padding: calc(var(--header-height) + clamp(var(--sp-4), 3vh, var(--sp-8))) 0 clamp(var(--sp-6), 4vh, var(--sp-10));
   background-color: var(--anpaq-dark-950);
   background-image: url('/assets/img/bg-alambique.jpg');
   background-image: url('/assets/img/bg-alambique.webp');
@@ -1849,7 +1849,7 @@ main {
 /* ─── HERÓI DE PÁGINAS INTERNAS (.page-hero) ─── */
 .page-hero {
   position: relative;
-  padding: clamp(var(--sp-12), 8vw, var(--sp-24)) 0 clamp(var(--sp-8), 5vw, var(--sp-16));
+  padding: calc(var(--header-height) + clamp(var(--sp-6), 4vw, var(--sp-12))) 0 clamp(var(--sp-8), 5vw, var(--sp-16));
   background-color: var(--anpaq-dark-950);
   background-image: url('/assets/img/bg-alambique.jpg');
   background-image: url('/assets/img/bg-alambique.webp');
@@ -3303,11 +3303,33 @@ main {
 /* ─── GARANTIA DE VISIBILIDADE IMEDIATA NA PRIMEIRA DOBRA ─── */
 .hero,
 .hero *,
+.hero-content,
+.hero-content *,
 .page-hero,
 .page-hero *,
+.page-hero-content,
+.page-hero-content *,
 main > section:first-of-type,
+main > section:first-of-type *,
 main > section:first-of-type .section-header,
 main > section:first-of-type .section-header * {
   opacity: 1 !important;
   visibility: visible !important;
+  transform: none !important;
+}
+
+.hero-overlay,
+.page-hero-overlay {
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+.hero-glow {
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+.hero-content,
+.page-hero-content {
+  z-index: 10 !important;
 }
