@@ -3833,10 +3833,10 @@ main:has(a[href="/"][class*="btn"]) > section:first-of-type {
 
 /* ═══════════════════════════════════════════════════════════════════
    ANPAQ DESIGN SYSTEM — EFEITOS, TEXTURAS & MICRO-INTERAÇÕES
-   Inspirado na Tradição & Excelência Artesanal do Selo Nacional
+   Inspirado na Tradição & Excelência da Cachaça de Alambique do Selo Nacional
    ═══════════════════════════════════════════════════════════════════ */
 
-/* ─── TEXTURA ARTESANAL DE GRÃO (DESKTOP) ─── */
+/* ─── TEXTURA SUTIL DE GRÃO (DESKTOP) ─── */
 @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
   body::before {
     content: '';
