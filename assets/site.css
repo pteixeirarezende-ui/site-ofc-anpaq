@@ -2647,9 +2647,38 @@ main {
 }
 
 @media (max-width: 640px) {
-  .associados-filter-bar,
+  .associados-filter-bar {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-2) var(--sp-3);
+    padding: var(--sp-3);
+  }
   .associados-filter-bar.is-fornecedores {
     grid-template-columns: 1fr;
+    gap: var(--sp-2);
+  }
+  .filter-search-wrap {
+    grid-column: 1 / -1;
+  }
+  .associados-filter-bar.is-fornecedores #groupFilterEstado {
+    grid-column: 1 / -1;
+  }
+  #groupFilterTipo {
+    grid-column: 1 / -1;
+  }
+  .filter-action-wrap {
+    grid-column: 1 / -1;
+  }
+  .filter-input,
+  .filter-select {
+    min-height: 44px;
+    height: 44px;
+    font-size: 16px; /* evita zoom automático no iOS Safari */
+  }
+  .btn-limpar {
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    font-size: var(--text-sm);
   }
 }
 
