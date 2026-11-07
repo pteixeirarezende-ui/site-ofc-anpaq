@@ -4222,11 +4222,61 @@ main > section:first-of-type .reveal-fade {
   .pulse-dot { animation: none !important; }
   .pulse-dot::after { animation: none !important; display: none !important; }
   .gold-border-animated::before { animation: none !important; }
-  .marquee-track { animation: none !important; }
   .scroll-indicator-line { animation: none !important; }
   .reveal, .reveal-up, .reveal-left, .reveal-scale, .reveal-fade {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
+  }
+
+  /* ─── FAIXA EDITORIAL EM LOOP: MODO ESTÁTICO REDUZIDO ─── */
+  .marquee-ribbon {
+    padding: var(--sp-3) var(--sp-4);
+    overflow: hidden;
+  }
+
+  .marquee-track {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: var(--sp-2) var(--sp-3) !important;
+    box-sizing: border-box !important;
+    padding: 0 var(--sp-2) !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  /* Ocultar a metade duplicada da lista (usada apenas no loop contínuo) */
+  .marquee-track .marquee-dup,
+  .marquee-track > span:nth-child(n + 15) {
+    display: none !important;
+  }
+
+  /* Ocultar diamantes independentes para evitar quebra isolada no início de linha */
+  .marquee-track .marquee-diamond {
+    display: none !important;
+  }
+
+  /* Itens centralizados que quebram de linha sem cortar texto nas bordas */
+  .marquee-track span:not(.marquee-diamond):not(.marquee-dup) {
+    padding: 0 !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: var(--sp-3) !important;
+  }
+
+  /* Separador dourado atômico ao final de cada item (exceto o último) */
+  .marquee-track span:not(.marquee-diamond):not(.marquee-dup):not(:nth-child(13))::after {
+    content: "◆";
+    color: var(--anpaq-gold-500);
+    font-size: 0.65em;
+    opacity: 0.8;
   }
 }
