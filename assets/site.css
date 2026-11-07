@@ -3396,18 +3396,21 @@ main {
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 /* ─── GARANTIA DE VISIBILIDADE IMEDIATA NA PRIMEIRA DOBRA ─── */
-.hero,
-.hero *,
-.hero-content,
-.hero-content *,
-.page-hero,
-.page-hero *,
-.page-hero-content,
-.page-hero-content *,
-main > section:first-of-type,
-main > section:first-of-type *,
-main > section:first-of-type .section-header,
-main > section:first-of-type .section-header * {
+.hero .reveal,
+.hero .reveal-up,
+.hero .reveal-left,
+.hero .reveal-scale,
+.hero .reveal-fade,
+.page-hero .reveal,
+.page-hero .reveal-up,
+.page-hero .reveal-left,
+.page-hero .reveal-scale,
+.page-hero .reveal-fade,
+main > section:first-of-type .reveal,
+main > section:first-of-type .reveal-up,
+main > section:first-of-type .reveal-left,
+main > section:first-of-type .reveal-scale,
+main > section:first-of-type .reveal-fade {
   opacity: 1 !important;
   visibility: visible !important;
   transform: none !important;
@@ -3723,10 +3726,7 @@ main > section:first-of-type .section-header * {
 }
 
 /* 2. Heróis Compactos em Páginas de Lista (/associados/, /agenda/ e /revista/) */
-.page-hero--compact,
-main:has(#diretorio) > .page-hero,
-main:has(#agenda-container) > section:first-of-type,
-main:has(#revista-destaque-container) > section:first-of-type {
+.page-hero--compact {
   min-height: clamp(260px, 38vh, 380px) !important;
   min-height: clamp(260px, 38svh, 380px) !important;
   display: flex !important;
@@ -3759,10 +3759,7 @@ main:has(#revista-destaque-container) > section:first-of-type {
 }
 
 @media (max-width: 640px) {
-  .page-hero--compact,
-  main:has(#diretorio) > .page-hero,
-  main:has(#agenda-container) > section:first-of-type,
-  main:has(#revista-destaque-container) > section:first-of-type {
+  .page-hero--compact {
     min-height: clamp(220px, 32vh, 320px) !important;
     min-height: clamp(220px, 32svh, 320px) !important;
     padding-top: var(--sp-4) !important;
@@ -3798,23 +3795,9 @@ main:has(#revista-destaque-container) > section:first-of-type {
     margin-bottom: var(--sp-4);
   }
 }
-main:has(#agenda-container) > section:nth-of-type(2) {
-  padding-top: var(--sp-6);
-}
-@media (max-width: 640px) {
-  main:has(#agenda-container) > section:nth-of-type(2) {
-    padding-top: var(--sp-4);
-  }
-}
 
 /* 3. Heróis Enxutos (Contato, Privacidade e 404) */
-.page-hero--sm,
-main:has(#contatoForm) > .page-hero,
-main:has(.privacy-content) > .page-hero,
-main:has(#contatoForm) > section:first-of-type,
-main:has(.privacy-content) > section:first-of-type,
-main:has(.privacy-content) > section:first-child,
-main:has(a[href="/"][class*="btn"]) > section:first-of-type {
+.page-hero--sm {
   min-height: clamp(320px, 45vh, 520px) !important;
   min-height: clamp(320px, 45svh, 520px) !important;
   display: flex !important;
@@ -3825,13 +3808,7 @@ main:has(a[href="/"][class*="btn"]) > section:first-of-type {
 }
 
 @media (max-width: 640px) {
-  .page-hero--sm,
-  main:has(#contatoForm) > .page-hero,
-  main:has(.privacy-content) > .page-hero,
-  main:has(#contatoForm) > section:first-of-type,
-  main:has(.privacy-content) > section:first-of-type,
-  main:has(.privacy-content) > section:first-child,
-  main:has(a[href="/"][class*="btn"]) > section:first-of-type {
+  .page-hero--sm {
     min-height: clamp(280px, 45vh, 440px) !important;
     min-height: clamp(280px, 45svh, 440px) !important;
     padding-left: max(16px, var(--container-pad));
@@ -3854,8 +3831,7 @@ main:has(a[href="/"][class*="btn"]) > section:first-of-type {
 .page-hero-title + .page-hero-subtitle,
 .page-hero-title + p,
 .page-hero h1 + p,
-.hero-selo-title + p,
-.hero-selo-title + * + p {
+.hero-selo-title + p {
   margin-top: var(--sp-4);
 }
 
@@ -3874,9 +3850,9 @@ main:has(a[href="/"][class*="btn"]) > section:first-of-type {
     z-index: 9999;
     pointer-events: none;
     opacity: 0.022;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-image: url("/assets/img/noise.png");
     background-repeat: repeat;
-    background-size: 180px;
+    background-size: 120px;
   }
 }
 
@@ -3921,13 +3897,18 @@ main:has(a[href="/"][class*="btn"]) > section:first-of-type {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   display: inline;
-  animation: anpaqShimmer 6s linear infinite;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .shimmer {
+    animation: anpaqShimmer 6s linear infinite;
+  }
 }
 
 /* ─── PULSE DOT (SINAL DE AUTENTICIDADE E STATUS AO VIVO) ─── */
-@keyframes anpaqPulseDot {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(201, 162, 39, 0.6); }
-  50% { opacity: 0.8; box-shadow: 0 0 0 7px rgba(201, 162, 39, 0); }
+@keyframes anpaqPulsePing {
+  0% { transform: scale(1); opacity: 0.8; }
+  70%, 100% { transform: scale(2.4); opacity: 0; }
 }
 
 .pulse-dot {
@@ -3937,9 +3918,19 @@ main:has(a[href="/"][class*="btn"]) > section:first-of-type {
   border-radius: 50%;
   display: inline-block;
   flex-shrink: 0;
-  animation: anpaqPulseDot 2.2s ease-in-out infinite;
   vertical-align: middle;
   margin-right: 6px;
+  position: relative;
+}
+
+.pulse-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: var(--anpaq-gold-500);
+  animation: anpaqPulsePing 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  pointer-events: none;
 }
 
 /* ─── BORDA DOURADA DINÂMICA ─── */
@@ -4012,11 +4003,12 @@ main:has(a[href="/"][class*="btn"]) > section:first-of-type {
   padding: var(--sp-3) 0;
   position: relative;
   z-index: 5;
+  contain: paint;
 }
 
 @keyframes anpaqMarqueeScroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
 }
 
 .marquee-track {
@@ -4031,6 +4023,7 @@ main:has(a[href="/"][class*="btn"]) > section:first-of-type {
   color: rgba(245, 241, 232, 0.6);
   animation: anpaqMarqueeScroll 34s linear infinite;
   will-change: transform;
+  backface-visibility: hidden;
 }
 
 .marquee-track:hover {
@@ -4050,15 +4043,33 @@ main:has(a[href="/"][class*="btn"]) > section:first-of-type {
 
 /* ─── GLASSMORPHISM CARDS (ELEVADOS NO TEMA ESCURO) ─── */
 .glass-card {
-  background: rgba(255, 255, 255, 0.035);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(26, 20, 16, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 8px 32px rgba(0, 0, 0, 0.35);
   transition: transform var(--duration-base) var(--ease-smooth),
               border-color var(--duration-base) var(--ease-smooth),
               box-shadow var(--duration-base) var(--ease-smooth),
               background var(--duration-base) var(--ease-smooth);
+}
+
+@media (min-width: 769px) {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.035);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+}
+
+.hero .reveal,
+.page-hero .reveal,
+main > section:first-of-type .reveal,
+main > section:first-of-type .reveal-up,
+main > section:first-of-type .reveal-left,
+main > section:first-of-type .reveal-scale,
+main > section:first-of-type .reveal-fade {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
 }
 
 .glass-card:hover {
@@ -4209,6 +4220,7 @@ main:has(a[href="/"][class*="btn"]) > section:first-of-type {
   body::before { display: none !important; }
   .shimmer { animation: none !important; background-size: 100% !important; }
   .pulse-dot { animation: none !important; }
+  .pulse-dot::after { animation: none !important; display: none !important; }
   .gold-border-animated::before { animation: none !important; }
   .marquee-track { animation: none !important; }
   .scroll-indicator-line { animation: none !important; }

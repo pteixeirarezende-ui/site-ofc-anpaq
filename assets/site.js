@@ -30,8 +30,8 @@
       }
     }, { passive: true });
 
-    // Checagem inicial
-    checkScroll();
+    // Checagem inicial desacoplada
+    window.requestAnimationFrame(checkScroll);
   }
 
   // ─── 2. MENU MOBILE ───
@@ -99,12 +99,6 @@
 
   // ─── 3. SCROLL REVEAL ANIMATIONS (DESIGN SYSTEM) ───
   function initScrollReveal() {
-    // Garante que elementos na primeira dobra nunca fiquem invisíveis
-    document.querySelectorAll('main > section:first-of-type .reveal, main > section:first-of-type .reveal-up, main > section:first-of-type .reveal-left, main > section:first-of-type .reveal-scale, main > section:first-of-type .reveal-fade, .hero .reveal, .page-hero .reveal').forEach(el => {
-      el.classList.remove('reveal', 'reveal-up', 'reveal-left', 'reveal-scale', 'reveal-fade');
-      el.classList.add('active', 'revealed');
-    });
-
     if (!('IntersectionObserver' in window)) {
       // Fallback para navegadores legados
       document.querySelectorAll('.reveal, .reveal-up, .reveal-left, .reveal-scale, .reveal-fade').forEach(el => {
@@ -221,12 +215,23 @@
   }
 
   // ─── 6. INICIALIZAÇÃO GERAL ───
-  document.addEventListener('DOMContentLoaded', () => {
-    initHeaderScroll();
+  function initAll() {
     initMobileMenu();
-    initScrollReveal();
+    initHeaderScroll();
     initSmoothAnchors();
-  });
+
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(() => initScrollReveal(), { timeout: 1200 });
+    } else {
+      setTimeout(initScrollReveal, 250);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll);
+  } else {
+    initAll();
+  }
 
   // Exporta para escopo global
   window.ANPAQ = {
