@@ -6,7 +6,10 @@
     "cidade": "Resende Costa",
     "estado": "MG",
     "regiao": "Campo das Vertentes",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "fabianomata@yahoo.com.br",
+    "telefone": "(31) 99538-3015",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Destilaria Barrosinha Ltda",
@@ -15,7 +18,10 @@
     "cidade": "Barroso",
     "estado": "MG",
     "regiao": "Campo das Vertentes",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacabarrosinha@hotmail.com",
+    "telefone": "(32) 98449-9953",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Destilaria Candeeiro Ltda",
@@ -24,16 +30,21 @@
     "cidade": "Ibertioga",
     "estado": "MG",
     "regiao": "Campo das Vertentes",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacacandeeiro@gmail.com",
+    "telefone": "(32) 98451-1646",
+    "publicar_contato": "SIM"
   },
   {
-    "nome": "Indústria de Bebidas Barreiro Ltda",
+    "nome": "Indústria de Aguardente Barreiro Ltda",
     "marcas": "Caieira Velha e Palmeira D'Agua",
     "tipo": "Produtor",
     "cidade": "Carandaí",
     "estado": "MG",
     "regiao": "Campo das Vertentes",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "telefone": "(31) 99731-9731",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Velho Ferreira Indústria e Comércio Ltda",
@@ -42,7 +53,10 @@
     "cidade": "Prados",
     "estado": "MG",
     "regiao": "Campo das Vertentes",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "contato@velhoferreira.com.br",
+    "telefone": "(21) 99879-5308",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Páramo Agroindustria e Comércio Ltda - ME",
@@ -51,7 +65,10 @@
     "cidade": "Tiradentes",
     "estado": "MG",
     "regiao": "Campo das Vertentes",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "contato@mazuma.com.br",
+    "telefone": "(47) 98406-1939",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Pousada Campestre Vila Tiradentes Ltda",
@@ -60,7 +77,10 @@
     "cidade": "Tiradentes",
     "estado": "MG",
     "regiao": "Campo das Vertentes",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "pousadadajosi@yahoo.com.br",
+    "telefone": "(32) 98872-5714",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Destilaria e Engarrafadora Porto Faria Ltda.",
@@ -69,7 +89,10 @@
     "cidade": "Curvelo",
     "estado": "MG",
     "regiao": "Central Mineira",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "portofariadestilariaadm@gmail.com",
+    "telefone": "(38) 99931-9899",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Fazenda Berro D'Agua Ltda",
@@ -78,7 +101,10 @@
     "cidade": "Morro da Garça",
     "estado": "MG",
     "regiao": "Central Mineira",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "berroagua@cachacalorena.com.br",
+    "telefone": "(31) 99234-0561",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Melicana Destilaria e Serviços Ltda",
@@ -87,7 +113,10 @@
     "cidade": "Bom Despacho",
     "estado": "MG",
     "regiao": "Central Mineira",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "comercialmelicana@gmail.com",
+    "telefone": "(37) 99107-8141",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Flor das Gerais Agroindustria Exportação e Serviços Ltda",
@@ -96,7 +125,10 @@
     "cidade": "Felixlândia",
     "estado": "MG",
     "regiao": "Central Mineira",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "beba@flordasgerais.com.br",
+    "telefone": "(31) 98558-5549",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaça Barreiras Ltda",
@@ -105,7 +137,10 @@
     "cidade": "Senador Modestino Gonçalves",
     "estado": "MG",
     "regiao": "Jequitinhonha",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "compras.mpm02@yahoo.com.br",
+    "telefone": "(38) 99810-1458",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Agrimar Agro Industria e Comércio Ltda",
@@ -114,7 +149,10 @@
     "cidade": "Nova Lima",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "gestaoagrimar@gmail.com",
+    "telefone": "(31) 99877-3636",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Agro Pastoril dos Poções Ltda",
@@ -123,7 +161,10 @@
     "cidade": "Jequitibá",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "luiz_cury@hotmail.com",
+    "telefone": "(31) 3717-6271",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Bebidas de Destilados SD Ltda",
@@ -132,7 +173,10 @@
     "cidade": "Pitangui",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "comercial@cachacafrazao.com.br",
+    "telefone": "(37) 9827-6985",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Aguardente Conceição do Para - Eireli",
@@ -141,7 +185,10 @@
     "cidade": "Conceição do Pará",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "jnatalfreitas@gmail.com",
+    "telefone": "(31) 99981-0337",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaça Vitalina Ltda",
@@ -150,7 +197,10 @@
     "cidade": "Jaboticatubas",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "contato@cachacavitalina.com",
+    "telefone": "(31) 99590-1699",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Capim Cheiroso Comércio de Cachaça Ltda",
@@ -159,7 +209,10 @@
     "cidade": "Santa Bárbara",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "escritorio@cachacacapimcheiroso.com.br",
+    "telefone": "(31) 99132-7561",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Carol Abreu Pereira",
@@ -168,7 +221,10 @@
     "cidade": "Pará de Minas",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "ronnepereira1970@gmail.com",
+    "telefone": "(31) 99195-4748",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Comercial Industrial Três Pessoas Ltda",
@@ -177,7 +233,10 @@
     "cidade": "Brumadinho",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "edison.teixeira@outlook.com",
+    "telefone": "(31) 99208-3853",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cristal Agropec Agricultura Pecuária e Ind. Ltda",
@@ -186,7 +245,10 @@
     "cidade": "Onça de Pitangui",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "minasempreendimento@yahoo.com.br",
+    "telefone": "(31) 3394-7505",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Destilaria Siriema Ltda",
@@ -195,7 +257,10 @@
     "cidade": "Jequitibá",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacaouro1@gmail.com",
+    "telefone": "(11) 99561-4552",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Uniagro União Agropecuaria Imp & Exp de Bebidas Ltda",
@@ -204,7 +269,10 @@
     "cidade": "Nova União",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "vendas@cachacagermana.com.br",
+    "telefone": "(31) 99445-7071",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Gomes e Vasconcelos Ind. e Com. de Aguardente Ltda",
@@ -213,7 +281,10 @@
     "cidade": "Contagem",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "turbinas@terra.com.br",
+    "telefone": "(31) 2524-1800",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Engenho Buriti de Minas Ltda",
@@ -222,7 +293,10 @@
     "cidade": "Papagaios",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "administrativo@engenhoburiti.com.br",
+    "telefone": "(37) 99981-6900",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Destilaria Sagrada Agroindustrial Ltda",
@@ -231,7 +305,10 @@
     "cidade": "Bom Jesus do Amparo",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "vendas@cachacasagrada.com.br",
+    "telefone": "(31) 98219-2725",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Indústria Comércio e Engarrafamento de Aguardente de Cana Ecológica",
@@ -240,7 +317,10 @@
     "cidade": "Salinas",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "nivaldoneves979@gmail.com",
+    "telefone": "(38) 99986-7504",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Indústria Comércio e Exportação de Cachaça Salinas Ltda",
@@ -249,7 +329,10 @@
     "cidade": "Salinas",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "leiladaysesarmento@gmail.com",
+    "telefone": "(31) 98718-0800",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Indústria e Comércio de Bebidas Engenho do Coronel Ltda",
@@ -258,7 +341,10 @@
     "cidade": "Taquaraçu de Minas",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "engenhodocoronel@hotmail.com",
+    "telefone": "(31) 99170-0656",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Indústria e Comércio de Cachaça Rio Manso Ltda",
@@ -267,7 +353,10 @@
     "cidade": "Rio Manso",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "engenharia@compedro.com.br",
+    "telefone": "(31) 99806-7062",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Industrias Reunidas de Bebidas Tatuzinho 3 Fazendas",
@@ -276,7 +365,10 @@
     "cidade": "Jequitibá",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cesar@tatuzinho.com.br",
+    "telefone": "(11) 3674-1300",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Jeceaba Agroindustria e Comércio Ltda",
@@ -285,7 +377,10 @@
     "cidade": "Jeceaba",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacajeceaba@cachacajeceaba.com.br",
+    "telefone": "(31) 99276-1231",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaça Caraíbas Ltda",
@@ -294,7 +389,10 @@
     "cidade": "Paraopeba",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "juliocaraibas@hotmail.com",
+    "telefone": "(31) 99514-9594",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Mauricio Uzeda Mascarenhas - ME",
@@ -303,7 +401,10 @@
     "cidade": "Jequitibá",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "mauriciojequitiba@gmail.com",
+    "telefone": "(31) 99632-2928",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "PI Company Comercial Ltda",
@@ -312,7 +413,10 @@
     "cidade": "Belo Horizonte",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "familiamineira@picompany.com.br",
+    "telefone": "(31) 99152-8271",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Restaurante Maria das Tranças Ltda",
@@ -321,7 +425,10 @@
     "cidade": "Pitangui",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "ricardo@mariadastrancas.com.br",
+    "telefone": "(31) 3441-3708",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Salinense Ecommerce Vip Ltda",
@@ -330,7 +437,10 @@
     "cidade": "Salinas",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "dsalinense@gmail.com",
+    "telefone": "(31) 99901-6597",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Santissima Agroindustria Pitangui Ltda - ME",
@@ -339,7 +449,10 @@
     "cidade": "Pitangui",
     "estado": "MG",
     "regiao": "Metropolitana/BH",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "jolopesss@gmail.com",
+    "telefone": "(31) 99795-0017",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Agroindustrial Monte Alto Ltda",
@@ -348,7 +461,10 @@
     "cidade": "Salinas",
     "estado": "MG",
     "regiao": "Norte de Minas",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "vinagredicasa@gmail.com",
+    "telefone": "(31) 3627-1031",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Associação Prod. Artesanais de Cachaça de Salinas-APACS",
@@ -357,7 +473,10 @@
     "cidade": "Salinas",
     "estado": "MG",
     "regiao": "Norte de Minas",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "apacs@apacs.com.br",
+    "telefone": "(38) 3841-3431",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Coop.Prod.Cach.Alamb.Micro Reg.Salinas - COOPERCACHAÇA",
@@ -366,7 +485,10 @@
     "cidade": "Salinas",
     "estado": "MG",
     "regiao": "Norte de Minas",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacaterradeouro@gmail.com",
+    "telefone": "(38) 3841-3499",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Fábrica de Cachaça Canoas Eireli - MG",
@@ -375,7 +497,10 @@
     "cidade": "Ubaí",
     "estado": "MG",
     "regiao": "Norte de Minas",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "mnassistenciamedica@gmail.com",
+    "telefone": "(37) 99991-1967",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Fazenda Salinas Indústria e Comércio de Bebidas Ltda",
@@ -384,7 +509,10 @@
     "cidade": "Salinas",
     "estado": "MG",
     "regiao": "Norte de Minas",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "sac@cachacasalinas.com.br",
+    "telefone": "(31) 99508-5059",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Seleta e Boazinha Ind. Com. Imp. Export. Ltda",
@@ -393,7 +521,10 @@
     "cidade": "Salinas",
     "estado": "MG",
     "regiao": "Norte de Minas",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "seleta@cachacaseleta.com.br",
+    "telefone": "(38) 3841-1254",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Viena Fazendas Reunidas Ltda.",
@@ -402,7 +533,10 @@
     "cidade": "Buritizeiro",
     "estado": "MG",
     "regiao": "Norte de Minas",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "claudio.tavares@vienasa.com.br",
+    "telefone": "(31) 2121-9191",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Wandi Milton Ribeiro",
@@ -411,7 +545,10 @@
     "cidade": "Montes Claros",
     "estado": "MG",
     "regiao": "Norte de Minas",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "mktcachacagraciosa@gmail.com",
+    "telefone": "(38) 98411-2922",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Acauã Artesanato Ltda",
@@ -420,7 +557,10 @@
     "cidade": "Botelhos",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacaamago@gmail.com",
+    "telefone": "(35) 99877-0289",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique Ouro Verde Ltda",
@@ -429,7 +569,10 @@
     "cidade": "Três Pontas",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "rodrigues.sierra@gmail.com",
+    "telefone": "(35) 99968-5100",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Bocaina Agroindustria e Com. de Cachaça Ltda",
@@ -438,7 +581,10 @@
     "cidade": "Lavras",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacabocaina@yahoo.com.br",
+    "telefone": "(35) 99119-9426",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Bolivar de Matos",
@@ -447,7 +593,10 @@
     "cidade": "Ervália",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacacasaamarelaofc@gmail.com",
+    "telefone": "(32) 99833-5540",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaça Moça de Família Ltda",
@@ -456,7 +605,10 @@
     "cidade": "Ervália",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacamocadefamilia@gmail.com",
+    "telefone": "(32) 98444-1235",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Destilaria Ipoema Ltda",
@@ -465,7 +617,10 @@
     "cidade": "Ipoema",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "sac@cachacamineiriana.com.br",
+    "telefone": "(31) 99826-8175",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Destilaria Pouso Alegre Industria e Comércio Ltda",
@@ -474,7 +629,10 @@
     "cidade": "Pouso Alegre",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacadonadiva@gmail.com",
+    "telefone": "(35) 99929-5111",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaça João Mendes Ltda EPP",
@@ -483,7 +641,10 @@
     "cidade": "Perdões",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "vendas@cachacajm.com.br",
+    "telefone": "(35) 98802-0135",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaçaria Autêntica Se Sobrá Ltda",
@@ -492,7 +653,10 @@
     "cidade": "Alfenas",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacasesobra@outlook.com",
+    "telefone": "(35) 99198-4509",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Carneiro Spindola Ltda",
@@ -501,7 +665,10 @@
     "cidade": "Guaxupé",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacasaodomingosgxp@gmail.com",
+    "telefone": "(35) 99909-8239",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Engarrafadora Estiva Ltda",
@@ -510,7 +677,10 @@
     "cidade": "Alto do Rio Doce",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacarainhadacana@gmail.com",
+    "telefone": "(32) 99836-8165",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Engenho Chapadão de Minas Ltda",
@@ -519,7 +689,10 @@
     "cidade": "Uberaba",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "terradozebu@aol.com",
+    "telefone": "(34) 99126-2556",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "HB Industria e Comércio de Bebidas Ltda",
@@ -528,7 +701,10 @@
     "cidade": "Buritis",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "urucuiana.negocio@gmail.com",
+    "telefone": "(38) 99879-1601",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Hotel Fazenda do Timbo Ltda",
@@ -537,7 +713,10 @@
     "cidade": "Careaçu",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "carlosepintucci@gmail.com",
+    "telefone": "(11) 98265-3388",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Indústria e Comércio de Bebidas Barrilitro Ltda",
@@ -546,7 +725,7 @@
     "cidade": "Fernandes Tourinho",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "NAO"
   },
   {
     "nome": "Industria e Comércio de Cachaça Gouveia Brasil Ltda",
@@ -555,7 +734,10 @@
     "cidade": "Turvolândia",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "brasil@grupogouveiabrasil.com.br",
+    "telefone": "(35) 99173-0386",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Jacy do Prado Barbosa Neto",
@@ -564,7 +746,10 @@
     "cidade": "Gonçalves",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "doutorjacy@gmail.com",
+    "telefone": "(11) 99204-0487",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Jorge Vieira Barbosa",
@@ -573,7 +758,10 @@
     "cidade": "Alfenas",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "jorgevbarbosa@hotmail.com",
+    "telefone": "(21) 98132-5032",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Lindolfo Dias Produção, Industria e Comércio de Bebidas",
@@ -582,7 +770,10 @@
     "cidade": "Machado",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacalimeira1910@gmail.com",
+    "telefone": "(35) 99767-6273",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Nova Cambuí Estandartizador e Engarrafador de Cachaça Ltda",
@@ -591,7 +782,10 @@
     "cidade": "Perdões",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacacatende@gmail.com",
+    "telefone": "(31) 98659-1687",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Engenho Prosa Mineira Ltda",
@@ -600,7 +794,10 @@
     "cidade": "Santa Rita de Caldas",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "contato@prosamineira.com.br",
+    "telefone": "(35) 99133-2097",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Ricardo Moukhaiber Zhouri Eireli - ME",
@@ -609,7 +806,10 @@
     "cidade": "Aiuruoca",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "rmzhouri@gmail.com",
+    "telefone": "(31) 99972-3491",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Tiê Industria e Comércio Ltda",
@@ -618,7 +818,10 @@
     "cidade": "Aiuruoca",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "vendas@cachacatie.com.br",
+    "telefone": "(11) 4233-9691",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaçaria Terras de Kubera Ltda",
@@ -627,7 +830,10 @@
     "cidade": "Uberaba",
     "estado": "MG",
     "regiao": "Sul/Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "contato@terrasdekubera.com",
+    "telefone": "(34) 99789-4334",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique Rio Fundo Ltda",
@@ -636,7 +842,9 @@
     "cidade": "Carmo do Rio Claro",
     "estado": "MG",
     "regiao": "Sudoeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "telefone": "(35) 3561-1154",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique Dona Clara",
@@ -645,16 +853,22 @@
     "cidade": "Patos de Minas",
     "estado": "MG",
     "regiao": "Triângulo/Alto Paran.",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "comercial@ondaclara.com.br",
+    "telefone": "(34) 99778-3555",
+    "publicar_contato": "SIM"
   },
   {
-    "nome": "Cachaça Batista Ltda",
+    "nome": "Destilaria Batista Ltda",
     "marcas": "Batista",
     "tipo": "Produtor",
     "cidade": "Sacramento",
     "estado": "MG",
     "regiao": "Triângulo/Alto Paran.",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "adm@cachacabatista.com.br",
+    "telefone": "(11) 99941-0328",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Chicrala Agroindustrial Ltda",
@@ -663,7 +877,10 @@
     "cidade": "Araxá",
     "estado": "MG",
     "regiao": "Triângulo/Alto Paran.",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "chicrala@terra.com.br",
+    "telefone": "(34) 99105-6674",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Indústria e Comércio de Cachaça Marbella",
@@ -672,7 +889,10 @@
     "cidade": "Patos de Minas",
     "estado": "MG",
     "regiao": "Triângulo/Alto Paran.",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacabenvinda@gmail.com",
+    "telefone": "(34) 99103-7639",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Tropeira Rural Ltda",
@@ -681,7 +901,7 @@
     "cidade": "Araguari",
     "estado": "MG",
     "regiao": "Triângulo/Alto Paran.",
-    "publicar": "SIM"
+    "publicar": "NAO"
   },
   {
     "nome": "Vanderley Pereira de Azevedo - ME",
@@ -690,7 +910,9 @@
     "cidade": "Ituiutaba",
     "estado": "MG",
     "regiao": "Triângulo/Alto Paran.",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "telefone": "(34) 99908-7940",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Agropecuaria Roda D'água Ltda.",
@@ -699,7 +921,10 @@
     "cidade": "Tarumirim",
     "estado": "MG",
     "regiao": "Vale do Rio Doce",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "lendamineira@gmail.com",
+    "telefone": "(31) 98891-0467",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaçaria O Paraíso Ltda",
@@ -708,7 +933,10 @@
     "cidade": "Sabinópolis",
     "estado": "MG",
     "regiao": "Vale do Rio Doce",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "etevaldolucas@hotmail.com",
+    "telefone": "(31) 99951-1157",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Aguardente Arruda Ltda",
@@ -717,7 +945,10 @@
     "cidade": "Lamim",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "silbertmarques@gmail.com",
+    "telefone": "(31) 9982-4571",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Aguardente Guaraciaba Ltda",
@@ -726,7 +957,10 @@
     "cidade": "Guaraciaba",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "junior@cachacaguaraciaba.com.br",
+    "telefone": "(31) 99965-2334",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique Costa Rica de Guarani Ltda",
@@ -735,7 +969,10 @@
     "cidade": "Guarani",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "alexandre@alambiqueguarani.com.br",
+    "telefone": "(32) 99964-4368",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique Vista Verde Ltda - ME",
@@ -744,7 +981,10 @@
     "cidade": "Bicas",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "alambiquevistaverde@gmail.com",
+    "telefone": "(32) 98404-5054",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique Risadinha Ltda",
@@ -753,7 +993,10 @@
     "cidade": "Piranga",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "avelartopografia@hotmail.com",
+    "telefone": "(31) 99627-3436",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaça Casa Verde Ltda - ME",
@@ -762,7 +1005,10 @@
     "cidade": "Teixeiras",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "geraldo.majela@perfyl.com.br",
+    "telefone": "(32) 99986-1309",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaça Skiva Ltda",
@@ -771,7 +1017,10 @@
     "cidade": "Rio Espera",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "filipeagro.monteiro@gmail.com",
+    "telefone": "(31) 99776-8933",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaça Tira Magoa Ltda - ME",
@@ -780,7 +1029,10 @@
     "cidade": "Jequeri",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "tiramagoaejequeri@gmail.com",
+    "telefone": "(31) 99744-5483",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Cachaçaria Vargas Ltda",
@@ -789,7 +1041,10 @@
     "cidade": "Miraí",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "alambiquejaimevargas@gmail.com",
+    "telefone": "(32) 99996-1928",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Coop. Prod. De Cachaça Artesanal de Alamb. do Vale do Piranga - COOPERVAPI",
@@ -798,7 +1053,10 @@
     "cidade": "Ponte Nova",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "essenciadasgerais@hotmail.com",
+    "telefone": "(31) 3817-1119",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Douglas Moreira Resende - ME",
@@ -807,7 +1065,10 @@
     "cidade": "Dores do Turvo",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacasonico@hotmail.com",
+    "telefone": "(32) 98466-7946",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "D'Vale do Piranga Importação e Exportação de Bebidas Ltda",
@@ -816,7 +1077,10 @@
     "cidade": "Piranga",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "aliancacm@gmail.com",
+    "telefone": "(31) 99604-2244",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Germinas - Assoc. dos Produtores de Cachaça do Vale do Piranga",
@@ -825,7 +1089,10 @@
     "cidade": "Piranga",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "aliancacm@gmail.com",
+    "telefone": "(31) 99604-2244",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "MWBX Agronegócios Ltda EPP",
@@ -834,7 +1101,10 @@
     "cidade": "Porto Firme",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "mwfinelli@gmail.com",
+    "telefone": "(31) 99191-5115",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Nova Fortaleza Agropecuária Ltda",
@@ -843,7 +1113,10 @@
     "cidade": "Belmiro Braga",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cvbotti@hotmail.com",
+    "telefone": "(32) 99988-8741",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Pirapetinga Destilaria Ltda",
@@ -852,7 +1125,10 @@
     "cidade": "Piranga",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "pirapetingadestilaria@gmail.com",
+    "telefone": "(31) 99970-1355",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Roch´s - Confecções, Bebidas e Doces Ltda",
@@ -861,7 +1137,10 @@
     "cidade": "Guarará",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "ivanrochamanso@gmail.com",
+    "telefone": "(32) 98414-9009",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Valdinei Vicente de Assis",
@@ -870,7 +1149,10 @@
     "cidade": "Rio Melo - Rio Espera",
     "estado": "MG",
     "regiao": "Zona da Mata",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "atendimento@cachacariomineiro.com.br",
+    "telefone": "(31) 97172-5701",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Agronegócios Fazenda Lagoa Seca do Brasil Ltda",
@@ -879,7 +1161,10 @@
     "cidade": "Itumbiara",
     "estado": "GO",
     "regiao": "Centro Oeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "contato@cachacacanela-de-ema.com.br",
+    "telefone": "(31) 98395-2576",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique Cambeba do Brasil Ltda",
@@ -888,7 +1173,10 @@
     "cidade": "Alexânia",
     "estado": "GO",
     "regiao": "Centro Oeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacacambeba@gmail.com",
+    "telefone": "(62) 99981-5868",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique Amana do Brasil",
@@ -897,16 +1185,22 @@
     "cidade": "Sobradinho",
     "estado": "DF",
     "regiao": "Centro Oeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "gestao@remedincachaca.com",
+    "telefone": "(61) 98162-6222",
+    "publicar_contato": "SIM"
   },
   {
-    "nome": "Associação dos Produtores Artesainais de Cachaça da Região de Calcária - APAC-RC",
+    "nome": "Associação dos Produtores Artesanais de Cachaça da Região de Calcária - APAC-RC",
     "marcas": "",
     "tipo": "Associação / cooperativa",
     "cidade": "Córrego Fundo",
     "estado": "MG",
     "regiao": "Centro Oeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "neurimarjose@yahoo.com.br",
+    "telefone": "(37) 99918-4071",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Associação Goiânia dos Produtores de Cachaça de Alambique - AGOPCAL",
@@ -915,7 +1209,10 @@
     "cidade": "Catalão",
     "estado": "GO",
     "regiao": "Centro Oeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "agopcal@gmail.com",
+    "telefone": "(64) 99984-1201",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Terra Pequena Indústria e Comércio Ltda",
@@ -924,7 +1221,10 @@
     "cidade": "Pirenópolis",
     "estado": "GO",
     "regiao": "Centro Oeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "alambiqueterrapequena@gmail.com",
+    "telefone": "(62) 99977-4167",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Zanin & Cia Ltda",
@@ -933,7 +1233,10 @@
     "cidade": "Comodoro",
     "estado": "MT",
     "regiao": "Centro Oeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacasucuri@ibest.com.br",
+    "telefone": "(69) 99995-1351",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Coop. dos Prod. Associados de Cana e seus derivados da Microregião de Abaíra - COOPAMA",
@@ -942,7 +1245,10 @@
     "cidade": "Abaíra",
     "estado": "BA",
     "regiao": "Nordeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "coopama@yahoo.com.br",
+    "telefone": "(77) 98121-3395",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Brejo dos Bois Ind Ltda",
@@ -951,7 +1257,10 @@
     "cidade": "Junqueiros",
     "estado": "AL",
     "regiao": "Nordeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "vendas@brejodosbois.com",
+    "telefone": "(82) 99121-5198",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Destilaria Berto Ltda",
@@ -960,7 +1269,10 @@
     "cidade": "Porto Seguro",
     "estado": "BA",
     "regiao": "Nordeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "bertodestilaria@gmail.com",
+    "telefone": "(73) 99944-3882",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Gogó da Ema Industria de Bebidas Ltda",
@@ -969,7 +1281,10 @@
     "cidade": "São Sebastião",
     "estado": "AL",
     "regiao": "Nordeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacagogodaema@hotmail.com",
+    "telefone": "(82) 99844-8072",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Holanda & Coelho Ltda",
@@ -978,7 +1293,10 @@
     "cidade": "Floriano",
     "estado": "PI",
     "regiao": "Nordeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "oticaflo@hotmail.com",
+    "telefone": "(89) 99985-0163",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Indústria e Comércio de Bebidas Cio da Terra Ltda",
@@ -987,7 +1305,10 @@
     "cidade": "Caravelas/Medeiros Neto",
     "estado": "BA",
     "regiao": "Nordeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacamatriarca@gmail.com",
+    "telefone": "(73) 99991-1798",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Indústria e Comércio de Bebidas Jardim das Laranjeiras Ltda",
@@ -996,7 +1317,10 @@
     "cidade": "Laranjeiras",
     "estado": "SE",
     "regiao": "Nordeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "adm@jardimdaslaranjeiras.com.br",
+    "telefone": "(79) 98844-7209",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Oto B. Silva - ME",
@@ -1005,7 +1329,10 @@
     "cidade": "Chão Grande",
     "estado": "PE",
     "regiao": "Nordeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "oto@sanhacu.com.br",
+    "telefone": "(81) 99251-7447",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Sussuapara Agroindustrial Ltda",
@@ -1014,7 +1341,10 @@
     "cidade": "Passagem Franca",
     "estado": "MA",
     "regiao": "Nordeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachacareservadozito@gmail.com",
+    "telefone": "(98) 98833-3530",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique Ouro Fino Ltda",
@@ -1023,7 +1353,10 @@
     "cidade": "São Paulo",
     "estado": "SP",
     "regiao": "Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "wilson.barros@cachacawiba.com.br",
+    "telefone": "(11) 95472-0111",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique Princesa Izabel Ind. e Com. Ltda - ME",
@@ -1032,7 +1365,10 @@
     "cidade": "Linhares",
     "estado": "ES",
     "regiao": "Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "vendas@cachacaprincesaisabel.com.br",
+    "telefone": "(27) 99266-7808",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "TMS Distribuidora de Bebidas Ltda",
@@ -1041,7 +1377,10 @@
     "cidade": "São Paulo",
     "estado": "SP",
     "regiao": "Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "vinicius.gigante@icloud.com",
+    "telefone": "(11) 91434-0469",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Engenho Santo Mario Ltda",
@@ -1050,7 +1389,10 @@
     "cidade": "Catanduva",
     "estado": "SP",
     "regiao": "Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "engenho@santomario.com.br",
+    "telefone": "(21) 99355-2666",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "FJC Ferreira Ltda",
@@ -1059,7 +1401,10 @@
     "cidade": "Dracena",
     "estado": "SP",
     "regiao": "Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "fabio@debuena.com.br",
+    "telefone": "(18) 99764-9521",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Industria e Comércio de Aguardente Santa Barbara Ltda",
@@ -1068,7 +1413,10 @@
     "cidade": "Aracruz",
     "estado": "ES",
     "regiao": "Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "francielesantos@doseclassica.com.br",
+    "telefone": "(27) 99714-6202",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "JLF Agropecuária Ltda",
@@ -1077,7 +1425,10 @@
     "cidade": "Vassouras",
     "estado": "RJ",
     "regiao": "Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "magnifica@cachacamagnifica.com.br",
+    "telefone": "(21) 98187-6428",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Lagos do Vale Alambique Ltda",
@@ -1086,7 +1437,10 @@
     "cidade": "Quatis",
     "estado": "RJ",
     "regiao": "Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachaca@lagosdovale.com.br",
+    "telefone": "(24) 99933-8785",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Red Oak Comércio de Bebidas Eireli",
@@ -1095,7 +1449,10 @@
     "cidade": "São Paulo",
     "estado": "SP",
     "regiao": "Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "hans@wocs.com.br",
+    "telefone": "(11) 99262-8906",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Spirit Com. Importação e Exportação de Bebidas Ltda",
@@ -1104,7 +1461,10 @@
     "cidade": "Araraquara",
     "estado": "SP",
     "regiao": "Sudeste",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "contato@7capelas.com.br",
+    "telefone": "(16) 99222-2233",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Alambique H Ltda",
@@ -1113,7 +1473,10 @@
     "cidade": "Blumenau",
     "estado": "SC",
     "regiao": "Sul",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "financeiro@alambiqueh.com.br",
+    "telefone": "(47) 99238-4068",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Assoc. Catarinense de Produtores de Cachaça de Alambique e outros Destilados - ACAPAC",
@@ -1122,7 +1485,10 @@
     "cidade": "Criciúma",
     "estado": "SC",
     "regiao": "Sul",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "acapacq.sandra@gmail.com",
+    "telefone": "(48) 3413-8411",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "JB Barbosa Ltda",
@@ -1131,7 +1497,10 @@
     "cidade": "Cachoeira de Minas",
     "estado": "MG",
     "regiao": "Sul",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "jailsonernanibarbosa@gmail.com",
+    "telefone": "(35) 99911-0960",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Regui Brasil Indústria e Comércio de Bebidas Ltda - Templo da Cachaça",
@@ -1140,7 +1509,10 @@
     "cidade": "Curitiba",
     "estado": "PR",
     "regiao": "Sul",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "luciaguidolinregis@gmail.com",
+    "telefone": "(41) 99974-4748",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Xanadu Agroindustria de Bebidas Premium Ltda - ME",
@@ -1149,7 +1521,10 @@
     "cidade": "Blumenau",
     "estado": "SC",
     "regiao": "Sul",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "roberto@xanadu.com.br",
+    "telefone": "(47) 3325-1275",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Xingú Destilados Ind. e Com. EIRELI",
@@ -1158,6 +1533,45 @@
     "cidade": "Altamira",
     "estado": "PA",
     "regiao": "Norte",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "xinguacaaguardente@gmail.com",
+    "telefone": "(93) 99208-0404",
+    "publicar_contato": "SIM"
+  },
+  {
+    "nome": "Aguardente Durvalina Ltda",
+    "marcas": "",
+    "tipo": "Produtor",
+    "cidade": "",
+    "estado": "MG",
+    "regiao": "",
+    "publicar": "NAO"
+  },
+  {
+    "nome": "José Lúcio Mendes Ferreira",
+    "marcas": "",
+    "tipo": "Produtor",
+    "cidade": "",
+    "estado": "MG",
+    "regiao": "",
+    "publicar": "NAO"
+  },
+  {
+    "nome": "Joaquim Ribeiro de Barros",
+    "marcas": "",
+    "tipo": "Produtor",
+    "cidade": "",
+    "estado": "MG",
+    "regiao": "",
+    "publicar": "NAO"
+  },
+  {
+    "nome": "Associação dos Produtores de Cachaça das Agulhas Negras - APCAN",
+    "marcas": "",
+    "tipo": "Associação / cooperativa",
+    "cidade": "",
+    "estado": "RJ",
+    "regiao": "Sudeste",
+    "publicar": "NAO"
   }
 ]

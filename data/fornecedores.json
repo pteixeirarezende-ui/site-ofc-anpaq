@@ -4,216 +4,315 @@
     "servico": "Fornecedor de garrafas e embalagens de vidro",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "gustavo@acquamineira.com.br",
+    "telefone": "(31) 3383-4253",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Benjamim de Almeida Mendes",
     "servico": "Consultor",
     "cidade": "Salvador",
     "estado": "BA",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "benjaalmendes@gmail.com",
+    "telefone": "(71) 3231-2252",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Confraria de Cachaça Copo Furado do Rio de Janeiro",
     "servico": "Confraria",
     "cidade": "Rio de Janeiro",
     "estado": "RJ",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "confrariacopofurado@gmail.com",
+    "telefone": "(21) 98893-0750",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Confraria Mineira da Cachaça - CONFALA",
     "servico": "Confraria",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "confala@confala.com.br",
+    "telefone": "(31) 3166-6106",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "CRUD Soluções em Software de Gestão e Consultoria",
     "servico": "Software para cachaça",
     "cidade": "Ouro Preto",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "luizsallescg@gmail.com",
+    "telefone": "(31) 99497-9956",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "DeVille Comunicação",
     "servico": "",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "sac@villeklemens.com.br",
+    "telefone": "(31) 3296-3724",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Direção Sul Comércio de Embalagens Ltda",
     "servico": "Embalagens de vidro para indústria alimentícia, de bebidas e fabricação de itens diversos . Potes, garrafas, frascos, tampas e rolhas",
     "cidade": "Curitiba",
     "estado": "PR",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "financeiro@direcaoembalagens.com.br",
+    "telefone": "(41) 9996-9828",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Distribuidora Savana",
     "servico": "Distribuição cachaças. Liocres, toneis, etc",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "cachaca@distribuidorasavana.com.br",
+    "telefone": "(31) 3297-3177",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "D&R Alambiques e Cobres Ltda",
     "servico": "Fornecedor fabricante de equipamentos",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "deralambiques@yahoo.com.br",
+    "telefone": "(31) 3383-4390",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Espaço Gráfico Ltda - Grafix",
     "servico": "Confecção de rótulos adesivos para produtos finais como cachaças, cervejas, vinhos, cosméticos, laticínios e outros, e/ou meio publicitário",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "brunolage@grafix.com.br",
+    "telefone": "(31) 3212-3212",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Fábrica de Alambiques Santa Efigênia Ltda",
     "servico": "",
     "cidade": "Itaverava",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "contato@alambiquessantaefigenia.com.br",
+    "telefone": "(31) 3757-1137",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Fernando Antônio Leite - ME",
     "servico": "Consultor de meio ambiente e assessor em eventos",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "fernando@rodadeideias.com",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Ferrarezi Biotecnologia Ltda - BIOMADE",
     "servico": "Laboratório de Análises",
     "cidade": "São José do Rio Preto",
     "estado": "SP",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "analucia@biomade.com.br",
+    "telefone": "(17) 99177-9727",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Garrafaria Serra Negra Ltda",
     "servico": "",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "contato@garrafariaserranegra.com.br",
+    "telefone": "(31) 3421-2588",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "IBI - Instituto Brasileiro de Integração - Cultura, Turismo e Cidadania",
     "servico": "Elaboração de projetos em parceria com o Governo Federal, governos estaduais e municipais e entidades publicas privadas",
     "cidade": "Brasília",
     "estado": "DF",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "oliveira.edilane@gmail.com",
+    "telefone": "(61) 99624-6100",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Integra Consultoria e Treinamentos Ltda",
     "servico": "Responsabilidade Técnica, Cursos e treinamentos em bebidas, registros de estabelecimentos e produtos no MAPA, Rotulagem de Bebidas, Elaboração de doc. Controle de qualidade e rastreabilidade, projetos arquiteonicos e layout segundo ANVISA e MAPA, Defesa de notificações e autuações, desenvolvimento de novos produtos",
     "cidade": "Anápolis",
     "estado": "GO",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "karlaengdealimentos@gmail.com",
+    "telefone": "(62) 99283-0199",
+    "publicar_contato": "SIM"
   },
   {
-    "nome": "José Carlos Cabral Linhares",
+    "nome": "José Carlos Cabral Linhares - Cabral Linhares Marcas e Patentes",
     "servico": "Prestação de serviços jurídicos na área da propriedade industrial e intelectual; atuação junto ao INPI com a realização de registros de marcas e software e junto a OMPI para registro de direitos",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "jcabrallinhares@gmail.com",
+    "telefone": "(31) 97400-8271",
+    "publicar_contato": "SIM"
   },
   {
-    "nome": "José Raimundo",
+    "nome": "José Raimundo de Rezende",
     "servico": "",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "jrr.lanza@gmail.com",
+    "telefone": "(31) 3411-6344",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Kely Cristina Barbosa Machado",
     "servico": "Sommelier",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "kelycma@gmail.com",
+    "telefone": "(31) 9994-7945",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "LABM - Laboratório Amazile Biagioni Maia Ltda",
     "servico": "Laboratório",
     "cidade": "Belo Horizonte",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "lorena@labm.com.br",
+    "telefone": "(31) 2515-3133",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Riverpack Embalagens",
     "servico": "tampas e garrafas",
     "cidade": "Monte Belo do Sul",
     "estado": "RS",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "design@riverpack.com.br",
+    "telefone": "(54) 3457-1588",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Lallemand Soluções Biológicas",
     "servico": "",
     "cidade": "Piracicaba",
     "estado": "SP",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "jmarques@lallemand.com",
+    "telefone": "(62) 99639-9073",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "LCC Nogueira Tanoaria Ltda",
     "servico": "Fabricação, revenda e manutenção barril carvalho, venda barril de Inox, mobiliário madeira de barril de carvalho",
     "cidade": "Resende",
     "estado": "RJ",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "tanoariaagulhasnegras@gmail.com",
+    "telefone": "(24) 99919-0255",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "LNF Latino Americana Consultoria, Assessoria e Importação Ltda",
     "servico": "",
     "cidade": "Bento Gonçalves",
     "estado": "RS",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "atendimento@lnf.com.br",
+    "telefone": "(54) 2521-3124",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Metalurgica Vale do Inox Ltda - Metainox",
     "servico": "Reservatórios, dornas, caixas d'água em aço inox, equipamentos para cachaça, cervejaria, apicultura. Equipamentos inox sob medida",
     "cidade": "João Monlevade",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "metainox@metainox.com.br",
+    "telefone": "(31) 99963-1633",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "MM Projetos e Consultoria - BRASIL CACHAÇAS",
     "servico": "Projetos, Consultoria e Eventos - Feira e Seminário da Brasil Cachaças",
     "cidade": "João Pessoa",
     "estado": "PB",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "mmprojetoseconsultoria@hotmail.com",
+    "telefone": "(83) 98690-6155",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Nutiare Comercio de Alimentos EIRELI",
     "servico": "Restaurante",
     "cidade": "Rio de Janeiro",
     "estado": "RJ",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "galetosatsbotafogo@gmail.com",
+    "telefone": "(21) 2266-6266",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Premier Pack Comércio de Embalagens Ltda",
     "servico": "Com. atacadista de embalagens, fabricação de embalagens vidro, fabricação artigos de vidro e design de produto",
     "cidade": "Santana de Parnaíba",
     "estado": "SP",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "marcelofalcao@premierpack.com.br",
+    "telefone": "(11) 4705-9610",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Ramos Girardi Comércio e Representações Ltda",
     "servico": "Serviços de consultoria, fornecimento de produtos, tratamento de água, etc",
     "cidade": "Porto Alegre",
     "estado": "RS",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "pr281262@gmail.com",
+    "telefone": "(51) 3348-1041",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Titular Consultoria em Marcas e Patentes Ltda",
     "servico": "Marcas e Patentes",
     "cidade": "",
     "estado": "",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "julianamoratols@gmail.com",
+    "telefone": "(37) 99929-0307",
+    "publicar_contato": "SIM"
   },
   {
     "nome": "Trilha Real Comercial e Produções Ltda",
     "servico": "Cachaçaria",
     "cidade": "Belo Horizonte e Nova Lima",
     "estado": "MG",
-    "publicar": "SIM"
+    "publicar": "SIM",
+    "email": "trilhareal@terra.com.br",
+    "telefone": "(31) 3281-9861",
+    "publicar_contato": "SIM"
+  },
+  {
+    "nome": "Prodooze Comércio Distribuição Importação e Exportação de Insumos Ltda",
+    "servico": "Distribuição de insumos",
+    "cidade": "",
+    "estado": "",
+    "publicar": "NAO"
   }
 ]

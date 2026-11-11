@@ -33,17 +33,6 @@
     "publicar": "SIM"
   },
   {
-    "inicio": "2026-06-09",
-    "fim": "2026-06-11",
-    "cidade_uf": "São Paulo/SP",
-    "evento": "Cachaça Trade Fair",
-    "organizador": "Marketpress",
-    "contato": "(11) 98347-2093",
-    "link": "https://cachacatradefair.com.br",
-    "anpaq": "NAO",
-    "publicar": "SIM"
-  },
-  {
     "inicio": "2026-06-08",
     "fim": "2026-06-09",
     "cidade_uf": "Belo Horizonte/MG",
@@ -51,6 +40,17 @@
     "organizador": "Cana Brasil",
     "contato": "(31) 99877-3636",
     "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-06-09",
+    "fim": "2026-06-11",
+    "cidade_uf": "São Paulo/SP",
+    "evento": "Cachaça Trade Fair",
+    "organizador": "Marketpress",
+    "contato": "(11) 98347-2093",
+    "link": "https://cachacatradefair.com.br",
     "anpaq": "NAO",
     "publicar": "SIM"
   },
@@ -154,6 +154,94 @@
     "publicar": "SIM"
   },
   {
+    "inicio": "2026-11-03",
+    "fim": "2026-12-14",
+    "cidade_uf": "Nacional",
+    "evento": "16º Concurso New Spirits – inscrição de amostras (1º lote)",
+    "organizador": "New Spirits",
+    "contato": "(31) 99995-5050 · (31) 98441-9009 (WhatsApp)",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-11-25",
+    "fim": "2026-11-27",
+    "cidade_uf": "Lavras/MG",
+    "evento": "Curso Produção de Cachaça de Alambique",
+    "organizador": "UFLA",
+    "contato": "(35) 3829-1202 · (35) 99985-3727",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-11-26",
+    "fim": "2026-11-28",
+    "cidade_uf": "Belo Horizonte/MG",
+    "evento": "Curso Produção de Cachaça de Qualidade",
+    "organizador": "D&R",
+    "contato": "(31) 3383-4390 · (31) 99641-8823",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-11-27",
+    "fim": "2026-11-29",
+    "cidade_uf": "Vassouras/RJ",
+    "evento": "9ª Feira de Cachaça de Vassouras",
+    "organizador": "",
+    "contato": "@feiradacachacavassouras",
+    "link": "https://instagram.com/feiradacachacavassouras",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-11-30",
+    "fim": "2026-12-01",
+    "cidade_uf": "Belo Horizonte/MG",
+    "evento": "Curso Blend, Análise Sensorial e Padronização de Cachaça",
+    "organizador": "D&R",
+    "contato": "(31) 3383-4390 · (31) 99641-8823",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-12-05",
+    "fim": "2026-12-07",
+    "cidade_uf": "San Carlos de Bariloche/Argentina",
+    "evento": "Festival de Destiladores Patagônicos · Copa Espírito del Sur",
+    "organizador": "",
+    "contato": "festivalpatagonicodedestilados@gmail.com",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2026-12-15",
+    "fim": "2027-01-18",
+    "cidade_uf": "Nacional",
+    "evento": "16º Concurso New Spirits – inscrição de amostras (2º lote)",
+    "organizador": "New Spirits",
+    "contato": "(31) 99995-5050 · (31) 98441-9009 (WhatsApp)",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2027-01-19",
+    "fim": "2027-03-03",
+    "cidade_uf": "Nacional",
+    "evento": "16º Concurso New Spirits – inscrição de amostras (3º e último lote)",
+    "organizador": "New Spirits",
+    "contato": "(31) 99995-5050 · (31) 98441-9009 (WhatsApp)",
+    "link": "",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
     "inicio": "2027-01-21",
     "fim": "2027-01-24",
     "cidade_uf": "Balneário Camboriú/SC",
@@ -161,6 +249,61 @@
     "organizador": "",
     "contato": "@expobebidasoficial",
     "link": "https://expobebidasbc.com.br",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2027-02-22",
+    "fim": "2027-02-24",
+    "cidade_uf": "Cachoeira do Campo, Ouro Preto/MG",
+    "evento": "Curso Tecnologia da Produção da Cachaça de Alambique",
+    "organizador": "Cachaçarias Nobres",
+    "contato": "(31) 97140-6195 · condição de pagamento especial para associados ANPAQ",
+    "link": "",
+    "anpaq": "SIM",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2027-02-25",
+    "fim": "2027-02-27",
+    "cidade_uf": "Cachoeira do Campo, Ouro Preto/MG",
+    "evento": "Curso Blend, Análise Sensorial e Padronização",
+    "organizador": "Cachaçarias Nobres",
+    "contato": "(31) 97140-6195 · condição de pagamento especial para associados ANPAQ",
+    "link": "",
+    "anpaq": "SIM",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2027-04-14",
+    "fim": "2027-04-15",
+    "cidade_uf": "Serra Negra/SP",
+    "evento": "ForDestila · II Feira para Indústrias de Destilados",
+    "organizador": "",
+    "contato": "www.fordestila.com.br · visitação gratuita",
+    "link": "https://www.fordestila.com.br",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2027-07-26",
+    "fim": "2027-07-26",
+    "cidade_uf": "Rio de Janeiro/RJ",
+    "evento": "Resenha do João e do Leandro (3ª edição)",
+    "organizador": "",
+    "contato": "(21) 98255-7793 · @resenhadojoaoeleandro",
+    "link": "https://instagram.com/resenhadojoaoeleandro",
+    "anpaq": "NAO",
+    "publicar": "SIM"
+  },
+  {
+    "inicio": "2027-08-12",
+    "fim": "2027-08-14",
+    "cidade_uf": "Belo Horizonte/MG",
+    "evento": "36ª Expocachaça · 5ª Minas + Doce · 20ª BrasilBier (Centerminas)",
+    "organizador": "Expocachaça",
+    "contato": "(31) 98441-9009 (Denise) · (31) 99813-9731 (José Lúcio)",
+    "link": "",
     "anpaq": "NAO",
     "publicar": "SIM"
   },
