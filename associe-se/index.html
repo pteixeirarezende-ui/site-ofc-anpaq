@@ -47,6 +47,44 @@
   <link rel="preload" href="/assets/fonts/playfair-display-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/img/bg-alambique.webp" as="image" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="/assets/site.css?v=20261106g"/>
+<style>
+  #documentos-admissao .card h3 {
+    font-size: clamp(1.25rem, 1.5vw, 1.45rem);
+    line-height: 1.3;
+  }
+  #documentos-admissao .btn-outline {
+    white-space: normal;
+    text-align: center;
+  }
+  #documentos-admissao .btn-outline:hover,
+  #documentos-admissao .btn-outline:focus-visible {
+    color: var(--anpaq-dark-950) !important;
+    background-color: var(--anpaq-gold-500);
+    border-color: var(--anpaq-gold-500) !important;
+  }
+  #documentos-admissao .btn-outline:hover svg,
+  #documentos-admissao .btn-outline:focus-visible svg {
+    transform: translateY(2px);
+  }
+  #documentos-admissao .docs-send-note {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+    color: var(--anpaq-text-body);
+    font-size: var(--text-base);
+    line-height: 1.65;
+  }
+  #documentos-admissao .docs-send-note a {
+    color: var(--anpaq-gold-700);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  #documentos-admissao .docs-send-note a:hover,
+  #documentos-admissao .docs-send-note a:focus-visible {
+    color: var(--anpaq-dark-950);
+  }
+</style>
 </head>
 <body>
 
@@ -301,7 +339,68 @@
       </div>
     </section>
 
-    
+    <!-- ─── 5. DOCUMENTOS DE ADMISSÃO ─── -->
+    <section class="section section--surface" id="documentos-admissao">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Propostas em PDF</span>
+          <span class="gold-line"></span>
+          <h2>Documentos de admissão</h2>
+          <p>Baixe a proposta da sua categoria ou acesse o <a href="/pre-cadastro/" style="color:var(--anpaq-gold-700); font-weight:600; text-decoration:underline; text-underline-offset:3px;">pré-cadastro</a>.</p>
+        </div>
+
+        <div class="selo-pillars-grid" style="margin-bottom:var(--sp-8);">
+          <!-- Card Produtor / Engarrafador / Proprietário de marca -->
+          <div class="card card--featured reveal">
+            <span class="badge badge-gold" style="align-self:flex-start; margin-bottom:var(--sp-3);">Produtores</span>
+            <h3 style="margin-bottom:var(--sp-2);">Produtor / Engarrafador / Proprietário de marca</h3>
+            <p style="color:var(--anpaq-text-muted); font-size:var(--text-base); margin-bottom:var(--sp-5);">
+              Admissão para produtores de alambique, engarrafadores e marcas.
+            </p>
+            <div style="margin-top:auto;">
+              <a href="/assets/docs/proposta-admissao-produtor.pdf" class="btn btn-outline" style="width:100%;" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Baixar proposta (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Fornecedor / Distribuidor -->
+          <div class="card card--featured reveal reveal-delay-1">
+            <span class="badge badge-gold" style="align-self:flex-start; margin-bottom:var(--sp-3);">Fornecedores</span>
+            <h3 style="margin-bottom:var(--sp-2);">Fornecedor / Distribuidor</h3>
+            <p style="color:var(--anpaq-text-muted); font-size:var(--text-base); margin-bottom:var(--sp-5);">
+              Admissão para fornecedores de insumos, equipamentos e distribuidores.
+            </p>
+            <div style="margin-top:auto;">
+              <a href="/assets/docs/proposta-admissao-fornecedor-distribuidor.pdf" class="btn btn-outline" style="width:100%;" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Baixar proposta (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Responsável técnico / Consultor / Prestador de serviço -->
+          <div class="card card--featured reveal reveal-delay-2">
+            <span class="badge badge-gold" style="align-self:flex-start; margin-bottom:var(--sp-3);">Técnicos</span>
+            <h3 style="margin-bottom:var(--sp-2);">Responsável técnico / Consultor / Prestador de serviço</h3>
+            <p style="color:var(--anpaq-text-muted); font-size:var(--text-base); margin-bottom:var(--sp-5);">
+              Admissão para responsáveis técnicos, consultores e prestadores.
+            </p>
+            <div style="margin-top:auto;">
+              <a href="/assets/docs/proposta-admissao-rt-consultor.pdf" class="btn btn-outline" style="width:100%;" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Baixar proposta (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p class="docs-send-note reveal">
+          Preencha, assine e envie para <a href="mailto:anpaq@anpaq.com.br">anpaq@anpaq.com.br</a> com os documentos indicados na proposta.
+        </p>
+      </div>
+    </section>
 
     <!-- ─── 6. FAIXA FINAL DE CTA ─── -->
     <section class="cta-band grid-paper" id="faixa-cta" style="position:relative; overflow:hidden;">
