@@ -2996,6 +2996,7 @@ main {
   padding: var(--sp-6);
   display: flex;
   flex-direction: column;
+  min-width: 0;
   box-shadow: var(--shadow-sm);
   position: relative;
   cursor: default;
@@ -3102,15 +3103,16 @@ main {
   color: var(--anpaq-text-muted);
 }
 
-/* Linha discreta de ícones-links de contato no rodapé do card (opt-in) */
+/* Lista vertical discreta de links de contato no rodapé do card (opt-in) */
 .associado-contacts {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--sp-2);
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
   margin-top: auto;
   padding-top: var(--sp-3);
   border-top: 1px solid rgba(201, 162, 39, 0.22);
+  min-width: 0;
 }
 
 .associado-location+.associado-contacts {
@@ -3118,51 +3120,70 @@ main {
 }
 
 .associado-contact-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
+  gap: var(--sp-2);
+  padding: 5px 4px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(110, 80, 11, 0.28);
-  background: rgba(201, 162, 39, 0.08);
-  color: var(--anpaq-gold-700);
+  font-family: var(--font-body);
+  font-size: max(14px, var(--text-base));
+  line-height: 1.4;
+  color: var(--anpaq-text-dark);
   text-decoration: none;
+  min-width: 0;
+  max-width: 100%;
   transition: background-color var(--duration-fast) var(--ease-out),
-    border-color var(--duration-fast) var(--ease-out),
     color var(--duration-fast) var(--ease-out);
 }
 
 .associado-contact-link svg {
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
+  color: var(--anpaq-gold-600);
   flex-shrink: 0;
+  transition: color var(--duration-fast) var(--ease-out);
 }
 
-.associado-contact-link:hover,
-.associado-contact-link:focus-visible {
-  background: var(--anpaq-gold-500);
-  border-color: var(--anpaq-gold-500);
-  color: var(--anpaq-dark-950);
+.associado-contact-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.associado-contact-link:hover {
+  background: rgba(201, 162, 39, 0.1);
+  color: var(--anpaq-gold-700);
+}
+
+.associado-contact-link:hover .associado-contact-text {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.associado-contact-link:hover svg,
+.associado-contact-link:focus-visible svg {
+  color: var(--anpaq-gold-700);
 }
 
 .associado-contact-link:focus-visible {
   outline: 2px solid var(--anpaq-gold-700);
   outline-offset: 2px;
+  background: rgba(201, 162, 39, 0.12);
+  color: var(--anpaq-gold-700);
 }
 
 @media (max-width: 767px),
 (pointer: coarse) {
   .associado-contact-link {
-    min-width: 44px;
     min-height: 44px;
-    width: 44px;
-    height: 44px;
+    padding: 10px 4px;
+    font-size: max(14px, var(--text-base));
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .associado-contact-link {
+  .associado-contact-link,
+  .associado-contact-link svg {
     transition: none;
   }
 }

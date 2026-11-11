@@ -46,7 +46,7 @@
   <link rel="preload" href="/assets/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/playfair-display-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/img/bg-alambique.webp" as="image" type="image/webp" fetchpriority="high">
-<link rel="stylesheet" href="/assets/site.css?v=20261111a"/>
+<link rel="stylesheet" href="/assets/site.css?v=20261111b"/>
 </head>
 <body>
 
@@ -404,70 +404,94 @@
         mobileFilterMq.addListener(syncFilterPlaceholderLabels);
       }
 
-      // Helpers de sanitização dos contatos opt-in dos associados
-      function buildTelHref(raw) {
+      // Helpers de sanitização e formatação dos contatos opt-in dos associados
+      function parseTelContact(raw) {
         const str = String(raw || '').trim();
-        if (!str) return '';
+        if (!str) return null;
         const digits = str.replace(/\D/g, '');
-        if (digits.length < 8) return '';
-        return `tel:${str.startsWith('+') ? '+' : ''}${digits}`;
+        if (digits.length < 8) return null;
+        return {
+          href: `tel:${str.startsWith('+') ? '+' : ''}${digits}`,
+          display: str
+        };
       }
 
-      function buildEmailHref(raw) {
+      function parseEmailContact(raw) {
         const str = String(raw || '').trim();
-        if (!str || !/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(str)) return '';
-        return `mailto:${str}`;
+        if (!str || !/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(str)) return null;
+        return {
+          href: `mailto:${str}`,
+          display: str
+        };
       }
 
-      function buildInstagramHref(raw) {
+      function parseInstagramContact(raw) {
         const str = String(raw || '').trim();
-        if (!str) return '';
+        if (!str) return null;
         if (/^@[a-zA-Z0-9._]{1,30}$/.test(str)) {
-          return `https://instagram.com/${encodeURIComponent(str.slice(1))}`;
+          return {
+            href: `https://instagram.com/${encodeURIComponent(str.slice(1))}`,
+            display: str
+          };
         }
         if (/^[a-zA-Z0-9._]{1,30}$/.test(str) && !/\.(com|br|net|org)$/i.test(str)) {
-          return `https://instagram.com/${encodeURIComponent(str)}`;
+          return {
+            href: `https://instagram.com/${encodeURIComponent(str)}`,
+            display: `@${str}`
+          };
         }
         const withProto = /^https?:\/\//i.test(str)
           ? str
           : (/^(www\.)?instagram\.com\//i.test(str) ? `https://${str}` : '');
-        if (!withProto) return '';
+        if (!withProto) return null;
         try {
           const parsed = new URL(withProto);
           if ((parsed.protocol === 'https:' || parsed.protocol === 'http:') && /(^|\.)instagram\.com$/i.test(parsed.hostname)) {
-            return parsed.href;
+            const segments = parsed.pathname.split('/').filter(Boolean);
+            const handle = segments[0] ? segments[0].replace(/^@/, '') : '';
+            if (!handle || !/^[a-zA-Z0-9._]{1,30}$/.test(handle)) return null;
+            return {
+              href: parsed.href,
+              display: `@${handle}`
+            };
           }
         } catch (_) {}
-        return '';
+        return null;
       }
 
-      function buildSiteHref(raw) {
+      function parseSiteContact(raw) {
         const str = String(raw || '').trim();
-        if (!str) return '';
+        if (!str) return null;
         const candidate = /^https?:\/\//i.test(str)
           ? str
           : (/^[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+(\/.*)?$/.test(str) ? `https://${str}` : '');
-        if (!candidate) return '';
+        if (!candidate) return null;
         try {
           const parsed = new URL(candidate);
           if ((parsed.protocol === 'https:' || parsed.protocol === 'http:') && parsed.hostname.includes('.')) {
-            return parsed.href;
+            return {
+              href: parsed.href,
+              display: parsed.hostname
+            };
           }
         } catch (_) {}
-        return '';
+        return null;
       }
 
-      function createContactLink(href, label, svgMarkup, isExternal) {
+      function createContactLink(href, displayText, label, svgMarkup, isExternal) {
         const a = document.createElement('a');
         a.className = 'associado-contact-link';
         a.href = href;
         a.setAttribute('aria-label', label);
-        a.setAttribute('title', label);
         if (isExternal) {
           a.target = '_blank';
           a.rel = 'noopener nofollow';
         }
         a.innerHTML = svgMarkup;
+        const textSpan = document.createElement('span');
+        textSpan.className = 'associado-contact-text';
+        textSpan.textContent = displayText;
+        a.appendChild(textSpan);
         return a;
       }
 
@@ -579,40 +603,44 @@
           const nomeAssoc = (item.nome || '').trim() || 'associado';
           const contactLinks = [];
 
-          const telHref = buildTelHref(item.telefone);
-          if (telHref) {
+          const telContact = parseTelContact(item.telefone);
+          if (telContact) {
             contactLinks.push(createContactLink(
-              telHref,
+              telContact.href,
+              telContact.display,
               `Ligar para ${nomeAssoc}`,
               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
               false
             ));
           }
 
-          const emailHref = buildEmailHref(item.email);
-          if (emailHref) {
+          const emailContact = parseEmailContact(item.email);
+          if (emailContact) {
             contactLinks.push(createContactLink(
-              emailHref,
+              emailContact.href,
+              emailContact.display,
               `Enviar e-mail para ${nomeAssoc}`,
               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>',
               false
             ));
           }
 
-          const igHref = buildInstagramHref(item.instagram);
-          if (igHref) {
+          const igContact = parseInstagramContact(item.instagram);
+          if (igContact) {
             contactLinks.push(createContactLink(
-              igHref,
+              igContact.href,
+              igContact.display,
               `Instagram de ${nomeAssoc}`,
               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>',
               true
             ));
           }
 
-          const siteHref = buildSiteHref(item.site);
-          if (siteHref) {
+          const siteContact = parseSiteContact(item.site);
+          if (siteContact) {
             contactLinks.push(createContactLink(
-              siteHref,
+              siteContact.href,
+              siteContact.display,
               `Site de ${nomeAssoc}`,
               '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
               true
