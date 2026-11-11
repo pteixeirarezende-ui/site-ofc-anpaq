@@ -3102,55 +3102,6 @@ main {
   color: var(--anpaq-text-muted);
 }
 
-/* Chamada discreta de contato via WhatsApp no topo da lista */
-.associados-whatsapp-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--sp-4);
-  flex-wrap: wrap;
-  background: var(--anpaq-cream-200);
-  border: 1px solid var(--anpaq-cream-400);
-  border-left: 3px solid var(--anpaq-gold-500);
-  border-radius: var(--radius);
-  padding: var(--sp-3) var(--sp-4);
-  margin-bottom: var(--sp-6);
-}
-
-.associados-whatsapp-text {
-  margin: 0;
-  font-size: var(--text-sm);
-  font-weight: 500;
-  color: var(--anpaq-text-dark);
-  line-height: 1.45;
-}
-
-.associados-whatsapp-bar .btn-whatsapp {
-  flex-shrink: 0;
-  padding: 0.6rem 1.1rem;
-  font-size: var(--text-sm);
-  min-height: 44px;
-}
-
-.associados-whatsapp-bar .btn-whatsapp:focus-visible {
-  outline: 2px solid var(--anpaq-dark-950);
-  outline-offset: 2px;
-}
-
-@media (max-width: 640px) {
-  .associados-whatsapp-bar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: var(--sp-3);
-    margin-bottom: var(--sp-4);
-  }
-
-  .associados-whatsapp-bar .btn-whatsapp {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
 /* Linha discreta de ícones-links de contato no rodapé do card (opt-in) */
 .associado-contacts {
   display: flex;
