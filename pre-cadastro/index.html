@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pré-cadastro do Alambique | ANPAQ</title>
+  <title>Pré-cadastro | ANPAQ</title>
   <meta name="description" content="Pré-cadastro para produtores interessados no Selo Nacional da Cachaça de Alambique ou em se associar à ANPAQ."/>
   <link rel="canonical" href="https://anpaq.com.br/pre-cadastro/"/>
   <link rel="icon" href="/favicon.ico" sizes="any"/>
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://anpaq.com.br/pre-cadastro/"/>
-  <meta property="og:title" content="Pré-cadastro do Alambique | ANPAQ"/>
+  <meta property="og:title" content="Pré-cadastro | ANPAQ"/>
   <meta property="og:description" content="Pré-cadastro para produtores interessados no Selo Nacional da Cachaça de Alambique ou em se associar à ANPAQ."/>
   <meta property="og:image" content="https://anpaq.com.br/assets/img/og-default.jpg"/>
   <meta property="og:image:width" content="1200"/>
@@ -19,7 +19,7 @@
   <meta property="og:locale" content="pt_BR"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:url" content="https://anpaq.com.br/pre-cadastro/"/>
-  <meta name="twitter:title" content="Pré-cadastro do Alambique | ANPAQ"/>
+  <meta name="twitter:title" content="Pré-cadastro | ANPAQ"/>
   <meta name="twitter:description" content="Pré-cadastro para produtores interessados no Selo Nacional da Cachaça de Alambique ou em se associar à ANPAQ."/>
   <meta name="twitter:image" content="https://anpaq.com.br/assets/img/og-default.jpg"/>
   <script type="application/ld+json">
@@ -47,7 +47,50 @@
   <!-- Preload de Fontes Críticas Locais -->
   <link rel="preload" href="/assets/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/playfair-display-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/site.css?v=20261106g"/>
+<link rel="stylesheet" href="/assets/site.css?v=20261111b"/>
+<style>
+  #cadastroForm select.form-input {
+    min-height: 46px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  #cadastroForm select.form-input option {
+    background-color: var(--anpaq-dark-900);
+    color: var(--anpaq-text-light);
+  }
+  #cadastroForm .form-input:focus-visible {
+    outline: 2px solid var(--anpaq-gold-400);
+    outline-offset: 2px;
+    border-color: var(--anpaq-gold-400);
+  }
+  #cadastroForm .error-text {
+    color: #F08A7E;
+  }
+  #successPropostaBox {
+    width: 100%;
+    background: rgba(201, 162, 39, 0.08);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    border-radius: var(--radius);
+    padding: var(--sp-4);
+    margin-bottom: var(--sp-4);
+    text-align: center;
+  }
+  #successPropostaBox .proposta-desc {
+    font-size: var(--text-sm);
+    color: var(--anpaq-text-light);
+    margin: 0 0 var(--sp-3);
+    line-height: 1.5;
+  }
+  #successPropostaBox .btn-outline {
+    white-space: normal;
+    text-align: center;
+    min-height: 44px;
+  }
+  #successPropostaBox .btn-outline:hover svg,
+  #successPropostaBox .btn-outline:focus-visible svg {
+    transform: translateY(2px);
+  }
+</style>
 </head>
 <body>
 
@@ -144,9 +187,9 @@
         <div class="section-header">
           <span class="eyebrow" style="color:var(--anpaq-gold-300);"><span class="pulse-dot"></span>Selo Nacional & Associação</span>
           <div class="gold-line"></div>
-          <h1 style="color:var(--anpaq-cream-100);">Pré-cadastro do <span class="shimmer">Alambique</span></h1>
+          <h1 style="color:var(--anpaq-cream-100);">Pré-cadastro</h1>
           <p style="color:var(--anpaq-text-light-muted); max-width:620px; margin:0 auto var(--sp-3);">
-            Deixe seus dados e a nossa equipe entrará em contato pelo WhatsApp ou e-mail informado para orientar os próximos passos da sua associação ou certificação do Selo Nacional.
+            Deixe seus dados e a nossa equipe entrará em contato pelo WhatsApp ou e-mail informado para orientar os próximos passos da sua associação.
           </p>
           <p style="font-size:var(--text-xs); color:var(--anpaq-text-light-subtle); max-width:540px; margin:0 auto;">
             O Selo Nacional passa por certificação pelo MAPA, tem laudo físico-químico de avaliação da qualidade do produto e cada garrafa tem código serial e QR Code únicos por produtor.
@@ -166,14 +209,33 @@
             </div>
 
             <div class="form-group">
-              <label for="razaoSocial" class="form-label">Razão Social *</label>
-              <input type="text" id="razaoSocial" name="razaoSocial" class="form-input" required placeholder="Nome empresarial ou do produtor">
-              <div class="error-text" id="razaoSocialError">Por favor, informe a razão social.</div>
+              <label for="categoria" class="form-label">Categoria *</label>
+              <select id="categoria" name="categoria" class="form-input" required>
+                <option value="">Selecione uma categoria...</option>
+                <option value="Produtor">Produtor</option>
+                <option value="Engarrafador">Engarrafador</option>
+                <option value="Estandardizador/Padronizador">Estandardizador/Padronizador</option>
+                <option value="Proprietário de marcas">Proprietário de marcas</option>
+                <option value="Cooperativa/Associação">Cooperativa/Associação</option>
+                <option value="Distribuidor/Atacadista">Distribuidor/Atacadista</option>
+                <option value="Fornecedor de insumos">Fornecedor de insumos</option>
+                <option value="Fabricante de equipamentos">Fabricante de equipamentos</option>
+                <option value="Prestador de serviço">Prestador de serviço</option>
+                <option value="Responsável técnico/Consultor">Responsável técnico/Consultor</option>
+                <option value="Outros">Outros</option>
+              </select>
+              <div class="error-text" id="categoriaError">Por favor, selecione uma categoria.</div>
             </div>
 
             <div class="form-group">
+              <label for="razaoSocial" class="form-label">Razão social ou nome *</label>
+              <input type="text" id="razaoSocial" name="razaoSocial" class="form-input" required placeholder="Nome empresarial ou nome completo">
+              <div class="error-text" id="razaoSocialError">Por favor, informe a razão social ou nome.</div>
+            </div>
+
+            <div class="form-group" id="nomeCachacaGroup" hidden style="display:none;">
               <label for="nomeCachaca" class="form-label">Nome da Cachaça *</label>
-              <input type="text" id="nomeCachaca" name="nomeCachaca" class="form-input" required placeholder="Marca ou nome do produto principal">
+              <input type="text" id="nomeCachaca" name="nomeCachaca" class="form-input" placeholder="Marca ou nome do produto principal">
               <div class="error-text" id="nomeCachacaError">Por favor, informe o nome da cachaça.</div>
             </div>
 
@@ -232,6 +294,16 @@
             <p class="state-desc">
               Tudo certo! Seus dados foram encaminhados com sucesso. Nossa equipe entrará em contato em breve para apresentar os próximos passos.
             </p>
+
+            <div id="successPropostaBox" hidden>
+              <p class="proposta-desc">
+                Baixe a proposta de admissão para <strong id="successPropostaCategoria"></strong>:
+              </p>
+              <a href="/assets/docs/proposta-admissao-produtor.pdf" id="successPropostaLink" class="btn btn-outline" style="width:100%;" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Baixar proposta (PDF)
+              </a>
+            </div>
             
             <div style="width:100%; height:1px; background:rgba(255,255,255,0.1); margin:var(--sp-4) 0;"></div>
             
@@ -338,7 +410,9 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const form = document.getElementById('cadastroForm');
+      const categoriaInput = document.getElementById('categoria');
       const razaoSocialInput = document.getElementById('razaoSocial');
+      const nomeCachacaGroup = document.getElementById('nomeCachacaGroup');
       const nomeCachacaInput = document.getElementById('nomeCachaca');
       const whatsappInput = document.getElementById('whatsapp');
       const responsavelInput = document.getElementById('responsavel');
@@ -346,12 +420,66 @@
       const termosInput = document.getElementById('termos');
       const gotchaInput = document.getElementById('_gotcha');
       const retryBtn = document.getElementById('retryBtn');
+      const successPropostaBox = document.getElementById('successPropostaBox');
+      const successPropostaCategoria = document.getElementById('successPropostaCategoria');
+      const successPropostaLink = document.getElementById('successPropostaLink');
+
+      const CATEGORIAS_COM_NOME_CACHACA = new Set([
+        'Produtor',
+        'Engarrafador',
+        'Estandardizador/Padronizador',
+        'Proprietário de marcas'
+      ]);
+
+      const PROPOSTAS_POR_CATEGORIA = {
+        'Produtor': '/assets/docs/proposta-admissao-produtor.pdf',
+        'Engarrafador': '/assets/docs/proposta-admissao-produtor.pdf',
+        'Estandardizador/Padronizador': '/assets/docs/proposta-admissao-produtor.pdf',
+        'Proprietário de marcas': '/assets/docs/proposta-admissao-produtor.pdf',
+        'Cooperativa/Associação': '/assets/docs/proposta-admissao-produtor.pdf',
+        'Distribuidor/Atacadista': '/assets/docs/proposta-admissao-fornecedor-distribuidor.pdf',
+        'Fornecedor de insumos': '/assets/docs/proposta-admissao-fornecedor-distribuidor.pdf',
+        'Fabricante de equipamentos': '/assets/docs/proposta-admissao-fornecedor-distribuidor.pdf',
+        'Prestador de serviço': '/assets/docs/proposta-admissao-fornecedor-distribuidor.pdf',
+        'Outros': '/assets/docs/proposta-admissao-fornecedor-distribuidor.pdf',
+        'Responsável técnico/Consultor': '/assets/docs/proposta-admissao-rt-consultor.pdf'
+      };
 
       const states = {
         form: form,
         loading: document.getElementById('loadingState'),
         success: document.getElementById('successState'),
         error: document.getElementById('errorState')
+      };
+
+      // Atualiza visibilidade e obrigatoriedade de "Nome da Cachaça" conforme Categoria
+      const updateNomeCachacaVisibility = () => {
+        const requiresNome = CATEGORIAS_COM_NOME_CACHACA.has(categoriaInput.value);
+        if (nomeCachacaGroup) {
+          nomeCachacaGroup.hidden = !requiresNome;
+          nomeCachacaGroup.style.display = requiresNome ? '' : 'none';
+        }
+        nomeCachacaInput.required = requiresNome;
+        if (!requiresNome) {
+          setFieldValidation(nomeCachacaInput, 'nomeCachacaError', true);
+        }
+      };
+
+      // Configura o link da proposta em PDF correspondente na tela de sucesso
+      const updateSuccessProposta = (categoriaSelecionada) => {
+        if (!successPropostaBox || !successPropostaLink) return;
+        const pdfHref = PROPOSTAS_POR_CATEGORIA[categoriaSelecionada];
+        if (!pdfHref) {
+          successPropostaBox.hidden = true;
+          successPropostaBox.style.display = 'none';
+          return;
+        }
+        successPropostaLink.href = pdfHref;
+        if (successPropostaCategoria) {
+          successPropostaCategoria.textContent = categoriaSelecionada;
+        }
+        successPropostaBox.hidden = false;
+        successPropostaBox.style.display = 'block';
       };
 
       // Máscara brasileira de WhatsApp: (XX) XXXXX-XXXX ou (XX) XXXX-XXXX
@@ -401,13 +529,26 @@
         }
       };
 
+      // Atualiza campos condicionais ao mudar Categoria e limpa erro ao selecionar
+      categoriaInput.addEventListener('change', () => {
+        updateNomeCachacaVisibility();
+        if (categoriaInput.value.trim() !== '') {
+          setFieldValidation(categoriaInput, 'categoriaError', true);
+        }
+      });
+      updateNomeCachacaVisibility();
+
       // Envio do formulário
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
+        const selectedCategoria = categoriaInput.value.trim();
+        const requiresNomeCachaca = CATEGORIAS_COM_NOME_CACHACA.has(selectedCategoria);
+
         // 1. Verificação Honeypot anti-spam
         if (gotchaInput && gotchaInput.value.trim() !== '') {
           // Bot detectado silenciosamente: finge sucesso sem disparar endpoint
+          updateSuccessProposta(selectedCategoria);
           changeState('success');
           return;
         }
@@ -415,13 +556,21 @@
         // 2. Validações de campos obrigatórios
         let hasError = false;
 
+        const isCategoriaValid = selectedCategoria !== '' && Object.prototype.hasOwnProperty.call(PROPOSTAS_POR_CATEGORIA, selectedCategoria);
+        setFieldValidation(categoriaInput, 'categoriaError', isCategoriaValid);
+        if (!isCategoriaValid) hasError = true;
+
         const isRazaoValid = razaoSocialInput.value.trim().length >= 2;
         setFieldValidation(razaoSocialInput, 'razaoSocialError', isRazaoValid);
         if (!isRazaoValid) hasError = true;
 
-        const isNomeValid = nomeCachacaInput.value.trim().length >= 2;
-        setFieldValidation(nomeCachacaInput, 'nomeCachacaError', isNomeValid);
-        if (!isNomeValid) hasError = true;
+        if (requiresNomeCachaca) {
+          const isNomeValid = nomeCachacaInput.value.trim().length >= 2;
+          setFieldValidation(nomeCachacaInput, 'nomeCachacaError', isNomeValid);
+          if (!isNomeValid) hasError = true;
+        } else {
+          setFieldValidation(nomeCachacaInput, 'nomeCachacaError', true);
+        }
 
         const waDigits = whatsappInput.value.replace(/\D/g, '');
         const isWaValid = waDigits.length >= 10;
@@ -455,7 +604,8 @@
         // 4. Preparação do payload (sem dados sensíveis no console)
         const payload = {
           razaoSocial: razaoSocialInput.value.trim(),
-          nomeCachaca: nomeCachacaInput.value.trim(),
+          nomeCachaca: requiresNomeCachaca ? nomeCachacaInput.value.trim() : '',
+          categoria: selectedCategoria,
           whatsapp: whatsappInput.value.trim(),
           responsavel: responsavelInput.value.trim(),
           email: emailInput.value.trim(),
@@ -482,8 +632,10 @@
             throw new Error(`Servidor respondeu com código ${response.status}`);
           }
 
+          updateSuccessProposta(selectedCategoria);
           changeState('success');
           form.reset();
+          updateNomeCachacaVisibility();
         } catch (err) {
           // Falha de rede ou webhook indisponível
           changeState('error', 'Houve uma instabilidade temporária na conexão. Você pode tentar novamente agora ou falar direto pelo WhatsApp oficial da ANPAQ.');
