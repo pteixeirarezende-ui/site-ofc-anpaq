@@ -45,7 +45,7 @@
   <!-- Preload de Fontes Críticas Locais -->
   <link rel="preload" href="/assets/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/playfair-display-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/site.css?v=20261113a"/>
+<link rel="stylesheet" href="/assets/site.css?v=20261113b"/>
 <style>
     .contact-grid {
       display: grid;
@@ -130,7 +130,7 @@
   <header class="site-header" id="site-header">
     <div class="container nav-container">
       <a href="/" class="nav-brand" aria-label="ANPAQ — Página inicial">
-        <img src="/assets/img/logo-anpaq.png" alt="ANPAQ — Associação Nacional da Cachaça de Alambique" class="nav-logo" width="160" height="48">
+        <img src="/assets/img/logo-anpaq.webp" alt="ANPAQ — Associação Nacional da Cachaça de Alambique" class="nav-logo" width="160" height="51" decoding="async">
       </a>
 
       <!-- Menu Desktop -->
@@ -176,7 +176,7 @@
   <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu de navegação">
     <div class="mobile-drawer-header">
       <a href="/" class="nav-brand" aria-label="ANPAQ — Página inicial">
-        <img src="/assets/img/logo-anpaq.png" alt="ANPAQ" class="nav-logo" width="140" height="42">
+        <img src="/assets/img/logo-anpaq.webp" alt="ANPAQ" class="nav-logo" width="140" height="45" decoding="async" loading="lazy">
       </a>
       <button class="btn-ghost" id="drawer-close" aria-label="Fechar menu" style="color:var(--anpaq-gold-400);font-size:1.5rem;padding:0.5rem;cursor:pointer;">
         ✕
@@ -211,8 +211,8 @@
     <!-- 1. HERÓI DA PÁGINA -->
     <section class="page-hero page-hero--sm">
       <picture class="page-hero-bg">
-        <source srcset="/assets/img/bg-alambique.webp" type="image/webp">
-        <img src="/assets/img/bg-alambique.jpg" alt="" fetchpriority="high" loading="eager" decoding="async" width="1122" height="1402">
+        <source media="(min-width: 641px)" srcset="/assets/img/bg-alambique.webp" type="image/webp">
+        <img src="/assets/img/bg-alambique-m.webp" alt="" fetchpriority="high" loading="eager" decoding="async" width="640" height="799">
       </picture>
       <div class="page-hero-overlay"></div>
       <div class="container page-hero-content">
@@ -292,7 +292,7 @@
                   <input type="checkbox" id="termos" name="termos" required>
                   <span class="checkmark"></span>
                   <span class="checkbox-label" style="font-size: var(--text-xs); line-height: 1.5; color: var(--anpaq-text-muted);">
-                    Concordo com o tratamento dos meus dados de acordo com a <a href="/privacidade/" target="_blank" style="color:var(--anpaq-gold-700); text-decoration:underline;">Política de Privacidade</a> da ANPAQ. *
+                    Concordo com o tratamento dos meus dados de acordo com a <a href="/privacidade/" target="_blank" rel="noopener" style="color:var(--anpaq-gold-700); text-decoration:underline;">Política de Privacidade</a> da ANPAQ. *
                   </span>
                 </label>
                 <div class="error-text" id="termosError">Você deve concordar com a política de privacidade para enviar.</div>
@@ -405,7 +405,7 @@
         <!-- Coluna 1: Marca & Frase -->
         <div class="footer-col-brand">
           <a href="/" aria-label="ANPAQ — Início">
-            <img src="/assets/img/logo-anpaq.png" alt="ANPAQ Logo" class="footer-logo" width="160" height="48" loading="lazy">
+            <img src="/assets/img/logo-anpaq.webp" alt="ANPAQ Logo" class="footer-logo" width="160" height="51" loading="lazy" decoding="async">
           </a>
           <p class="footer-brand-desc">
             A Associação Nacional da Cachaça de Alambique apoia e desenvolve o setor produtivo da autêntica cachaça de alambique brasileira desde 1988.
@@ -460,8 +460,8 @@
   <!-- Scripts -->
 
   
-  <script src="/assets/config.js?v=20261106g" defer></script>
-  <script src="/assets/site.js?v=20261106g" defer></script>
+  <script src="/assets/config.js?v=20261107a" defer></script>
+  <script src="/assets/site.js?v=20261113b" defer></script>
 
   <!-- Validação e Envio do Formulário de Contato -->
   <script>
@@ -586,7 +586,7 @@
                 feedbackEl.style.display = 'block';
                 feedbackEl.style.background = 'rgba(74, 124, 89, 0.15)';
                 feedbackEl.style.border = '1px solid rgba(74, 124, 89, 0.4)';
-                feedbackEl.style.color = 'var(--anpaq-green-600)';
+                feedbackEl.style.color = '#2D593A';
                 feedbackEl.textContent = 'Mensagem enviada com sucesso! Agradecemos seu contato. Nossa equipe responderá em breve.';
               }
             } else {
@@ -599,7 +599,7 @@
 *E-mail:* ${payload.email}
 *Telefone:* ${payload.telefone || 'Não informado'}`;
               const waUrl = `https://wa.me/5531998287495?text=${encodeURIComponent(textoWhatsApp)}`;
-              window.open(waUrl, '_blank');
+              window.open(waUrl, '_blank', 'noopener');
 
               form.reset();
               if (feedbackEl) {
@@ -621,7 +621,7 @@
 *E-mail:* ${payload.email}
 *Telefone:* ${payload.telefone || 'Não informado'}`;
             const waUrl = `https://wa.me/5531998287495?text=${encodeURIComponent(textoWhatsApp)}`;
-            window.open(waUrl, '_blank');
+            window.open(waUrl, '_blank', 'noopener');
 
             form.reset();
             if (feedbackEl) {

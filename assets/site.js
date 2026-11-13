@@ -98,6 +98,42 @@
   }
 
   // ─── 3. SCROLL REVEAL ANIMATIONS (DESIGN SYSTEM) ───
+  const REVEAL_SELECTOR = '.reveal:not(.active), .reveal-up:not(.revealed), .reveal-left:not(.revealed), .reveal-scale:not(.revealed), .reveal-fade:not(.revealed)';
+  let revealScrollBound = false;
+  let revealTicking = false;
+
+  function revealVisibleOrPassed() {
+    const thresholdY = window.innerHeight + 40;
+    const pending = document.querySelectorAll(REVEAL_SELECTOR);
+    let remaining = 0;
+
+    pending.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= thresholdY) {
+        el.classList.add('active', 'revealed');
+        if (globalRevealObserver) globalRevealObserver.unobserve(el);
+      } else {
+        remaining++;
+      }
+    });
+
+    if (remaining === 0 && revealScrollBound) {
+      window.removeEventListener('scroll', onRevealScroll);
+      window.removeEventListener('hashchange', onRevealScroll);
+      revealScrollBound = false;
+    }
+  }
+
+  function onRevealScroll() {
+    if (!revealTicking) {
+      revealTicking = true;
+      window.requestAnimationFrame(() => {
+        revealVisibleOrPassed();
+        revealTicking = false;
+      });
+    }
+  }
+
   function initScrollReveal() {
     if (!('IntersectionObserver' in window)) {
       // Fallback para navegadores legados
@@ -123,9 +159,18 @@
   }
 
   function refreshReveals() {
-    if (!globalRevealObserver) return;
-    const elements = document.querySelectorAll('.reveal:not(.active), .reveal-up:not(.revealed), .reveal-left:not(.revealed), .reveal-scale:not(.revealed), .reveal-fade:not(.revealed)');
-    elements.forEach(el => globalRevealObserver.observe(el));
+    revealVisibleOrPassed();
+    const pending = document.querySelectorAll(REVEAL_SELECTOR);
+    if (pending.length === 0) return;
+
+    if (globalRevealObserver) {
+      pending.forEach(el => globalRevealObserver.observe(el));
+    }
+    if (!revealScrollBound) {
+      window.addEventListener('scroll', onRevealScroll, { passive: true });
+      window.addEventListener('hashchange', onRevealScroll, { passive: true });
+      revealScrollBound = true;
+    }
   }
 
   // ─── 4. SMOOTH SCROLL PARA ANCHORS LOCAIS ───
@@ -219,12 +264,7 @@
     initMobileMenu();
     initHeaderScroll();
     initSmoothAnchors();
-
-    if ('requestIdleCallback' in window) {
-      window.requestIdleCallback(() => initScrollReveal(), { timeout: 1200 });
-    } else {
-      setTimeout(initScrollReveal, 250);
-    }
+    initScrollReveal();
   }
 
   if (document.readyState === 'loading') {

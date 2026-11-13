@@ -1501,7 +1501,7 @@ main {
   color: var(--anpaq-gold-300);
   outline: 2px solid var(--anpaq-gold-400);
   outline-offset: 2px;
-  border-radius: var(--radius-xs);
+  border-radius: var(--radius-sm);
 }
 
 .footer-contact-item .footer-whatsapp-link svg {
@@ -1601,13 +1601,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: clamp(var(--sp-4), 3vh, var(--sp-8)) var(--container-pad);
+  padding: clamp(var(--sp-4), 3vh, var(--sp-8)) var(--container-px);
   background-color: var(--anpaq-dark-950);
-  background-image: url('/assets/img/bg-alambique.jpg');
-  background-image: url('/assets/img/bg-alambique.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   overflow: hidden;
   color: var(--anpaq-text-light);
   box-sizing: border-box;
@@ -2021,7 +2016,7 @@ main {
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
     min-height: clamp(420px, 70vh, 640px);
     min-height: clamp(420px, 70svh, 640px);
-    padding: clamp(var(--sp-4), 4vh, var(--sp-8)) max(16px, var(--container-pad));
+    padding: clamp(var(--sp-4), 4vh, var(--sp-8)) max(16px, var(--container-px));
     justify-content: center;
   }
 
@@ -2057,7 +2052,7 @@ main {
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
     min-height: clamp(420px, 70vh, 640px);
     min-height: clamp(420px, 70svh, 640px);
-    padding: var(--sp-4) max(16px, var(--container-pad));
+    padding: var(--sp-4) max(16px, var(--container-px));
     justify-content: center;
   }
 
@@ -2139,13 +2134,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: clamp(var(--sp-4), 4vh, var(--sp-10)) var(--container-pad);
+  padding: clamp(var(--sp-4), 4vh, var(--sp-10)) var(--container-px);
   background-color: var(--anpaq-dark-950);
-  background-image: url('/assets/img/bg-alambique.jpg');
-  background-image: url('/assets/img/bg-alambique.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: var(--anpaq-text-light);
   overflow: hidden;
   text-align: center;
@@ -3987,7 +3977,7 @@ main>section:first-of-type .reveal-fade {
 }
 
 .selo-how-info p {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 0.9375rem;
   line-height: 1.55;
   color: var(--anpaq-text-light-muted);
@@ -4062,9 +4052,17 @@ main>section:first-of-type .reveal-fade {
   outline-offset: 3px;
 }
 
-#publicacoes .pub-card:hover .btn {
+#publicacoes .pub-card:hover .btn-ghost {
   color: var(--anpaq-gold-600);
   background-color: rgba(201, 162, 39, 0.12);
+}
+
+#publicacoes .pub-card:hover .btn-primary {
+  background-color: var(--anpaq-gold-400);
+  border-color: var(--anpaq-gold-400);
+  color: var(--anpaq-dark-950);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(201, 162, 39, 0.32);
 }
 
 /* ─── CORREÇÃO DE CONTRASTE EM FUNDOS ESCUROS (.cta-band, .mobile-drawer, .site-footer, .section--dark & .on-dark) ─── */
@@ -4191,8 +4189,8 @@ main>section:first-of-type .reveal-fade {
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
     min-height: clamp(420px, 70vh, 640px) !important;
     min-height: clamp(420px, 70svh, 640px) !important;
-    padding-left: max(16px, var(--container-pad));
-    padding-right: max(16px, var(--container-pad));
+    padding-left: max(16px, var(--container-px));
+    padding-right: max(16px, var(--container-px));
   }
 }
 
@@ -4238,8 +4236,8 @@ main>section:first-of-type .reveal-fade {
     min-height: clamp(220px, 32svh, 320px) !important;
     padding-top: var(--sp-4) !important;
     padding-bottom: var(--sp-4) !important;
-    padding-left: max(16px, var(--container-pad));
-    padding-right: max(16px, var(--container-pad));
+    padding-left: max(16px, var(--container-px));
+    padding-right: max(16px, var(--container-px));
   }
 
   .page-hero--compact h1,
@@ -4290,8 +4288,8 @@ main>section:first-of-type .reveal-fade {
   .page-hero--sm {
     min-height: clamp(280px, 45vh, 440px) !important;
     min-height: clamp(280px, 45svh, 440px) !important;
-    padding-left: max(16px, var(--container-pad));
-    padding-right: max(16px, var(--container-pad));
+    padding-left: max(16px, var(--container-px));
+    padding-right: max(16px, var(--container-px));
   }
 }
 
@@ -4825,5 +4823,18 @@ main>section:first-of-type .reveal-fade {
     color: var(--anpaq-gold-500);
     font-size: 0.65em;
     opacity: 0.8;
+  }
+}
+
+/* ─── OTIMIZAÇÃO DE RENDERIZAÇÃO ABAIXO DA DOBRA (LCP / TBT) ─── */
+@supports (content-visibility: auto) {
+  main > section:nth-of-type(n + 2) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 520px;
+  }
+
+  .site-footer {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 380px;
   }
 }
