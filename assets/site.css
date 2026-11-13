@@ -1474,6 +1474,44 @@ main {
   margin-top: 2px;
 }
 
+/* Link de WhatsApp e telefones no rodapé institucional */
+.footer-phone-fixo {
+  white-space: nowrap;
+}
+
+.footer-contact-item .footer-whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 39, 0.6);
+  text-underline-offset: 3px;
+  white-space: nowrap;
+  transition: color var(--duration-fast) var(--ease-out),
+    text-decoration-color var(--duration-fast) var(--ease-out);
+}
+
+.footer-contact-item .footer-whatsapp-link:hover {
+  color: var(--anpaq-gold-300);
+  text-decoration-color: var(--anpaq-gold-300);
+}
+
+.footer-contact-item .footer-whatsapp-link:focus-visible {
+  color: var(--anpaq-gold-300);
+  outline: 2px solid var(--anpaq-gold-400);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+.footer-contact-item .footer-whatsapp-link svg {
+  width: 1em;
+  height: 1em;
+  margin-top: 0;
+  color: currentColor;
+  flex-shrink: 0;
+}
+
 /* Barra inferior do rodapé */
 .footer-bottom {
   padding: var(--sp-6) 0;
