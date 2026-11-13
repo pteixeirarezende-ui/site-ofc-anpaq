@@ -1505,9 +1505,10 @@ main {
 }
 
 .footer-contact-item .footer-whatsapp-link svg {
-  width: 1em;
-  height: 1em;
+  width: 16px;
+  height: 16px;
   margin-top: 0;
+  vertical-align: middle;
   color: currentColor;
   flex-shrink: 0;
 }
