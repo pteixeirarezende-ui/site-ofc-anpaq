@@ -1,10 +1,26 @@
 [
   {
-    "edicao": "95",
-    "data": "",
-    "titulo": "",
-    "capa_url": "/assets/img/revista-capa-95.jpg",
-    "link": "",
+    "edicao": "101",
+    "data": "2026",
+    "titulo": "Como o terroir é importante para avaliação da cachaça de alambique",
+    "capa_url": "/assets/img/revista-capa-101.webp",
+    "link": "/assets/revistas/revista-anpaq-101.pdf",
+    "publicar": "SIM"
+  },
+  {
+    "edicao": "100",
+    "data": "2026",
+    "titulo": "Mudanças no perfil dos consumidores de bebidas",
+    "capa_url": "/assets/img/revista-capa-100.webp",
+    "link": "/assets/revistas/revista-anpaq-100.pdf",
+    "publicar": "SIM"
+  },
+  {
+    "edicao": "99",
+    "data": "2026",
+    "titulo": "ANPAQ lança Selo Nacional da Cachaça de Alambique",
+    "capa_url": "/assets/img/revista-capa-99.webp",
+    "link": "/assets/revistas/revista-anpaq-099.pdf",
     "publicar": "SIM"
   }
 ]

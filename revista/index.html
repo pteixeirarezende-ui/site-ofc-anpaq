@@ -158,20 +158,17 @@
           <!-- Renderizado via JS / Fallback inicial gracioso -->
           <div class="pub-highlight-card">
             <div class="pub-highlight-cover-wrap">
-              <picture>
-                <source srcset="/assets/img/revista-capa-95.webp" type="image/webp">
-                <img src="/assets/img/revista-capa-95.jpg" alt="Capa da Edição 95 da Revista da ANPAQ" class="pub-highlight-cover-img" width="800" height="1132" loading="eager">
-              </picture>
+              <img src="/assets/img/revista-capa-101.webp" alt="Capa da Edição 101 da Revista da ANPAQ" class="pub-highlight-cover-img" width="800" height="1132" loading="eager">
             </div>
             <div class="pub-highlight-body">
               <span class="badge" style="background: rgba(201, 162, 39, 0.15); color: var(--anpaq-gold-700); border-color: rgba(201, 162, 39, 0.3); margin-bottom: var(--sp-3);">Edição em Destaque</span>
-              <h2 style="font-family: var(--font-display); font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl)); margin-bottom: var(--sp-2); color: var(--anpaq-dark-900);">Edição 95</h2>
+              <h2 style="font-family: var(--font-display); font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl)); margin-bottom: var(--sp-2); color: var(--anpaq-dark-900);">Edição 101</h2>
               <p style="color: var(--anpaq-dark-800); line-height: 1.6; margin-bottom: var(--sp-8);">
                 Revista distribuída gratuitamente em todo o Brasil. Matérias técnicas, novidades regulatórias, eventos e divulgação da cachaça de alambique.
               </p>
               <div style="display: flex; gap: var(--sp-4); flex-wrap: wrap;">
-                <a href="/contato/" class="btn btn-primary">
-                  Solicitar a edição
+                <a href="/assets/revistas/revista-anpaq-101.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+                  Ler edição
                 </a>
                 <a href="#todas-edicoes" class="btn btn-secondary" id="btnVerAcervo" style="display: none;">
                   Ver acervo de edições
@@ -375,7 +372,7 @@
         if (edicao.capa_url && edicao.capa_url.trim()) {
           const img = document.createElement('img');
           img.src = edicao.capa_url;
-          img.alt = `Capa da Edição ${edicao.edicao} da Revista ANPAQ`;
+          img.alt = `Capa da Edição ${edicao.edicao} da Revista da ANPAQ`;
           img.className = 'pub-highlight-cover-img';
           img.width = 1131;
           img.height = 1600;
