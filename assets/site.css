@@ -1596,8 +1596,8 @@ main {
 /* ─── HERÓI (DOBRA 1) ─── */
 .hero {
   position: relative;
-  min-height: clamp(480px, calc(100vh - var(--header-h)), 880px);
-  min-height: clamp(480px, calc(100svh - var(--header-h)), 880px);
+  min-height: clamp(460px, calc(76vh - var(--header-h)), 600px);
+  min-height: clamp(460px, calc(76svh - var(--header-h)), 600px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2013,10 +2013,16 @@ main {
     --header-height: 64px;
   }
 
-  .hero,
+  .hero {
+    min-height: clamp(420px, 62vh, 530px);
+    min-height: clamp(420px, 62svh, 530px);
+    padding: clamp(var(--sp-4), 4vh, var(--sp-8)) max(16px, var(--container-px));
+    justify-content: center;
+  }
+
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(420px, 70vh, 640px);
-    min-height: clamp(420px, 70svh, 640px);
+    min-height: clamp(320px, 48vh, 460px);
+    min-height: clamp(320px, 48svh, 460px);
     padding: clamp(var(--sp-4), 4vh, var(--sp-8)) max(16px, var(--container-px));
     justify-content: center;
   }
@@ -2049,10 +2055,16 @@ main {
     height: 38px;
   }
 
-  .hero,
+  .hero {
+    min-height: clamp(420px, 62vh, 530px);
+    min-height: clamp(420px, 62svh, 530px);
+    padding: var(--sp-4) max(16px, var(--container-px));
+    justify-content: center;
+  }
+
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(420px, 70vh, 640px);
-    min-height: clamp(420px, 70svh, 640px);
+    min-height: clamp(320px, 48vh, 460px);
+    min-height: clamp(320px, 48svh, 460px);
     padding: var(--sp-4) max(16px, var(--container-px));
     justify-content: center;
   }
@@ -2129,8 +2141,8 @@ main {
 /* ─── HERÓI DE PÁGINAS INTERNAS (.page-hero) ─── */
 .page-hero {
   position: relative;
-  min-height: clamp(480px, calc(100vh - var(--header-h)), 880px);
-  min-height: clamp(480px, calc(100svh - var(--header-h)), 880px);
+  min-height: clamp(340px, 50vh, 480px);
+  min-height: clamp(340px, 50svh, 480px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4172,11 +4184,20 @@ main>section:first-of-type .reveal-fade {
 
 /* ─── ALTURA PROPORCIONAL DA PRIMEIRA DOBRA (TODAS AS PÁGINAS) ─── */
 
-/* 1. Heróis Grandes de Conteúdo (.hero, .page-hero padrão: Home, Selo, A ANPAQ, Associe-se) */
-.hero,
+/* 1. Herói da Home (.hero) e Heróis Internos (.page-hero padrão: Selo, A ANPAQ, Associe-se) */
+.hero {
+  min-height: clamp(460px, calc(76vh - var(--header-h)), 600px);
+  min-height: clamp(460px, calc(76svh - var(--header-h)), 600px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
 .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-  min-height: clamp(480px, calc(100vh - var(--header-h)), 880px);
-  min-height: clamp(480px, calc(100svh - var(--header-h)), 880px);
+  min-height: clamp(340px, 50vh, 480px);
+  min-height: clamp(340px, 50svh, 480px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4186,10 +4207,16 @@ main>section:first-of-type .reveal-fade {
 
 @media (max-width: 640px) {
 
-  .hero,
+  .hero {
+    min-height: clamp(420px, 62vh, 530px) !important;
+    min-height: clamp(420px, 62svh, 530px) !important;
+    padding-left: max(16px, var(--container-px));
+    padding-right: max(16px, var(--container-px));
+  }
+
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(420px, 70vh, 640px) !important;
-    min-height: clamp(420px, 70svh, 640px) !important;
+    min-height: clamp(320px, 48vh, 460px) !important;
+    min-height: clamp(320px, 48svh, 460px) !important;
     padding-left: max(16px, var(--container-px));
     padding-right: max(16px, var(--container-px));
   }
