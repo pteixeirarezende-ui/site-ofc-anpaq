@@ -1596,8 +1596,8 @@ main {
 /* ─── HERÓI (DOBRA 1) ─── */
 .hero {
   position: relative;
-  min-height: clamp(520px, calc(86vh - var(--header-h)), 690px);
-  min-height: clamp(520px, calc(86svh - var(--header-h)), 690px);
+  min-height: clamp(480px, 70vh, 660px);
+  min-height: clamp(480px, 70svh, 660px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2021,8 +2021,8 @@ main {
   }
 
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(380px, 56vh, 500px);
-    min-height: clamp(380px, 56svh, 500px);
+    min-height: clamp(380px, 58vh, 500px);
+    min-height: clamp(380px, 58svh, 500px);
     padding: clamp(var(--sp-4), 4vh, var(--sp-8)) max(16px, var(--container-px));
     justify-content: center;
   }
@@ -2063,8 +2063,8 @@ main {
   }
 
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(380px, 56vh, 500px);
-    min-height: clamp(380px, 56svh, 500px);
+    min-height: clamp(380px, 58vh, 500px);
+    min-height: clamp(380px, 58svh, 500px);
     padding: var(--sp-4) max(16px, var(--container-px));
     justify-content: center;
   }
@@ -2141,8 +2141,8 @@ main {
 /* ─── HERÓI DE PÁGINAS INTERNAS (.page-hero) ─── */
 .page-hero {
   position: relative;
-  min-height: clamp(460px, calc(76vh - var(--header-h)), 620px);
-  min-height: clamp(460px, calc(76svh - var(--header-h)), 620px);
+  min-height: clamp(420px, 68vh, 620px);
+  min-height: clamp(420px, 68svh, 620px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4186,8 +4186,8 @@ main>section:first-of-type .reveal-fade {
 
 /* 1. Herói da Home (.hero) e Heróis Internos (.page-hero padrão: Selo, A ANPAQ, Associe-se) */
 .hero {
-  min-height: clamp(520px, calc(86vh - var(--header-h)), 690px);
-  min-height: clamp(520px, calc(86svh - var(--header-h)), 690px);
+  min-height: clamp(480px, 70vh, 660px);
+  min-height: clamp(480px, 70svh, 660px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4196,8 +4196,8 @@ main>section:first-of-type .reveal-fade {
 }
 
 .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-  min-height: clamp(460px, calc(76vh - var(--header-h)), 620px);
-  min-height: clamp(460px, calc(76svh - var(--header-h)), 620px);
+  min-height: clamp(420px, 68vh, 620px);
+  min-height: clamp(420px, 68svh, 620px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4215,8 +4215,8 @@ main>section:first-of-type .reveal-fade {
   }
 
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(380px, 56vh, 500px) !important;
-    min-height: clamp(380px, 56svh, 500px) !important;
+    min-height: clamp(380px, 58vh, 500px) !important;
+    min-height: clamp(380px, 58svh, 500px) !important;
     padding-left: max(16px, var(--container-px));
     padding-right: max(16px, var(--container-px));
   }
@@ -4224,8 +4224,8 @@ main>section:first-of-type .reveal-fade {
 
 /* 2. Heróis Compactos em Páginas de Lista (/associados/, /agenda/ e /revista/) */
 .page-hero--compact {
-  min-height: clamp(300px, 44vh, 430px) !important;
-  min-height: clamp(300px, 44svh, 430px) !important;
+  min-height: clamp(420px, 68vh, 620px) !important;
+  min-height: clamp(420px, 68svh, 620px) !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -4260,8 +4260,8 @@ main>section:first-of-type .reveal-fade {
 
 @media (max-width: 640px) {
   .page-hero--compact {
-    min-height: clamp(250px, 36vh, 360px) !important;
-    min-height: clamp(250px, 36svh, 360px) !important;
+    min-height: clamp(380px, 58vh, 500px) !important;
+    min-height: clamp(380px, 58svh, 500px) !important;
     padding-top: var(--sp-4) !important;
     padding-bottom: var(--sp-4) !important;
     padding-left: max(16px, var(--container-px));
@@ -4303,8 +4303,8 @@ main>section:first-of-type .reveal-fade {
 
 /* 3. Heróis Enxutos (Contato, Privacidade e 404) */
 .page-hero--sm {
-  min-height: clamp(360px, 52vh, 540px) !important;
-  min-height: clamp(360px, 52svh, 540px) !important;
+  min-height: clamp(420px, 68vh, 620px) !important;
+  min-height: clamp(420px, 68svh, 620px) !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -4314,8 +4314,8 @@ main>section:first-of-type .reveal-fade {
 
 @media (max-width: 640px) {
   .page-hero--sm {
-    min-height: clamp(310px, 48vh, 460px) !important;
-    min-height: clamp(310px, 48svh, 460px) !important;
+    min-height: clamp(380px, 58vh, 500px) !important;
+    min-height: clamp(380px, 58svh, 500px) !important;
     padding-left: max(16px, var(--container-px));
     padding-right: max(16px, var(--container-px));
   }
