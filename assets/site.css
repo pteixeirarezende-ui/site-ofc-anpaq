@@ -2021,8 +2021,8 @@ main {
   }
 
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(340px, 50vh, 460px);
-    min-height: clamp(340px, 50svh, 460px);
+    min-height: clamp(380px, 56vh, 500px);
+    min-height: clamp(380px, 56svh, 500px);
     padding: clamp(var(--sp-4), 4vh, var(--sp-8)) max(16px, var(--container-px));
     justify-content: center;
   }
@@ -2063,8 +2063,8 @@ main {
   }
 
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(340px, 50vh, 460px);
-    min-height: clamp(340px, 50svh, 460px);
+    min-height: clamp(380px, 56vh, 500px);
+    min-height: clamp(380px, 56svh, 500px);
     padding: var(--sp-4) max(16px, var(--container-px));
     justify-content: center;
   }
@@ -2141,8 +2141,8 @@ main {
 /* ─── HERÓI DE PÁGINAS INTERNAS (.page-hero) ─── */
 .page-hero {
   position: relative;
-  min-height: clamp(380px, 56vh, 540px);
-  min-height: clamp(380px, 56svh, 540px);
+  min-height: clamp(460px, calc(76vh - var(--header-h)), 620px);
+  min-height: clamp(460px, calc(76svh - var(--header-h)), 620px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4196,8 +4196,8 @@ main>section:first-of-type .reveal-fade {
 }
 
 .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-  min-height: clamp(380px, 56vh, 540px);
-  min-height: clamp(380px, 56svh, 540px);
+  min-height: clamp(460px, calc(76vh - var(--header-h)), 620px);
+  min-height: clamp(460px, calc(76svh - var(--header-h)), 620px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4215,8 +4215,8 @@ main>section:first-of-type .reveal-fade {
   }
 
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(340px, 50vh, 460px) !important;
-    min-height: clamp(340px, 50svh, 460px) !important;
+    min-height: clamp(380px, 56vh, 500px) !important;
+    min-height: clamp(380px, 56svh, 500px) !important;
     padding-left: max(16px, var(--container-px));
     padding-right: max(16px, var(--container-px));
   }
@@ -4224,8 +4224,8 @@ main>section:first-of-type .reveal-fade {
 
 /* 2. Heróis Compactos em Páginas de Lista (/associados/, /agenda/ e /revista/) */
 .page-hero--compact {
-  min-height: clamp(260px, 38vh, 380px) !important;
-  min-height: clamp(260px, 38svh, 380px) !important;
+  min-height: clamp(300px, 44vh, 430px) !important;
+  min-height: clamp(300px, 44svh, 430px) !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -4260,8 +4260,8 @@ main>section:first-of-type .reveal-fade {
 
 @media (max-width: 640px) {
   .page-hero--compact {
-    min-height: clamp(220px, 32vh, 320px) !important;
-    min-height: clamp(220px, 32svh, 320px) !important;
+    min-height: clamp(250px, 36vh, 360px) !important;
+    min-height: clamp(250px, 36svh, 360px) !important;
     padding-top: var(--sp-4) !important;
     padding-bottom: var(--sp-4) !important;
     padding-left: max(16px, var(--container-px));
@@ -4303,8 +4303,8 @@ main>section:first-of-type .reveal-fade {
 
 /* 3. Heróis Enxutos (Contato, Privacidade e 404) */
 .page-hero--sm {
-  min-height: clamp(320px, 45vh, 520px) !important;
-  min-height: clamp(320px, 45svh, 520px) !important;
+  min-height: clamp(360px, 52vh, 540px) !important;
+  min-height: clamp(360px, 52svh, 540px) !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -4314,8 +4314,8 @@ main>section:first-of-type .reveal-fade {
 
 @media (max-width: 640px) {
   .page-hero--sm {
-    min-height: clamp(280px, 45vh, 440px) !important;
-    min-height: clamp(280px, 45svh, 440px) !important;
+    min-height: clamp(310px, 48vh, 460px) !important;
+    min-height: clamp(310px, 48svh, 460px) !important;
     padding-left: max(16px, var(--container-px));
     padding-right: max(16px, var(--container-px));
   }
