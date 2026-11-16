@@ -1596,8 +1596,8 @@ main {
 /* ─── HERÓI (DOBRA 1) ─── */
 .hero {
   position: relative;
-  min-height: clamp(460px, calc(76vh - var(--header-h)), 600px);
-  min-height: clamp(460px, calc(76svh - var(--header-h)), 600px);
+  min-height: clamp(520px, calc(86vh - var(--header-h)), 690px);
+  min-height: clamp(520px, calc(86svh - var(--header-h)), 690px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2014,15 +2014,15 @@ main {
   }
 
   .hero {
-    min-height: clamp(420px, 62vh, 530px);
-    min-height: clamp(420px, 62svh, 530px);
+    min-height: clamp(450px, 66vh, 570px);
+    min-height: clamp(450px, 66svh, 570px);
     padding: clamp(var(--sp-4), 4vh, var(--sp-8)) max(16px, var(--container-px));
     justify-content: center;
   }
 
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(320px, 48vh, 460px);
-    min-height: clamp(320px, 48svh, 460px);
+    min-height: clamp(340px, 50vh, 460px);
+    min-height: clamp(340px, 50svh, 460px);
     padding: clamp(var(--sp-4), 4vh, var(--sp-8)) max(16px, var(--container-px));
     justify-content: center;
   }
@@ -2056,15 +2056,15 @@ main {
   }
 
   .hero {
-    min-height: clamp(420px, 62vh, 530px);
-    min-height: clamp(420px, 62svh, 530px);
+    min-height: clamp(450px, 66vh, 570px);
+    min-height: clamp(450px, 66svh, 570px);
     padding: var(--sp-4) max(16px, var(--container-px));
     justify-content: center;
   }
 
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(320px, 48vh, 460px);
-    min-height: clamp(320px, 48svh, 460px);
+    min-height: clamp(340px, 50vh, 460px);
+    min-height: clamp(340px, 50svh, 460px);
     padding: var(--sp-4) max(16px, var(--container-px));
     justify-content: center;
   }
@@ -2141,8 +2141,8 @@ main {
 /* ─── HERÓI DE PÁGINAS INTERNAS (.page-hero) ─── */
 .page-hero {
   position: relative;
-  min-height: clamp(340px, 50vh, 480px);
-  min-height: clamp(340px, 50svh, 480px);
+  min-height: clamp(380px, 56vh, 540px);
+  min-height: clamp(380px, 56svh, 540px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4186,8 +4186,8 @@ main>section:first-of-type .reveal-fade {
 
 /* 1. Herói da Home (.hero) e Heróis Internos (.page-hero padrão: Selo, A ANPAQ, Associe-se) */
 .hero {
-  min-height: clamp(460px, calc(76vh - var(--header-h)), 600px);
-  min-height: clamp(460px, calc(76svh - var(--header-h)), 600px);
+  min-height: clamp(520px, calc(86vh - var(--header-h)), 690px);
+  min-height: clamp(520px, calc(86svh - var(--header-h)), 690px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4196,8 +4196,8 @@ main>section:first-of-type .reveal-fade {
 }
 
 .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-  min-height: clamp(340px, 50vh, 480px);
-  min-height: clamp(340px, 50svh, 480px);
+  min-height: clamp(380px, 56vh, 540px);
+  min-height: clamp(380px, 56svh, 540px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4208,15 +4208,15 @@ main>section:first-of-type .reveal-fade {
 @media (max-width: 640px) {
 
   .hero {
-    min-height: clamp(420px, 62vh, 530px) !important;
-    min-height: clamp(420px, 62svh, 530px) !important;
+    min-height: clamp(450px, 66vh, 570px) !important;
+    min-height: clamp(450px, 66svh, 570px) !important;
     padding-left: max(16px, var(--container-px));
     padding-right: max(16px, var(--container-px));
   }
 
   .page-hero:not(.page-hero--compact):not(.page-hero--sm) {
-    min-height: clamp(320px, 48vh, 460px) !important;
-    min-height: clamp(320px, 48svh, 460px) !important;
+    min-height: clamp(340px, 50vh, 460px) !important;
+    min-height: clamp(340px, 50svh, 460px) !important;
     padding-left: max(16px, var(--container-px));
     padding-right: max(16px, var(--container-px));
   }
