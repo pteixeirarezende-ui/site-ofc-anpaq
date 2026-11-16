@@ -4224,8 +4224,8 @@ main>section:first-of-type .reveal-fade {
 
 /* 2. Heróis Compactos em Páginas de Lista (/associados/, /agenda/ e /revista/) */
 .page-hero--compact {
-  min-height: clamp(420px, 68vh, 620px) !important;
-  min-height: clamp(420px, 68svh, 620px) !important;
+  min-height: clamp(260px, 38vh, 340px) !important;
+  min-height: clamp(260px, 38svh, 340px) !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -4260,8 +4260,8 @@ main>section:first-of-type .reveal-fade {
 
 @media (max-width: 640px) {
   .page-hero--compact {
-    min-height: clamp(380px, 58vh, 500px) !important;
-    min-height: clamp(380px, 58svh, 500px) !important;
+    min-height: clamp(220px, 32vh, 300px) !important;
+    min-height: clamp(220px, 32svh, 300px) !important;
     padding-top: var(--sp-4) !important;
     padding-bottom: var(--sp-4) !important;
     padding-left: max(16px, var(--container-px));
@@ -4303,8 +4303,8 @@ main>section:first-of-type .reveal-fade {
 
 /* 3. Heróis Enxutos (Contato, Privacidade e 404) */
 .page-hero--sm {
-  min-height: clamp(420px, 68vh, 620px) !important;
-  min-height: clamp(420px, 68svh, 620px) !important;
+  min-height: clamp(260px, 38vh, 340px) !important;
+  min-height: clamp(260px, 38svh, 340px) !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -4314,8 +4314,8 @@ main>section:first-of-type .reveal-fade {
 
 @media (max-width: 640px) {
   .page-hero--sm {
-    min-height: clamp(380px, 58vh, 500px) !important;
-    min-height: clamp(380px, 58svh, 500px) !important;
+    min-height: clamp(220px, 32vh, 300px) !important;
+    min-height: clamp(220px, 32svh, 300px) !important;
     padding-left: max(16px, var(--container-px));
     padding-right: max(16px, var(--container-px));
   }
